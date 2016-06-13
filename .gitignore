@@ -56,3 +56,4 @@ themes/Spring-University/node_modules/*
 # ================== #
 themes/Spring-University/build/*
 themes/Spring-University/gulpfile.js
+themes/Spring-University/style.css
