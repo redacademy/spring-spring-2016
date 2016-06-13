@@ -1,13 +1,13 @@
 <?php
 /**
- * RED Starter Theme functions and definitions.
+ * Spring Theme functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RED_Starter_Theme
+ * @package Spring_Theme
  */
 
-if ( ! function_exists( 'red_starter_setup' ) ) :
+if ( ! function_exists( 'spring_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
@@ -36,7 +36,7 @@ function spring_setup() {
 	) );
 
 }
-endif; // red_starter_setup
+endif; // spring_setup
 add_action( 'after_setup_theme', 'spring_setup' );
 
 /**
@@ -45,9 +45,9 @@ add_action( 'after_setup_theme', 'spring_setup' );
  * @global int $content_width
  */
 function spring_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'red_starter_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'spring_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'red_starter_content_width', 0 );
+add_action( 'after_setup_theme', 'spring_content_width', 0 );
 
 /**
  * Register widget area.
@@ -65,7 +65,7 @@ function spring_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'red_starter_widgets_init' );
+add_action( 'widgets_init', 'spring_widgets_init' );
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
@@ -77,7 +77,7 @@ function spring_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 
 	return $stylesheet_uri;
 }
-add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
+add_filter( 'stylesheet_uri', 'spring_minified_css', 10, 2 );
 
 /**
  * Enqueue scripts and styles.
