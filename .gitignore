@@ -10,7 +10,6 @@
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
-gulpfile.js
 
 # Ignore logs and databases #
 # ========================= #
@@ -56,3 +55,4 @@ themes/Spring-University/node_modules/*
 # Ignore build files #
 # ================== #
 themes/Spring-University/build/*
+themes/Spring-University/gulpfile.js
