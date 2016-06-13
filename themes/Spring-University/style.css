@@ -680,6 +680,14 @@ object {
     height: 100px;
     width: 150px; }
 
+
 /*--------------------------------------------------------------
 #Footer
 --------------------------------------------------------------*/
+.fa {
+  padding: .5rem;
+  border: 1px solid #a9a9a9;
+  border-radius: 50%; }
+
+.fa fa-facebook {
+  border: 1px solid red; }
