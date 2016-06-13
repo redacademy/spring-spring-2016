@@ -490,7 +490,6 @@ a {
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
   height: 1px;
   width: 1px;
   overflow: hidden; }
@@ -656,3 +655,31 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  position: fixed;
+  background-color: #209f99;
+  width: 100%; }
+  .site-header .home_img {
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    height: 100px;
+    width: 150px; }
+  .site-header .menu_img {
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    height: 100px;
+    width: 150px; }
+
+/*--------------------------------------------------------------
+#Footer
+--------------------------------------------------------------*/

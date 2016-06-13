@@ -1,3 +1,28 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+// Navbar //
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: $main_color;
+  width: 100%;
+
+  .home_img {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    height: 100px;
+    width: 150px;
+  }
+
+  .menu_img {
+    display: flex;
+    position: absolute;
+    height: 100px;
+    width: 150px;
+  }
+}
