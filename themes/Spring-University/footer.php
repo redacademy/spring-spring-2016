@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying the footer.
+ * Template Name: Footer Template
  *
- * @package RED_Starter_Theme
+ * @package Spring_Theme
  */
 
 ?>
@@ -11,10 +11,12 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<p>1490 W Broadway #300</p>
-					<p>Vacouver, BC Canada</p>
-					<span>Monday - Friday:</span>
-					<p>9:00am - 5:00pm</p>
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+					<p class="address">1490 W Broadway #300<br/>Vacouver, BC Canada</p>
+					<p class="operatio-hours"><span>Monday - Friday:</span>9:00am - 5:00pm (PST)</p>
+					<p class="phone-number">+1(604)440-0101</p>
+					<a href="#">help@springu.is</a>
 
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
