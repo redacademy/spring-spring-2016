@@ -675,3 +675,37 @@ object {
 /*--------------------------------------------------------------
 #Footer
 --------------------------------------------------------------*/
+.site-footer {
+  border-top: 1px solid #73CCD5;
+  color: #a9a9a9;
+  text-align: center; }
+
+.social-networks {
+  margin-top: 1rem; }
+  .social-networks a {
+    color: #a9a9a9; }
+    .social-networks a:visited {
+      color: #a9a9a9; }
+    .social-networks a:hover, .social-networks a:focus, .social-networks a:active {
+      color: #4A4A4A; }
+  .social-networks .fa {
+    padding: .5rem;
+    border: 1px solid #a9a9a9;
+    border-radius: 50%; }
+
+.contact-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.phone-number {
+  padding: 0 1rem; }
+
+.email-info {
+  text-decoration: none;
+  color: #a9a9a9; }
+  .email-info:visited {
+    color: #a9a9a9; }
+  .email-info:hover, .email-info:focus, .email-info:active {
+    color: #4A4A4A; }

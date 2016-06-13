@@ -1,3 +1,56 @@
 /*--------------------------------------------------------------
 #Footer
 --------------------------------------------------------------*/
+//Mobile
+.site-footer{
+  border-top: 1px solid $accent_color;
+  color: #a9a9a9;
+  text-align: center;
+}
+
+.social-networks{
+
+  margin-top: 1rem;
+
+  a {
+  	color: $color_footer_link;
+
+  	&:visited {
+  		color: $color_footer_link-visited;
+  	}
+  	&:hover,
+  	&:focus,
+  	&:active {
+  		color: $color_footer_link-hover;
+  	}
+  }
+
+  .fa{
+    padding: .5rem;
+    border: 1px solid #a9a9a9;
+    border-radius: 50%;
+  }
+}
+
+.contact-info{
+  display: flex;
+  justify-content: center;
+}
+
+.phone-number{
+  padding: 0 1rem;
+}
+
+.email-info{
+  text-decoration: none;
+  color: $color_footer_link;
+
+  &:visited{
+    color: $color_footer_link;
+  }
+  &:hover,
+  &:focus,
+  &:active{
+    color: $color_footer_link-hover;
+  }
+}
