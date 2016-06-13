@@ -63,7 +63,7 @@ gulp.task('browser-sync', function() {
    ];
 
     browserSync.init(files, {
-        proxy: 'inhabitent.dev',
+        proxy: 'http://localhost/Spring/', //update this everytime you pull-inhabitent.dev
     });
 
     gulp.watch(files).on('change', browserSync.reload);

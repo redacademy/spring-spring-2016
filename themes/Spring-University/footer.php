@@ -11,7 +11,11 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+					<p>1490 W Broadway #300</p>
+					<p>Vacouver, BC Canada</p>
+					<span>Monday - Friday:</span>
+					<p>9:00am - 5:00pm</p>
+
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

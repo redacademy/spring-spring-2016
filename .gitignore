@@ -10,6 +10,7 @@
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
+gulpfile.js
 
 # Ignore logs and databases #
 # ========================= #
