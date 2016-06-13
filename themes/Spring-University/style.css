@@ -659,35 +659,19 @@ object {
 # Header
 --------------------------------------------------------------*/
 .site-header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
   position: fixed;
   background-color: #209f99;
-  width: 100%; }
+  width: 100%;
+  height: 15vh; }
   .site-header .home_img {
-    display: -ms-flexbox;
-    display: flex;
     position: absolute;
-    bottom: 10px;
+    bottom: 3px;
     height: 100px;
     width: 150px; }
-  .site-header .menu_img {
-    display: -ms-flexbox;
-    display: flex;
+  .site-header .menu-toggle {
     position: absolute;
-    height: 100px;
-    width: 150px; }
-
+    right: 10px; }
 
 /*--------------------------------------------------------------
 #Footer
 --------------------------------------------------------------*/
-.fa {
-  padding: .5rem;
-  border: 1px solid #a9a9a9;
-  border-radius: 50%; }
-
-.fa fa-facebook {
-  border: 1px solid red; }

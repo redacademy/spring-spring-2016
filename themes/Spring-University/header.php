@@ -25,9 +25,7 @@
 					<h1 class="site-title screen-reader-text">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 						<img class="home_img" src= "<?php echo get_template_directory_uri(); ?>/images/spring_logo_white.png" alt= "whiteLogo" />
-						<img class="menu_img" src= "<?php echo get_template_directory_uri(); ?>/images/spring_logo_white.png" alt= "menu" />
 					</h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
