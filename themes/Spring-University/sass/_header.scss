@@ -5,8 +5,9 @@
 // Navbar //
 
 .site-header {
+  display: flex;
   position: fixed;
-  top: 0;
+  top: 45px;
   background-color: $main_color;
   width: 100%;
   height: 15vh;
@@ -20,16 +21,39 @@
     width: 35px;
   }
 
+  .main-navigation {
+    padding-right: 20px;
+  }
+
   .menu-toggle {
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     background-color: $main_color;
     box-shadow: none;
     border: none;
+  }
 
-    &:active {
+  .hamburger {
+    height: 30px;
+  }
 
-    }
+  .x-mark {
+    display: none;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 782px) {
+  .site-header {
+    top: 32px;
   }
 }

@@ -38,6 +38,6 @@
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
-
+		<script type="text/javascript" src="wp-content/themes/Spring-University/js/header.js"></script>
 	</body>
 </html>
