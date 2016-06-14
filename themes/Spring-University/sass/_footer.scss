@@ -10,7 +10,7 @@
   background-color: $accent_color;
 }
 
-.site-footer{
+.site-footer {
   font-family: Helvetica, sans-serif;
   font-weight: 350;
   padding: 1rem;
@@ -18,53 +18,59 @@
   text-align: center;
 }
 
-.social-networks{
-
-  margin-top: 1rem;
+.spring-contact {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-
-  a {
-    display: block;
-    width: 2rem;
-  	color: $color_footer_link;
-
-  	&:visited {
-  		color: $color_footer_link-visited;
-  	}
-  	&:hover,
-  	&:focus,
-  	&:active {
-  		color: $color_footer_link-hover;
-  	}
-  }
 }
 
-.facebook-icon{
+.social-networks,
+.office-info,
+.contact-info {
+  min-width: 100%;
+  flex: 1 0 100%;
+}
+
+.social-networks{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.facebook-icon a,
+.twitter-icon a {
+  display: inline-block;
+  color: $color_footer_link;
   font-size: 1.5rem;
   border: 1.5px solid #a9a9a9;
   border-radius: 50%;
   padding: .3rem .5rem;
   margin: .5rem 1rem;
-}
+  width: 40px;
+  height: 40px;
 
-.facebook-icon:hover { border-color: $color_footer_link-hover; }
-
-
-.twitter-icon{
-  font-size: 1.5rem;
-  border: 1px solid #a9a9a9;
-  border-radius: 50%;
-  padding: .2rem .5rem;
-  margin: .5rem 1rem;
-
-  i{
-    margin-top: .4rem;
-    margin-left: .3rem;
+  &:visited {
+    color: $color_footer_link-visited;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color_footer_link-hover;
   }
 }
 
-.twitter-icon:hover { border-color: $color_footer_link-hover; }
+
+// .twitter-icon{
+//   font-size: 1.5rem;
+//   border: 1px solid #a9a9a9;
+//   border-radius: 50%;
+//   padding: .2rem .5rem;
+//   margin: .5rem 1rem;
+//
+//   i{
+//     margin-top: .4rem;
+//     margin-left: .3rem;
+//   }
+// }
 
 .phone-number{
   padding: 0 1rem;
@@ -82,5 +88,76 @@
   &:focus,
   &:active{
     color: $color_footer_link-hover;
+  }
+}
+
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+----------------------Media Query---------------------------------
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+@media only screen and (min-width: 600px) {
+
+  .line-separator{
+    visibility: hidden;
+  }
+  .footer-info{
+    padding-bottom: 2rem;
+  }
+
+  .spring-contact {
+    justify-content: flex-start;
+  }
+
+  .office-info,
+  .contact-info {
+    min-width: none;
+    max-width: 67%;
+    flex: 1 0 67%;
+  }
+
+  .social-networks {
+    min-width: 0;
+    max-width: 33%;
+    flex: 1 0 33%;
+    order: 3;
+  }
+  // .spring-contact{
+  //   display: flex;
+  //   flex-direction: row-reverse;
+  //   justify-content: space-around;
+  // }
+  // .social-networks{
+  //   align-self: center;
+  //   margin-top: 0;
+  // }
+  // .office-info{
+  //   display: flex;
+  //   margin-right: 1rem;
+  //   margin-left: 1rem;
+  // }
+  // .contact-info{
+  //   display: flex;
+  //   flex-direction: row-reverse;
+  //   justify-content: flex-end;
+  // }
+  // .address{
+  //   margin-right: 1rem;
+  //   text-align: left;
+  // }
+  // .operation-hours{
+  //   margin-left: 1rem;
+  //   text-align: left;
+  // }
+  // .phone-number{
+  //
+  // }
+  // .email-info{
+  //   padding-left: 0;
+  // }
+}
+
+@media only screen and (min-width: 1240px) {
+
+  .line-separator{
+    visibility: hidden;
   }
 }

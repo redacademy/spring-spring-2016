@@ -718,43 +718,44 @@ object {
   color: #a9a9a9;
   text-align: center; }
 
-.social-networks {
-  margin-top: 1rem;
+.spring-contact {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center; }
-  .social-networks a {
-    display: block;
-    width: 2rem;
-    color: #a9a9a9; }
-    .social-networks a:visited {
-      color: #a9a9a9; }
-    .social-networks a:hover, .social-networks a:focus, .social-networks a:active {
-      color: #4A4A4A; }
 
-.facebook-icon {
+.social-networks,
+.office-info,
+.contact-info {
+  min-width: 100%;
+  -ms-flex: 1 0 100%;
+      flex: 1 0 100%; }
+
+.social-networks {
+  text-align: center;
+  margin-top: 1rem; }
+
+.facebook-icon a,
+.twitter-icon a {
+  display: inline-block;
+  color: #a9a9a9;
   font-size: 1.5rem;
   border: 1.5px solid #a9a9a9;
   border-radius: 50%;
   padding: .3rem .5rem;
-  margin: .5rem 1rem; }
-
-.facebook-icon:hover {
-  border-color: #4A4A4A; }
-
-.twitter-icon {
-  font-size: 1.5rem;
-  border: 1px solid #a9a9a9;
-  border-radius: 50%;
-  padding: .2rem .5rem;
-  margin: .5rem 1rem; }
-  .twitter-icon i {
-    margin-top: .4rem;
-    margin-left: .3rem; }
-
-.twitter-icon:hover {
-  border-color: #4A4A4A; }
+  margin: .5rem 1rem;
+  width: 40px;
+  height: 40px; }
+  .facebook-icon a:visited,
+  .twitter-icon a:visited {
+    color: #a9a9a9; }
+  .facebook-icon a:hover, .facebook-icon a:focus, .facebook-icon a:active,
+  .twitter-icon a:hover,
+  .twitter-icon a:focus,
+  .twitter-icon a:active {
+    color: #4A4A4A; }
 
 .phone-number {
   padding: 0 1rem; }
@@ -767,3 +768,32 @@ object {
     color: #a9a9a9; }
   .email-info:hover, .email-info:focus, .email-info:active {
     color: #4A4A4A; }
+
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+----------------------Media Query---------------------------------
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+@media only screen and (min-width: 600px) {
+  .line-separator {
+    visibility: hidden; }
+  .footer-info {
+    padding-bottom: 2rem; }
+  .spring-contact {
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
+  .office-info,
+  .contact-info {
+    min-width: none;
+    max-width: 67%;
+    -ms-flex: 1 0 67%;
+        flex: 1 0 67%; }
+  .social-networks {
+    min-width: 0;
+    max-width: 33%;
+    -ms-flex: 1 0 33%;
+        flex: 1 0 33%;
+    -ms-flex-order: 3;
+        order: 3; } }
+
+@media only screen and (min-width: 1240px) {
+  .line-separator {
+    visibility: hidden; } }
