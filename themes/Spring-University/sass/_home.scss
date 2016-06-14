@@ -10,7 +10,15 @@
 .inner_hero {
   border: 1px solid blue;
   width: 75%;
-  height: 60%;
+  height: 70%;
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+    img {
+      height: 50%;
+      border: 1px solid green;
+    }
 }
 
 
