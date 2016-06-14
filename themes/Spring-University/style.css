@@ -675,14 +675,31 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .inner_hero img {
-    height: 50%;
-    border: 1px solid green; }
+    height: 50%; }
 
 .mobile_cta {
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  background: #F49110;
+  height: 30px;
+  width: 120px;
+  padding: 10px;
+  padding-top: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px gray;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .desktop_home_hero {
   height: 100vh;
@@ -799,10 +816,6 @@ object {
   text-align: center;
   margin-top: 1rem; }
 
-.facebook-icon i,
-.twitter-icon i {
-  font-size: 2rem; }
-
 .facebook-icon a,
 .twitter-icon a {
   display: inline-block;
@@ -821,7 +834,8 @@ object {
   .twitter-icon a:hover,
   .twitter-icon a:focus,
   .twitter-icon a:active {
-    color: #4A4A4A; }
+    color: #4A4A4A;
+    border-color: #4A4A4A; }
 
 .address, .operation-hours {
   margin-right: 1rem;
@@ -856,19 +870,27 @@ object {
     display: -ms-flexbox;
     display: flex;
     min-width: none;
-    max-width: 67%;
-    -ms-flex: 1 0 67%;
-        flex: 1 0 67%; }
+    max-width: 70%;
+    -ms-flex: 1 0 70%;
+        flex: 1 0 70%; }
   .social-networks {
     min-width: 0;
-    max-width: 33%;
-    -ms-flex: 1 0 33%;
-        flex: 1 0 33%;
+    max-width: 30%;
+    -ms-flex: 1 0 30%;
+        flex: 1 0 30%;
     -ms-flex-order: 3;
         order: 3; }
   .phone-number {
-    margin-right: 3.5rem; } }
+    padding-right: 1.5rem;
+    margin-right: 3rem; }
+  .address {
+    margin-right: 2rem; } }
 
 @media only screen and (min-width: 1240px) {
   .line-separator {
-    visibility: hidden; } }
+    visibility: hidden; }
+  .address {
+    margin-right: 3rem; }
+  .phone-number {
+    padding-right: 2rem;
+    margin-right: 3.5rem; } }

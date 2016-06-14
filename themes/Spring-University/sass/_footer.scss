@@ -36,14 +36,6 @@
   margin-top: 1rem;
 }
 
-.facebook-icon,
-.twitter-icon{
-
-  i{
-    font-size: 2rem;
-  }
-}
-
 .facebook-icon a,
 .twitter-icon a {
   display: inline-block;
@@ -63,6 +55,7 @@
   &:focus,
   &:active {
     color: $color_footer_link-hover;
+    border-color: $color_footer_link-hover;
   }
 }
 
@@ -100,7 +93,7 @@
 
   .footer-info {
     display: flex;
-    justify-content: space-around;;
+    justify-content: space-around;
     padding-bottom: 2rem;
   }
 
@@ -109,19 +102,23 @@
     text-align: left;
     display: flex;
     min-width: none;
-    max-width: 67%;
-    flex: 1 0 67%;
+    max-width: 70%;
+    flex: 1 0 70%;
   }
 
   .social-networks {
     min-width: 0;
-    max-width: 33%;
-    flex: 1 0 33%;
+    max-width: 30%;
+    flex: 1 0 30%;
     order: 3;
   }
 
   .phone-number{
-    margin-right: 3.5rem;
+    padding-right: 1.5rem;
+    margin-right: 3rem;
+  }
+  .address{
+    margin-right: 2rem;
   }
 }
 
@@ -129,5 +126,14 @@
 
   .line-separator{
     visibility: hidden;
+  }
+
+  .address{
+    margin-right: 3rem;
+  }
+
+  .phone-number{
+    padding-right: 2rem;
+    margin-right: 3.5rem;
   }
 }
