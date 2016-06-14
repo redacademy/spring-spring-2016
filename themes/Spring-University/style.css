@@ -490,7 +490,6 @@ a {
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
   height: 1px;
   width: 1px;
   overflow: hidden; }
@@ -659,6 +658,20 @@ object {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.site-header {
+  position: fixed;
+  background-color: #209f99;
+  width: 100%;
+  height: 15vh; }
+  .site-header .home_img {
+    position: absolute;
+    bottom: 3px;
+    height: 100px;
+    width: 150px; }
+  .site-header .menu-toggle {
+    position: absolute;
+    right: 10px; }
+
 /*--------------------------------------------------------------
 #Footer
 --------------------------------------------------------------*/
