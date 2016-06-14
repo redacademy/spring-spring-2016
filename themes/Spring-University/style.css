@@ -459,7 +459,7 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 640px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
@@ -675,11 +675,31 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .inner_hero img {
-    height: 50%;
-    border: 1px solid green; }
+    height: 50%; }
+
+.mobile_cta {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  background: #F49110;
+  height: 30px;
+  width: 120px;
+  padding: 10px;
+  padding-top: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px gray;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .desktop_home_hero {
   height: 100vh;
@@ -723,12 +743,12 @@ object {
   top: 45px;
   background-color: #209f99;
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   z-index: 5; }
   .site-header .home_img {
     position: absolute;
     left: 30px;
-    bottom: 30px;
+    bottom: 15px;
     height: 40px;
     width: 35px; }
   .site-header .main-navigation {
@@ -744,14 +764,15 @@ object {
         justify-content: flex-end;
     background-color: #209f99;
     box-shadow: none;
-    border: none; }
+    border: none;
+    outline: none; }
   .site-header .hamburger {
     height: 30px; }
   .site-header .x-mark {
     display: none;
     height: 30px; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 640px) {
   .hamburger {
     display: none; } }
 
@@ -802,10 +823,10 @@ object {
   font-size: 1.5rem;
   border: 1.5px solid #a9a9a9;
   border-radius: 50%;
-  padding: .3rem .5rem;
+  padding: .5rem .7rem;
   margin: .5rem 1rem;
-  width: 40px;
-  height: 40px; }
+  width: 50px;
+  height: 50px; }
   .facebook-icon a:visited,
   .twitter-icon a:visited {
     color: #a9a9a9; }
@@ -813,7 +834,8 @@ object {
   .twitter-icon a:hover,
   .twitter-icon a:focus,
   .twitter-icon a:active {
-    color: #4A4A4A; }
+    color: #4A4A4A;
+    border-color: #4A4A4A; }
 
 .address, .operation-hours {
   margin-right: 1rem;
@@ -839,8 +861,8 @@ object {
   .footer-info {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding-bottom: 2rem; }
   .office-info,
   .contact-info {
@@ -848,19 +870,27 @@ object {
     display: -ms-flexbox;
     display: flex;
     min-width: none;
-    max-width: 67%;
-    -ms-flex: 1 0 67%;
-        flex: 1 0 67%; }
+    max-width: 70%;
+    -ms-flex: 1 0 70%;
+        flex: 1 0 70%; }
   .social-networks {
     min-width: 0;
-    max-width: 33%;
-    -ms-flex: 1 0 33%;
-        flex: 1 0 33%;
+    max-width: 30%;
+    -ms-flex: 1 0 30%;
+        flex: 1 0 30%;
     -ms-flex-order: 3;
         order: 3; }
   .phone-number {
-    margin-right: 3.5rem; } }
+    padding-right: 1.5rem;
+    margin-right: 3rem; }
+  .address {
+    margin-right: 2rem; } }
 
 @media only screen and (min-width: 1240px) {
   .line-separator {
-    visibility: hidden; } }
+    visibility: hidden; }
+  .address {
+    margin-right: 3rem; }
+  .phone-number {
+    padding-right: 2rem;
+    margin-right: 3.5rem; } }
