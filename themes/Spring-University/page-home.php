@@ -17,6 +17,9 @@ get_header(); ?>
 							<div class="mobile_cta">
 								<p> Find out more </p>
 							</div>
+							<div class="down_button">
+								<i class="fa fa-chevron-circle-down fa-3x" aria-hidden="true"></i>
+							</div>
 						</div>		
 				</div>
 
