@@ -6,4 +6,4 @@
 - Jane Kim       github.com/janekim0730
 - Rony Bansal    github.com/ronybansal
 
-### Project Managed by Tom Roper
+##### Project Managed by Tom Roper
