@@ -738,3 +738,47 @@ object {
     color: #a9a9a9; }
   .email-info:hover, .email-info:focus, .email-info:active {
     color: #4A4A4A; }
+
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+----------------------Media Query---------------------------------
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+@media only screen and (min-width: 600px) {
+  .line-separator {
+    visibility: hidden; }
+  .footer-info {
+    padding-bottom: 2rem; }
+  .spring-contact {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .social-networks {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 0; }
+  .office-info {
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 1rem;
+    margin-left: 1rem; }
+  .contact-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+  .address {
+    margin-right: 1rem;
+    text-align: left; }
+  .operation-hours {
+    margin-left: 1rem;
+    text-align: left; }
+  .email-info {
+    padding-left: 0; } }
+
+@media only screen and (min-width: 1240px) {
+  .line-separator {
+    visibility: hidden; } }

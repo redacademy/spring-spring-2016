@@ -84,3 +84,56 @@
     color: $color_footer_link-hover;
   }
 }
+
+/*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+----------------------Media Query---------------------------------
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+@media only screen and (min-width: 600px) {
+
+  .line-separator{
+    visibility: hidden;
+  }
+  .footer-info{
+    padding-bottom: 2rem;
+  }
+  .spring-contact{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .social-networks{
+    align-self: center;
+    margin-top: 0;
+  }
+  .office-info{
+    display: flex;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .contact-info{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .address{
+    margin-right: 1rem;
+    text-align: left;
+  }
+  .operation-hours{
+    margin-left: 1rem;
+    text-align: left;
+  }
+  .phone-number{
+
+  }
+  .email-info{
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+
+  .line-separator{
+    visibility: hidden;
+  }
+}
