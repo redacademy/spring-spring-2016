@@ -5,6 +5,11 @@
  *
  */
 
- jQuery.( ".menu-toggle" ).click(function() {
-   jQuery.( "img" ).toggle();
- });
+ (function($) {
+
+   $( ".menu-toggle" ).click(function() {
+     $( ".hamburger" ).toggle();
+     $( ".x-mark" ).toggle();
+   });
+
+ })( jQuery );
