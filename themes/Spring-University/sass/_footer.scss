@@ -36,6 +36,14 @@
   margin-top: 1rem;
 }
 
+.facebook-icon,
+.twitter-icon{
+
+  i{
+    font-size: 2rem;
+  }
+}
+
 .facebook-icon a,
 .twitter-icon a {
   display: inline-block;
@@ -43,10 +51,10 @@
   font-size: 1.5rem;
   border: 1.5px solid #a9a9a9;
   border-radius: 50%;
-  padding: .3rem .5rem;
+  padding: .5rem .7rem;
   margin: .5rem 1rem;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 
   &:visited {
     color: $color_footer_link-visited;
@@ -92,7 +100,7 @@
 
   .footer-info {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;;
     padding-bottom: 2rem;
   }
 

@@ -681,6 +681,9 @@ object {
     height: 50%;
     border: 1px solid green; }
 
+.mobile_cta {
+  font-family: "Lato", sans-serif; }
+
 .desktop_home_hero {
   height: 100vh;
   position: relative;
@@ -795,6 +798,10 @@ object {
   text-align: center;
   margin-top: 1rem; }
 
+.facebook-icon i,
+.twitter-icon i {
+  font-size: 2rem; }
+
 .facebook-icon a,
 .twitter-icon a {
   display: inline-block;
@@ -802,10 +809,10 @@ object {
   font-size: 1.5rem;
   border: 1.5px solid #a9a9a9;
   border-radius: 50%;
-  padding: .3rem .5rem;
+  padding: .5rem .7rem;
   margin: .5rem 1rem;
-  width: 40px;
-  height: 40px; }
+  width: 50px;
+  height: 50px; }
   .facebook-icon a:visited,
   .twitter-icon a:visited {
     color: #a9a9a9; }
@@ -839,8 +846,8 @@ object {
   .footer-info {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding-bottom: 2rem; }
   .office-info,
   .contact-info {
