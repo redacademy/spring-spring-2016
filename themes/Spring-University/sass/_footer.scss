@@ -11,8 +11,8 @@
 }
 
 .site-footer {
-  font-family: Helvetica, sans-serif;
-  font-weight: 350;
+  font-family: $font_spring;
+  font-weight: 300;
   padding: 1rem;
   color: #a9a9a9;
   text-align: center;
@@ -129,11 +129,11 @@
   }
 
   .address{
-    margin-right: 3rem;
+    margin-right: 5rem;
   }
 
   .phone-number{
-    padding-right: 2rem;
-    margin-right: 3.5rem;
+    padding-right: 3.5rem;
+    margin-right: 4rem;
   }
 }
