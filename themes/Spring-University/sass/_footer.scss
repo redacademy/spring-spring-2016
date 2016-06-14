@@ -2,8 +2,18 @@
 #Footer
 --------------------------------------------------------------*/
 //Mobile
+.line-separator{
+  height: 1.8px;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  background-color: $accent_color;
+}
+
 .site-footer{
-  border-top: 1px solid $accent_color;
+  font-family: Helvetica, sans-serif;
+  font-weight: 350;
+  padding: 1rem;
   color: #a9a9a9;
   text-align: center;
 }
@@ -11,8 +21,12 @@
 .social-networks{
 
   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
 
   a {
+    display: block;
+    width: 2rem;
   	color: $color_footer_link;
 
   	&:visited {
@@ -24,17 +38,28 @@
   		color: $color_footer_link-hover;
   	}
   }
-
-  .fa{
-    padding: .5rem;
-    border: 1px solid #a9a9a9;
-    border-radius: 50%;
-  }
 }
 
-.contact-info{
-  display: flex;
-  justify-content: center;
+.facebook-icon{
+  font-size: 1.5rem;
+  border: 1.5px solid #a9a9a9;
+  border-radius: 50%;
+  padding: .3rem .5rem;
+  margin: .5rem 1rem;
+
+}
+
+.twitter-icon{
+  font-size: 1.5rem;
+  border: 1px solid #a9a9a9;
+  border-radius: 50%;
+  padding: .2rem .5rem;
+  margin: .5rem 1rem;
+
+  i{
+    margin-top: .4rem;
+    margin-left: .3rem;
+  }
 }
 
 .phone-number{
@@ -42,6 +67,7 @@
 }
 
 .email-info{
+  padding: 0 1rem;
   text-decoration: none;
   color: $color_footer_link;
 
