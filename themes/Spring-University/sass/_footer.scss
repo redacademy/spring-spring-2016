@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-.spring-contact {
+.footer-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -58,12 +58,16 @@
   }
 }
 
-.phone-number{
-  padding: 0 1rem;
+.address, .operation-hours{
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.phone-number, .email-info{
+  margin-left: 1rem;
 }
 
 .email-info{
-  padding: 0 1rem;
   text-decoration: none;
   color: $color_footer_link;
 
@@ -80,21 +84,22 @@
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
 ----------------------Media Query---------------------------------
 /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 640px) {
 
   .line-separator{
     visibility: hidden;
   }
-  .footer-info{
-    padding-bottom: 2rem;
-  }
 
-  .spring-contact {
-    justify-content: flex-start;
+  .footer-info {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
   }
 
   .office-info,
   .contact-info {
+    text-align: left;
+    display: flex;
     min-width: none;
     max-width: 67%;
     flex: 1 0 67%;
@@ -106,39 +111,10 @@
     flex: 1 0 33%;
     order: 3;
   }
-  // .spring-contact{
-  //   display: flex;
-  //   flex-direction: row-reverse;
-  //   justify-content: space-around;
-  // }
-  // .social-networks{
-  //   align-self: center;
-  //   margin-top: 0;
-  // }
-  // .office-info{
-  //   display: flex;
-  //   margin-right: 1rem;
-  //   margin-left: 1rem;
-  // }
-  // .contact-info{
-  //   display: flex;
-  //   flex-direction: row-reverse;
-  //   justify-content: flex-end;
-  // }
-  // .address{
-  //   margin-right: 1rem;
-  //   text-align: left;
-  // }
-  // .operation-hours{
-  //   margin-left: 1rem;
-  //   text-align: left;
-  // }
-  // .phone-number{
-  //
-  // }
-  // .email-info{
-  //   padding-left: 0;
-  // }
+
+  .phone-number{
+    margin-right: 3.5rem;
+  }
 }
 
 @media only screen and (min-width: 1240px) {
