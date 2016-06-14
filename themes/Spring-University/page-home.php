@@ -13,12 +13,14 @@ get_header(); ?>
 				<div class="mobile_home_hero">
 						<div class="inner_hero">
 							<img class="spring_mobile_logo" src= "<?php echo get_template_directory_uri(); ?>/images/spring_logo.png" alt= "spring logo" />
-							<p>A global startup school for Entrepreneurs</p>
+							<div class="subtext_mobile">
+								<p>A global startup school for Entrepreneurs</p>
+							</div>
 							<div class="mobile_cta">
 								<p> Find out more </p>
 							</div>
 							<div class="down_button">
-								<i class="fa fa-chevron-circle-down fa-3x" aria-hidden="true"></i>
+								<i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>
 							</div>
 						</div>		
 				</div>
