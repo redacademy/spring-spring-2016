@@ -96,9 +96,31 @@ a {
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
+
+.main-navigation ul {
+	display: none;
+	position: absolute;
+	top: 71px;
+	right: 0;
+	background-color: $main_color;
+	width: 100vw;
+	height: 75vh;
+
+	a {
+		display: block;
+		border-top: 1px solid white;
+		width: 100vw;
+    padding: 25px 85px;
+		font: $font_spring;
+		font-weight: lighter;
+    font-size: 1.5rem;
+		color: white;
+		text-transform: uppercase;
+	}
+}
+
+#menu-item-41 {
+	background-color: $highlight_color
 }
 
 @media screen and (min-width: 640px) {
