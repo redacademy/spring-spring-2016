@@ -11,7 +11,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 				<div class="home_hero">
-					<iframe src="https://player.vimeo.com/video/165338136" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					
+					<div class="js-video [vimeo, widescreen]">
+						<iframe src="https://player.vimeo.com/video/165338136" width="100%" height="75%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
 
 
 				</div>
