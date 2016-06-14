@@ -24,12 +24,15 @@
 				<div class="site-branding">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 							<h1 class="site-title screen-reader-text"> Spring </h1>
-							<img class="home_img" src= "<?php echo get_template_directory_uri(); ?>/images/spring_logo_white.png" alt= "whiteLogo" />
+							<img class="home_img" src= "<?php echo get_template_directory_uri(); ?>/images/spring_mobile_white_logo.png" alt= "whiteLogo" />
 					</a>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+						<img class="menu_img" src= "<?php echo get_template_directory_uri(); ?>/images/hamburger.png" alt= "menu-image" />
+						<?php esc_html( 'Primary Menu' ); ?>
+					</button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
