@@ -14,7 +14,7 @@
 				<div class="site-info">
 					<div class="social-networks">
 					 <div class="facebook-icon"><a href="https://www.facebook.com/SpringUni/?fref=ts" target="_blank" alt="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
-					 <div class="twitter-icon"><a href="https://twitter.com/SpringU_is" target="_blank" alt="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+					 <div class="twitter-icon"><a href="https://twitter.com/SpringU_is" target="_blank" alt="twitter"><i class="fa fa-twitter" aria-hidden="true"></a></i></div>
 					</div>
 					<p class="address">1490 W Broadway #300<br/>Vacouver, BC Canada</p>
 					<p class="operation-hours"><span>Monday - Friday:</span><br/>9:00am - 5:00pm (PST)</p>
