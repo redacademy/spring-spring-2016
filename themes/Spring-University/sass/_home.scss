@@ -2,7 +2,27 @@
   height: 90vh;
   position: relative;
   margin-top: 5vh;
-  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner_hero {
+  border: 1px solid blue;
+  width: 75%;
+  height: 70%;
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+    img {
+      height: 50%;
+      border: 1px solid green;
+    }
+}
+
+.mobile_cta {
+  font-family: $font_spring;
 }
 
 
@@ -52,6 +72,6 @@
     height: 100%;
   }
   .mobile_home_hero {
-    display: none;
+    display: none; 
   }
 }

@@ -659,7 +659,27 @@ object {
   height: 90vh;
   position: relative;
   margin-top: 5vh;
-  border: 1px solid green; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.inner_hero {
+  border: 1px solid blue;
+  width: 75%;
+  height: 70%;
+  margin-top: 20%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .inner_hero img {
+    height: 50%;
+    border: 1px solid green; }
 
 .desktop_home_hero {
   height: 100vh;
