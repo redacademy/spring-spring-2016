@@ -11,8 +11,8 @@
 }
 
 .site-footer {
-  font-family: Helvetica, sans-serif;
-  font-weight: 350;
+  font-family: $font_spring;
+  font-weight: 300;
   padding: 1rem;
   color: #a9a9a9;
   text-align: center;
@@ -43,10 +43,10 @@
   font-size: 1.5rem;
   border: 1.5px solid #a9a9a9;
   border-radius: 50%;
-  padding: .3rem .5rem;
+  padding: .5rem .7rem;
   margin: .5rem 1rem;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 
   &:visited {
     color: $color_footer_link-visited;
@@ -55,6 +55,7 @@
   &:focus,
   &:active {
     color: $color_footer_link-hover;
+    border-color: $color_footer_link-hover;
   }
 }
 
@@ -92,7 +93,7 @@
 
   .footer-info {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     padding-bottom: 2rem;
   }
 
@@ -101,19 +102,23 @@
     text-align: left;
     display: flex;
     min-width: none;
-    max-width: 67%;
-    flex: 1 0 67%;
+    max-width: 70%;
+    flex: 1 0 70%;
   }
 
   .social-networks {
     min-width: 0;
-    max-width: 33%;
-    flex: 1 0 33%;
+    max-width: 30%;
+    flex: 1 0 30%;
     order: 3;
   }
 
   .phone-number{
-    margin-right: 3.5rem;
+    padding-right: 1.5rem;
+    margin-right: 3rem;
+  }
+  .address{
+    margin-right: 2rem;
   }
 }
 
@@ -121,5 +126,14 @@
 
   .line-separator{
     visibility: hidden;
+  }
+
+  .address{
+    margin-right: 5rem;
+  }
+
+  .phone-number{
+    padding-right: 3.5rem;
+    margin-right: 4rem;
   }
 }

@@ -29,7 +29,6 @@
 						<span class="phone-number">+1 (604) 440-0101</span>
 						<a class="email-info" href="mailto:help@springu.is"><span>help@springu.is</a></span>
 					</div>
-
 				</div>
 
 				</div><!-- .footer-info -->
