@@ -46,8 +46,10 @@
   border-radius: 50%;
   padding: .3rem .5rem;
   margin: .5rem 1rem;
-
 }
+
+.facebook-icon:hover { border-color: $color_footer_link-hover; }
+
 
 .twitter-icon{
   font-size: 1.5rem;
@@ -61,6 +63,8 @@
     margin-left: .3rem;
   }
 }
+
+.twitter-icon:hover { border-color: $color_footer_link-hover; }
 
 .phone-number{
   padding: 0 1rem;
