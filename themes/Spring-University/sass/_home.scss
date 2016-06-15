@@ -70,6 +70,42 @@
   display: none;
 }
 
+.video_text_overlay {
+  background: rgba(0,0,0,0.6);
+  height: 95%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+    .home_hero_h1 {
+      font-family: $font_spring;
+      font-style: italic;
+      font-weight: 300;
+      color: #fff;
+      margin-top: -50px;
+    }
+    
+    .home_hero_logo {
+      height: 80%;
+    }
+    
+    .fa-play-circle-o {
+      color: #fff;
+      width: 100%;
+      text-align: center;
+    }
+    
+  
+}
+
+
+
+
 
 //Below is a workaround to make the vimeo video flex with the container size
 
@@ -99,7 +135,7 @@
   height: 100%;
   position: absolute;
 }
-
+ 
 .overlay iframe {
   width:100%; 
   height:180%; 
@@ -108,6 +144,7 @@
   top:-40%; 
   z-index:-1;
   }
+  
 
 // Media Queries
 
