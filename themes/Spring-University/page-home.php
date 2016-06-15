@@ -7,6 +7,7 @@
 
 get_header(); ?>
 
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -27,7 +28,6 @@ get_header(); ?>
 
 				<div class="desktop_home_hero">
 					<div class="js-video [vimeo, widescreen] overlay">
-						<iframe src="https://player.vimeo.com/video/165338136?portrait=0&title=0&autoplay=1&byline=0" width="100%" height="75%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 				</div>
 
