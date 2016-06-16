@@ -36,6 +36,10 @@ get_header(); ?>
 
 					</div>
 				</div>
+				
+				<section>
+					<h2 class="section_header">What we offer</h2>
+				</section>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
