@@ -18,7 +18,7 @@ get_header(); ?>
 								<p>A global startup school for Entrepreneurs</p>
 							</div>
 							<div class="mobile_cta">
-								<p> Find out more </p>
+								<a href="<?php echo get_site_url(); ?>/programs"<p> Find out more </p></a>
 							</div>
 							<div class="down_button">
 								<i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i>

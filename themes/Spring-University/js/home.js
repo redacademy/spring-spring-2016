@@ -1,7 +1,7 @@
 (function($) {
    
-   //video url variable
-   var videoUrl = "<iframe id=\"vimeo_player\" src=\"https://player.vimeo.com/video/165338136?portrait=0&title=0&autoplay=1&byline=0&loop=1\" width=\"100%\" height=\"75%\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+   //video url variable, set autoplay to =1 to autoplay. 
+   var videoUrl = "<iframe id=\"vimeo_player\" src=\"https://player.vimeo.com/video/165338136?portrait=0&title=0&autoplay=0&byline=0&loop=1\" width=\"100%\" height=\"75%\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
    
    // on page load over 640px video will load. under and it will be mobile view.
    if ($(window).width() > 640) {

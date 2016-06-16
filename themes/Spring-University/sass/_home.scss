@@ -36,7 +36,7 @@
   }
 }
 
-.mobile_cta {
+.mobile_cta a{
   font-family: $font_spring;
   font-weight: bold;
   font-size: 0.8rem;
@@ -44,14 +44,20 @@
   height: 30px;  
   width: 120px;
   padding: 10px;
-  padding-top: 15px;
   border-radius: 5px;
   box-shadow: 0px 3px 3px gray;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  
+  &:hover {
+    background-color: $button_hover;
+  }
 }
+
+
 
 .down_button {
   width: 100%;
