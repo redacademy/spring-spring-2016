@@ -1,0 +1,27 @@
+.error-header {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 4rem;
+}
+
+.error-title {
+  @include right-rounded-border;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.error-content{
+  text-align: left;
+  font-size: 1.2rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.go-home-button {
+  @include main-button;
+}
