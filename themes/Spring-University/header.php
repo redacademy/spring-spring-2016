@@ -24,9 +24,10 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"> Spring </h1>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"></a>
-						<img class="home_img" src= "<?php echo get_template_directory_uri(); ?>/images/spring_mobile_white_logo.png" alt= "whiteLogo" />
-					</h1>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img class="spring-home" src= "<?php echo get_template_directory_uri(); ?>/images/spring_mobile_white_logo.png" alt= "whiteLogo" />
+						<img class="spring-u-home" src= "<?php echo get_template_directory_uri(); ?>/images/spring_university_white_logo.png" alt= "sping-u-white-logo" />
+					</a>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">

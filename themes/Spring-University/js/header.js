@@ -5,12 +5,12 @@
  *
  */
 
- // (function($) {
- //
- //   $( ".menu-toggle" ).click(function() {
- //     $( ".hamburger" ).toggle();
- //     $( ".x-mark" ).toggle();
- //     $( ".main-navigation ul" ).toggle();
- //   });
- //
- // })( jQuery );
+ (function($) {
+
+   $( ".menu-toggle" ).click(function() {
+     $( ".hamburger" ).toggle();
+     $( ".x-mark" ).toggle();
+     $( ".menu-spring_main_menu-container" ).toggle();
+   });
+
+ })( jQuery );

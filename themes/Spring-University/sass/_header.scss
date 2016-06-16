@@ -9,15 +9,15 @@
   justify-content: space-between;
   position: fixed;
   background-color: $main_color;
-  padding: 16px;
+  padding: 15px;
   width: 100%;
   height: 60px;
   z-index: 5;
 
 	// Spring Logo //
 
-  .site-branding {
-    width: 35px;
+  .spring-u-home {
+    display: none;
   }
 
 	// Hamburger Menu //
@@ -42,8 +42,9 @@
 // Site Pages//
 
 .menu-spring_main_menu-container {
+  display: none;
 
-	ul {
+  ul {
 		width: 100%;
 	 	position: fixed;
 		flex-direction: column;
@@ -71,22 +72,38 @@
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
-}
 
   .menu-item-41 {
     background-color: $highlight_color;
   }
+}
 
 // Tablet Version //
 
 
-@media screen and (min-width: 815px) {
+@media screen and (min-width: 890px) {
+  .site-header {
+    padding: 5px;
+  }
+
+  .site-branding {
+
+    .spring-home {
+      display: none;
+    }
+
+    .spring-u-home {
+      display: block;
+      height: 50px;;
+    }
+  }
+
   .menu-toggle {
     display: none;
   }
 
 	.menu-spring_main_menu-container {
-    display: flex;
+    display: block;
 
 		ul {
 			display: flex;
@@ -103,6 +120,16 @@
     li {
       border-top: none;
       background: none;
+    }
+
+    .menu-item-41 {
+      background: none;
+
+      a {
+        background-color: $highlight_color;
+        padding: 10px;
+        border-radius: 5px;
+      }
     }
 	}
 }
