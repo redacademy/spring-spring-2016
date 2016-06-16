@@ -46,6 +46,30 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
+			
+			<section>
+				<h2 class="section_header">Where we are</h2>
+				<div id='map' style='width: 400px; height: 300px;'></div>
+					<script>
+					mapboxgl.accessToken = 'pk.eyJ1IjoidG9tcm9wZXIiLCJhIjoiY2lwaW5wZHVtMDFyaHRjbWRjZmJ1M2c0ZSJ9.Gc778JgvVYrCjqLRAmrbww';
+					  var map = new mapboxgl.Map({
+					      container: 'map',
+					      style: 'mapbox://styles/tomroper/cipio0ab7003gbam5i1tlh7w4'
+					  });
+					</script>
+			</section>
+			
+			<section>
+				<h2 class="section_header">Events</h2>
+			</section>
+			
+			<section>
+				<h2 class="section_header">Blog</h2>
+			</section>
+
+			<section>
+				<h2 class="section_header">Stay updated</h2>
+			</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
