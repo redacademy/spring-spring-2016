@@ -66,6 +66,9 @@
 	a {
 		color: white;
 		text-decoration: none;
+    font-family: $font_spring;
+    font-weight: lighter;
+    text-shadow: none;
 	}
 
 	.current_page_item > a,
@@ -81,9 +84,9 @@
 // Tablet Version //
 
 
-@media screen and (min-width: 890px) {
+@media screen and (min-width: 920px) {
   .site-header {
-    padding: 5px;
+    padding: 3px;
   }
 
   .site-branding {
@@ -94,7 +97,7 @@
 
     .spring-u-home {
       display: block;
-      height: 50px;;
+      height: 50px;
     }
   }
 
@@ -111,7 +114,7 @@
       align-items: center;
       justify-content: flex-end;
       padding-right: 15px;
-			font-size: 0.95rem;
+			font-size: 0.9rem;
       margin-top: 0;
       z-index: 6;
       height: 60px;
