@@ -49,7 +49,7 @@ get_header(); ?>
 			
 			<section>
 				<h2 class="section_header">Where we are</h2>
-				<div id='map'></div>
+				<div id='map'	></div>
 					<script>
 					mapboxgl.accessToken = 'pk.eyJ1IjoidG9tcm9wZXIiLCJhIjoiY2lwaW5wZHVtMDFyaHRjbWRjZmJ1M2c0ZSJ9.Gc778JgvVYrCjqLRAmrbww';
 					  var map = new mapboxgl.Map({
@@ -60,15 +60,15 @@ get_header(); ?>
 					</script>
 			</section>
 			
-			<section>
+			<section class="home_events">
 				<h2 class="section_header">Events</h2>
 			</section>
 			
-			<section>
+			<section class="home_blog">
 				<h2 class="section_header">Blog</h2>
 			</section>
 
-			<section>
+			<section class="home_updated">
 				<h2 class="section_header">Stay updated</h2>
 			</section>
 

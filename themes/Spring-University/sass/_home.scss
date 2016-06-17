@@ -157,6 +157,21 @@
   width: 100%;
   height: 250px;
 }
+
+.home_events {
+  height: 420px;
+  background: green;
+}
+
+.home_blog {
+  height: 420px;
+  background: blue;
+}
+
+.home_updated {
+  height: 420px;
+  background: red;
+}
   
 // Media Queries
 
@@ -169,6 +184,6 @@
     display: none;
   }
   #map {
-    height: 500px;
+    height: 650px;
   }
 }
