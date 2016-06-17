@@ -151,6 +151,12 @@
   top:-40%; 
   z-index:-1;
 }
+
+
+#map {
+  width: 100%;
+  height: 250px;
+}
   
 // Media Queries
 
@@ -161,5 +167,8 @@
   }
   .mobile_home_hero {
     display: none;
+  }
+  #map {
+    height: 500px;
   }
 }

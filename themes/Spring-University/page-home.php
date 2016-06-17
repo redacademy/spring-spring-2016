@@ -49,13 +49,14 @@ get_header(); ?>
 			
 			<section>
 				<h2 class="section_header">Where we are</h2>
-				<div id='map' style='width: 400px; height: 300px;'></div>
+				<div id='map'></div>
 					<script>
 					mapboxgl.accessToken = 'pk.eyJ1IjoidG9tcm9wZXIiLCJhIjoiY2lwaW5wZHVtMDFyaHRjbWRjZmJ1M2c0ZSJ9.Gc778JgvVYrCjqLRAmrbww';
 					  var map = new mapboxgl.Map({
 					      container: 'map',
 					      style: 'mapbox://styles/tomroper/cipio0ab7003gbam5i1tlh7w4'
 					  });
+						map.scrollZoom.disable();
 					</script>
 			</section>
 			
