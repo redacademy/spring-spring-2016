@@ -66,6 +66,9 @@
 	a {
 		color: white;
 		text-decoration: none;
+    font-family: $font_spring;
+    font-weight: lighter;
+    text-shadow: none;
 	}
 
 	.current_page_item > a,
@@ -83,7 +86,7 @@
 
 @media screen and (min-width: 920px) {
   .site-header {
-    padding: 5px;
+    padding: 3px;
   }
 
   .site-branding {
