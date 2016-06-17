@@ -56,7 +56,6 @@ get_header(); ?>
 					      container: 'map',
 					      style: 'mapbox://styles/tomroper/cipio0ab7003gbam5i1tlh7w4'
 					  });
-						// disable map zoom when using scroll
 						map.scrollZoom.disable();
 					</script>
 			</section>
