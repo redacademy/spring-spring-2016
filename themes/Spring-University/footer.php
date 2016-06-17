@@ -36,7 +36,7 @@
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
-		<script type="text/javascript" src="wp-content/themes/Spring-University/js/header.js"></script>
-		<script type="text/javascript" src="wp-content/themes/Spring-University/js/home.js"></script>
+		<script type="text/javascript" src="wp-content/themes/Spring-University/build/js/header.js"></script>
+		<script type="text/javascript" src="wp-content/themes/Spring-University/build/js/home.js"></script>
 	</body>
 </html>
