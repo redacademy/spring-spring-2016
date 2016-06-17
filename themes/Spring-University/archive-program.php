@@ -28,8 +28,8 @@ get_header(); ?>
 
 							<?php the_excerpt(); ?>
 
-						  <div class="program-tuition"><p><?php echo CFS()->get( 'program_tuition' ); ?></p>
-							<span><?php echo CFS()->get( 'program_onetime_tuition' ); ?></span></div>
+						  <div class="program-tuition"><?php echo CFS()->get( 'program_tuition' ); ?></div>
+							<div class="program-onetime-tuition"><?php echo CFS()->get( 'program_onetime_tuition' ); ?></div>
 
 						</a>
 					</div>

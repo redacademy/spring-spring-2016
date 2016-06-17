@@ -1,28 +1,28 @@
 .program-container {
-  border: 1px solid red;
   display: flex;
+  flex-direction: row-reverse;
   margin: 1rem;
   font-family: $font_spring;
 }
 
-.single-container {
+.single-container a{
+  display: inline-block;
   border: 3px solid #F49110;
   border-radius: 7px;
   min-width: 270px;
-  padding: 3rem 1rem 2rem 1rem;
+  max-width: 270px;
+  // min-height: 500px;
+  // max-height: 500px;
+  padding: 3rem 1rem 1rem 1rem;
   margin: 1rem;
   text-align: center;
   background-color: $main_color;
+  color: #fff;
+  text-decoration: none;
 
-  a{
-    color: #fff;
-    text-decoration: none;
+  &:hover{
+    background-color: #F49110;
   }
-}
-
-.program-title{
-  font-size: 1.5rem;
-  margin-top:0;
 }
 
 .program-image {
@@ -32,7 +32,18 @@
   }
 }
 
+.program-title{
+  font-size: 1.5rem;
+  margin-top:0;
+}
 
+.program-tuition{
+  font-size: 2rem;
+}
+
+.program-onetime-tuition{
+  font-size: .8rem;
+}
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
 ----------------------Media Query---------------------------------
 /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
