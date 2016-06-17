@@ -54,10 +54,10 @@ get_header(); ?>
 					mapboxgl.accessToken = 'pk.eyJ1IjoidG9tcm9wZXIiLCJhIjoiY2lwaW5wZHVtMDFyaHRjbWRjZmJ1M2c0ZSJ9.Gc778JgvVYrCjqLRAmrbww';
 					  var map = new mapboxgl.Map({
 					      container: 'map',
-					      style: 'mapbox://styles/tomroper/cipio0ab7003gbam5i1tlh7w4',
-								center: [-122.65, 45.52], // starting position
-    					zoom: 9 // starting zoom
+					      style: 'mapbox://styles/tomroper/cipio0ab7003gbam5i1tlh7w4'
 					  });
+						// disable map zoom when using scroll
+						map.scrollZoom.disable();
 					</script>
 			</section>
 			
