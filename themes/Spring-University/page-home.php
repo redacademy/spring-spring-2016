@@ -69,9 +69,20 @@ get_header(); ?>
 			</div>	
 			</section>
 			
+			
+			<h2 class="section_header">Blog</h2>
 			<section class="home_blog">
-				<h2 class="section_header">Blog</h2>
-				<?php echo CFS()->get( 'blog' ); ?>
+				
+					<?php
+						$args = array( 'numberposts' => '1' );
+						$recent_posts = wp_get_recent_posts( $args );
+						foreach( $recent_posts as $recent ){
+							echo  $recent["post_title"];
+							echo  $recent["post_content"];
+						}
+					?>
+				
+				<a href="#">View Blog</a>
 			</section>
 
 			<section class="home_updated">

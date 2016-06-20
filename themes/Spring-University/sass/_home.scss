@@ -174,22 +174,25 @@
       font-family: $font_spring;
       text-shadow: 0px 0px 7px #000;
     }
-  
     a {
       @include main-button;
       margin: 0 auto;
       align-self: flex-end;
       width: 50%;
     }
-  
-  
 }
 
 .home_blog {
   height: 290px;
   background: url('../../images/events.jpg');
   background-size: cover;
-background-position: 0px -140px;
+  background-position: 0px -140px;
+  a {
+    @include main-button;
+    margin: 0 auto;
+    align-self: flex-end;
+    width: 50%;
+  }
 }
 
 .home_updated {
