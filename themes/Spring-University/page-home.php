@@ -37,9 +37,26 @@ get_header(); ?>
 					</div>
 				</div>
 				
-				<section>
+				<section class="what_we_offer_section">
 					<h2 class="section_header">What we offer</h2>
-					<?php echo CFS()->get( 'what_we_offer' ); ?>
+					<p class="offer_text"><?php echo CFS()->get( 'what_we_offer' ); ?></p>
+					<div class="program_blocks">
+							<?php
+						 	$args = array( 'post_type' => 'program', 'posts_per_page' => 4 );
+						 	$program_post = get_posts( $args );
+							?>
+							<?php foreach ( $program_post as $post ) : setup_postdata( $post ); ?>
+								<div class="home_program_box">
+									<h3><?php the_title(); ?></h3>
+									<?php	the_post_thumbnail(); ?>
+									<?php	the_excerpt(); ?>
+							 </div>
+							<?php endforeach; wp_reset_postdata(); ?>
+					</div>
+					
+					
+					
+					
 				</section>
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -78,15 +95,18 @@ get_header(); ?>
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){
 							echo  $recent["post_title"];
-							echo  $recent["post_content"];
+							echo  $recent["post_author"];
+							echo  $recent["post_date"];
 						}
 					?>
 				
 				<a href="#">View Blog</a>
 			</section>
 
+
+			<h2 class="section_header">Stay updated</h2>
 			<section class="home_updated">
-				<h2 class="section_header">Stay updated</h2>
+				<p><?php echo CFS()->get( 'updated' ); ?></p>
 			</section>
 
 		</main><!-- #main -->

@@ -104,9 +104,11 @@
       text-align: center;
     }
     
-  
 }
 
+.offer_text {
+  display: none;
+}
 
 .section_header {
   @include section-header;
@@ -152,6 +154,18 @@
   z-index:-1;
 }
 
+// end of workaround 
+
+.what_we_offer_section {
+
+}
+
+.program_blocks {
+  border: 1px solid blue;
+  max-width: $content_width;
+  margin: 0 auto;
+}
+
 
 #map {
   width: 100%;
@@ -186,7 +200,6 @@
   height: 290px;
   background: url('../../images/events.jpg');
   background-size: cover;
-  background-position: 0px -140px;
   a {
     @include main-button;
     margin: 0 auto;
@@ -197,7 +210,12 @@
 
 .home_updated {
   height: 190px;
-  background: red;
+  background: $main_color;
+    p {
+      margin: 0;
+      color: #fff;
+      font-family: $font_spring;
+    }
 }
   
 // Media Queries
@@ -212,5 +230,15 @@
   }
   #map {
     height: 650px;
+  }
+  .home_blog {
+    background-position: 0px -140px;
+  }
+  .offer_text {
+    display: block;
+    max-width: $content_width;
+    font-family: $font_spring;
+    margin: 0 auto; 
+    padding: 20px; 
   }
 }
