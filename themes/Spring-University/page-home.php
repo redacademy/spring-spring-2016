@@ -49,7 +49,7 @@ get_header(); ?>
 								<div class="home_program_box">
 									<img src="<?php echo CFS()->get( 'program_image' ); ?>" alt="program_image">
 									<h3 class="home_program_title"><?php the_title(); ?></h3>
-									<?php	the_excerpt(); ?>
+								<p>	<?php echo CFS()->get( 'program_keywords' ); ?> </p>
 							 </div>
 							<?php endforeach; wp_reset_postdata(); ?>
 					</div>
