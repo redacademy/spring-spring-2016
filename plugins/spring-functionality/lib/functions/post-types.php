@@ -67,8 +67,8 @@ add_action( 'init', 'programs_post_type', 0 );
 function spring_instructors() {
 
 	$labels = array(
-		'name'                  => 'instructors',
-		'singular_name'         => 'instructor',
+		'name'                  => 'Instructors',
+		'singular_name'         => 'Instructor',
 		'menu_name'             => 'Program Instructors',
 		'name_admin_bar'        => 'Program Instructors',
 		'archives'              => 'Instructor Archives',
@@ -100,10 +100,10 @@ function spring_instructors() {
 		'feeds'                 => true,
 	);
 	$args = array(
-		'label'                 => 'instructor',
+		'label'                 => 'Instructor',
 		'description'           => 'Program Instructors',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', ),
+		'supports'              => array( 'title', 'editor', 'thumbnail'),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
