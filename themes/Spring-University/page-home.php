@@ -39,17 +39,14 @@ get_header(); ?>
 				
 				<section>
 					<h2 class="section_header">What we offer</h2>
-				</section>
-				
-				<p>
 					<?php echo CFS()->get( 'what_we_offer' ); ?>
-				</p>
+				</section>
 
-			<!-- <?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php endwhile; // End of the loop. ?> -->
+			<?php endwhile; // End of the loop. ?>
 			
 			<section>
 				<h2 class="section_header">Where we are</h2>
@@ -65,10 +62,12 @@ get_header(); ?>
 			</section>
 			
 			<section class="home_events">
+				<h2 class="section_header">Events</h2>
 				<?php echo CFS()->get( 'events' ); ?>
 			</section>
 			
 			<section class="home_blog">
+				<h2 class="section_header">Blog</h2>
 				<?php echo CFS()->get( 'blog' ); ?>
 			</section>
 
