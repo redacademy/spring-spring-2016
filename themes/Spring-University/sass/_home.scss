@@ -154,6 +154,18 @@
   z-index:-1;
 }
 
+// end of workaround 
+
+.what_we_offer_section {
+
+}
+
+.program_blocks {
+  border: 1px solid blue;
+  max-width: $content_width;
+  margin: 0 auto;
+}
+
 
 #map {
   width: 100%;
@@ -224,5 +236,9 @@
   }
   .offer_text {
     display: block;
+    max-width: $content_width;
+    font-family: $font_spring;
+    margin: 0 auto; 
+    padding: 20px; 
   }
 }

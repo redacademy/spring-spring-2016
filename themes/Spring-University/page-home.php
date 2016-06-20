@@ -37,9 +37,26 @@ get_header(); ?>
 					</div>
 				</div>
 				
-				<section>
+				<section class="what_we_offer_section">
 					<h2 class="section_header">What we offer</h2>
 					<p class="offer_text"><?php echo CFS()->get( 'what_we_offer' ); ?></p>
+					<div class="program_blocks">
+							<?php
+						 	$args = array( 'post_type' => 'program', 'posts_per_page' => 4 );
+						 	$program_post = get_posts( $args );
+							?>
+							<?php foreach ( $program_post as $post ) : setup_postdata( $post ); ?>
+								<div class="home_program_box">
+									<h3><?php the_title(); ?></h3>
+									<?php	the_post_thumbnail(); ?>
+									<?php	the_excerpt(); ?>
+							 </div>
+							<?php endforeach; wp_reset_postdata(); ?>
+					</div>
+					
+					
+					
+					
 				</section>
 
 			<?php while ( have_posts() ) : the_post(); ?>
