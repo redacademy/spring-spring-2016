@@ -47,8 +47,8 @@ get_header(); ?>
 							?>
 							<?php foreach ( $program_post as $post ) : setup_postdata( $post ); ?>
 								<div class="home_program_box">
-									<h3><?php the_title(); ?></h3>
-									<?php	the_post_thumbnail(); ?>
+									<img src="<?php echo CFS()->get( 'program_image' ); ?>" alt="program_image">
+									<h3 class="home_program_title"><?php the_title(); ?></h3>
 									<?php	the_excerpt(); ?>
 							 </div>
 							<?php endforeach; wp_reset_postdata(); ?>
