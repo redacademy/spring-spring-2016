@@ -39,7 +39,7 @@ get_header(); ?>
 				
 				<section>
 					<h2 class="section_header">What we offer</h2>
-					<?php echo CFS()->get( 'what_we_offer' ); ?>
+					<p class="offer_text"><?php echo CFS()->get( 'what_we_offer' ); ?></p>
 				</section>
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -78,15 +78,18 @@ get_header(); ?>
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){
 							echo  $recent["post_title"];
-							echo  $recent["post_content"];
+							echo  $recent["post_author"];
+							echo  $recent["post_date"];
 						}
 					?>
 				
 				<a href="#">View Blog</a>
 			</section>
 
+
+			<h2 class="section_header">Stay updated</h2>
 			<section class="home_updated">
-				<h2 class="section_header">Stay updated</h2>
+				<p><?php echo CFS()->get( 'updated' ); ?></p>
 			</section>
 
 		</main><!-- #main -->
