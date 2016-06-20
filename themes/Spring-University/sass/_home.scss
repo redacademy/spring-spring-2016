@@ -160,16 +160,40 @@
 
 .home_events {
   height: 420px;
-  background: green;
+  background: url('../../images/people-coffee-tea-meeting.jpg');
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 50px;
+    p {
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-family: $font_spring;
+      text-shadow: 0px 0px 7px #000;
+    }
+  
+    a {
+      @include main-button;
+      margin: 0 auto;
+      align-self: flex-end;
+      width: 50%;
+    }
+  
+  
 }
 
 .home_blog {
-  height: 420px;
-  background: blue;
+  height: 290px;
+  background: url('../../images/events.jpg');
+  background-size: cover;
+background-position: 0px -140px;
 }
 
 .home_updated {
-  height: 420px;
+  height: 190px;
   background: red;
 }
   

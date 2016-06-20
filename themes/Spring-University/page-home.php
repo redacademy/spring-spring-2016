@@ -61,9 +61,12 @@ get_header(); ?>
 					</script>
 			</section>
 			
+			<h2 class="section_header">Events</h2>
 			<section class="home_events">
-				<h2 class="section_header">Events</h2>
-				<?php echo CFS()->get( 'events' ); ?>
+			<div class="home_cta">
+				<p><?php echo CFS()->get( 'events' ); ?></p>
+				<a href="#">See our Events</a>
+			</div>	
 			</section>
 			
 			<section class="home_blog">

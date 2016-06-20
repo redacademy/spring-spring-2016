@@ -27,9 +27,9 @@
     vid.prop('muted', true);
     
     
+    
     $('.fa-play-circle-o').on('click', function(){
       $('.video_text_overlay').fadeOut(300);
-      
     });
     
 
