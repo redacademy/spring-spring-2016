@@ -61,3 +61,66 @@ function programs_post_type() {
 
 }
 add_action( 'init', 'programs_post_type', 0 );
+
+
+// Register Custom Post Type
+function spring_instructors() {
+
+	$labels = array(
+		'name'                  => 'instructors',
+		'singular_name'         => 'instructor',
+		'menu_name'             => 'Program Instructors',
+		'name_admin_bar'        => 'Program Instructors',
+		'archives'              => 'Instructor Archives',
+		'parent_item_colon'     => 'instructor Item:',
+		'all_items'             => 'All Instructors',
+		'add_new_item'          => 'Add New Instructor',
+		'add_new'               => 'Add New',
+		'new_item'              => 'New Instructor',
+		'edit_item'             => 'Edit Instructor',
+		'update_item'           => 'Update Instructor',
+		'view_item'             => 'View Instructor',
+		'search_items'          => 'Search Instructor',
+		'not_found'             => 'Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into item',
+		'uploaded_to_this_item' => 'Uploaded to this item',
+		'items_list'            => 'Items list',
+		'items_list_navigation' => 'Items list navigation',
+		'filter_items_list'     => 'Filter items list',
+	);
+	$rewrite = array(
+		'slug'                  => 'instructor',
+		'with_front'            => true,
+		'pages'                 => true,
+		'feeds'                 => true,
+	);
+	$args = array(
+		'label'                 => 'instructor',
+		'description'           => 'Program Instructors',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 10,
+		'menu_icon'             => 'dashicons-businessman',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => false,
+		'can_export'            => true,
+		'has_archive'           => true,		
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'rewrite'               => $rewrite,
+		'capability_type'       => 'post',
+	);
+	register_post_type( 'program_instructors', $args );
+
+}
+add_action( 'init', 'spring_instructors', 0 );
