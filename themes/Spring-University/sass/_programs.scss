@@ -1,7 +1,11 @@
+.program-header{
+  padding-top: 4.5rem;
+}
+
 .program-container {
   display: flex;
   flex-direction: row-reverse;
-  margin: 1rem;
+  margin: 2rem 1rem 0 1rem;
   font-family: $font_spring;
 }
 
@@ -27,20 +31,37 @@
 
   img {
   background-color: transparent;
+  width: 140px;
+  height: 140px;
   }
 }
 
 .program-title{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 900;
   margin-top:0;
+}
+
+.program-keywords{
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: lighter;
 }
 
 .program-tuition{
   font-size: 2rem;
+  margin-top: 2rem;
+  line-height: 1;
+}
+
+.tuition-amount{
+  font-size: 3rem;
+  font-weight: 800;
 }
 
 .program-onetime-tuition{
   font-size: .8rem;
+  margin-bottom: 1rem;
 }
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
 ----------------------Media Query---------------------------------

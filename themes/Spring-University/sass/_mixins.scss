@@ -53,14 +53,15 @@
 	}
 }
 
-//section headers 
+//section headers
 @mixin section-header {
 	margin: 0px;
-	height: 50px;
+	height: 70px;
+	font-size: 2rem;
 	background: #4a4a4a;
 	color: #fff;
 	font-family: $font_spring;
-	font-weight: 300;
+	font-weight: 100;
 	text-transform: uppercase;
 	display: flex;
 	justify-content: center;

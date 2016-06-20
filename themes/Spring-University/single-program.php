@@ -20,7 +20,7 @@ get_header(); ?>
 		<div class="program-description"><?php echo CFS()->get( 'program_description' ); ?></div>
 		<h2 class="section_header">What you learn</h2>
 		<div class="program-syllabus"><?php echo CFS()->get( 'program_syllabus' ); ?></div>
-		<h2 class="section_header">Progrm Dates</h2>
+		<h2 class="section_header">Program Dates</h2>
 		<div class="program-dates"><?php echo CFS()->get( 'program_dates' ); ?></div>
 		<div class="program-info"><?php echo CFS()->get( 'program_info' ); ?></div>
 		<h2 class="section_header">Your Instructors</h2>
