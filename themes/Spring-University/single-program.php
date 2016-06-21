@@ -50,7 +50,30 @@ get_header(); ?>
 		</section><!--# Program Dates-->
 
 			<h2 class="section_header">Your Instructors</h2>
+			<?php
+			// Find connected pages
+			$connected = new WP_Query( array(
+			  'connected_type' => 'posts_to_posts',
+			  'connected_items' => get_queried_object(),
+			  'nopaging' => true,
+			) );
 
+			// Display connected pages
+			if ( $connected->have_posts() ) :
+			?>
+			<h3>Related posts:</h3>
+			<ul>
+			<?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
+			    <p><?php echo CFS()->get( 'instructor_title' ); ?></p>
+			<?php endwhile; ?>
+			</ul>
+
+			<?php
+			// Prevent weirdness
+			wp_reset_postdata();
+
+			endif;
+			?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

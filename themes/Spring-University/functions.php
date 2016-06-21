@@ -111,3 +111,13 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
+function my_connection_types() {
+    p2p_register_connection_type( array(
+        'name' => 'posts_to_posts',
+        'from' => 'post',
+        'to' => 'post'
+    ) );
+}
+add_action( 'p2p_init', 'my_connection_types' );
