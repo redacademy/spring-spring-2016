@@ -62,13 +62,8 @@ get_header(); ?>
 							
 					</section>
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
 			
-			<section>
+			<section class="map_section">
 				<h2 class="section_header">Where we are</h2>
 				<div id='map'	></div>
 					<script>
@@ -79,6 +74,16 @@ get_header(); ?>
 					  });
 						map.scrollZoom.disable();
 					</script>
+					
+					<div class="map_overlay">
+						<div class="map_overlay_text">
+							<?php echo CFS()->get( 'locations_text' ); ?>
+						</div>
+						<div class="home_cta location_cta">
+							<a href="#">Our Locations</a>
+						</div>
+						
+					</div>
 			</section>
 			
 			<h2 class="section_header">Events</h2>
