@@ -30,17 +30,26 @@ get_header(); ?>
 
 		<h2 class="section_header">Program Dates</h2>
 		<section class="dates-container">
-			<div class="program-dates">
-				<p class="program-month"><?php echo CFS()->get( 'program_month' ); ?></p>
-				<p class="program-day"><?php echo CFS()->get( 'program_day' ); ?></p>
-				<p class="program-year"><?php echo CFS()->get( 'program_year' ); ?></p>
-			</div>
-		</section>
+				<div class="program-dates">
+					<p class="program-month"><?php echo CFS()->get( 'program_month' ); ?></p>
+					<p class="program-day"><?php echo CFS()->get( 'program_day' ); ?></p>
+					<p class="program-year"><?php echo CFS()->get( 'program_year' ); ?></p>
+				</div>
+				<div class="program-info">
+				<?php
+					$infos = CFS() -> get ('program_info');
+					foreach ($infos as $info) :
+				?>
+					<p><?php echo $info['program_hours']; ?></p>
+					<p><?php echo $info['program_sessions']; ?></p>
+					<p><?php echo $info['program_days_and_times']; ?></p>
+				 </div>
+				<?php endforeach; ?>
+				<a class="apply-button" href="#">Apply</a>
+			 </div>
+		</section><!--# Program Dates-->
 
-
-
-
-
+			<h2 class="section_header">Your Instructors</h2>
 
 
 		</main><!-- #main -->
