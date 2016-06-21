@@ -73,6 +73,7 @@
 //
 .program-area{
   padding-top: 4rem;
+  font-family: $font_spring;
 }
 
 .program-description{
@@ -88,13 +89,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .learning-images{
   padding: 1rem 3rem 0 3rem;
   text-align: center;
   font-size: 20px;
-  font-family: $font_spring;
 
   img{
     height: 150px;
@@ -114,12 +115,64 @@
   margin-bottom: 1rem;
 }
 
+.dates-container{
+  background-color: $main_color;
+  padding: 2rem;
+}
+
+.program-dates{
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  color: $main_color;
+  text-align: center;
+  -webkit-box-shadow: -1px 6px 19px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow: -1px 6px 19px 3px rgba(0,0,0,0.3);
+  box-shadow: -1px 6px 19px 3px rgba(0,0,0,0.3);
+}
+
+.program-month{
+  font-size: 32px;
+  margin: 0;
+}
+
+.program-day{
+  font-size: 60px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.program-year{
+  margin: 0;
+}
+
+.program-info{
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.apply-button {
+  @include main-button;
+  text-transform: uppercase;
+}
+
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
 ----------------------Media Query---------------------------------
 /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
 @media only screen and (min-width: 640px) {
 
+  .learning-images{
+    padding: 1rem 7rem 0 7rem;
+    font-size: 24px;
 
+    img{
+      height: 200px;
+      width: 200px;
+    }
+  }
 
 }
 
@@ -127,6 +180,24 @@
 
   .program-container{
     justify-content: space-around;
+  }
+
+  .learning-container{
+    flex-direction: row;
+  }
+
+  .learning-images{
+    padding: 1rem 3rem 0 3rem;
+    font-size: 24px;
+
+    img{
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  .learning-object{
+    font-size: 28px;
   }
 
 }
