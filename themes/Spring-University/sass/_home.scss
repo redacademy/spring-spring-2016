@@ -318,6 +318,9 @@
 .home_updated {
   height: 190px;
   background: $main_color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
     p {
       margin: 0;
       color: #fff;
