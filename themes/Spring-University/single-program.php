@@ -52,8 +52,9 @@ get_header(); ?>
 			<h2 class="section_header">Your Instructors</h2>
 			<?php
 			// Find connected pages
+
 			$connected = new WP_Query( array(
-			  'connected_type' => 'posts_to_posts',
+			  'connected_type' => 'program_to_program_instructors',
 			  'connected_items' => get_queried_object(),
 			  'nopaging' => true,
 			) );
@@ -61,12 +62,12 @@ get_header(); ?>
 			// Display connected pages
 			if ( $connected->have_posts() ) :
 			?>
-			<h3>Related posts:</h3>
-			<ul>
+			<h3>Instructors:</h3>
+			<div>
 			<?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
 			    <p><?php echo CFS()->get( 'instructor_title' ); ?></p>
 			<?php endwhile; ?>
-			</ul>
+		 </div>
 
 			<?php
 			// Prevent weirdness

@@ -112,12 +112,14 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
-
-function my_connection_types() {
+/**
+ * Posts2Posts plugin to connect program and program_instructors
+ */
+function connect_program_instructors() {
     p2p_register_connection_type( array(
-        'name' => 'posts_to_posts',
-        'from' => 'post',
-        'to' => 'post'
+        'name' => 'program_to_program_instructors',
+        'from' => 'program',
+        'to' => 'program_instructors'
     ) );
 }
-add_action( 'p2p_init', 'my_connection_types' );
+add_action( 'p2p_init', 'connect_program_instructors' );
