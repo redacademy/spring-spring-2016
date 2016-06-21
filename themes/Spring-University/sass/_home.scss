@@ -55,9 +55,6 @@
     background-color: $button_hover;
   }
 }
-
-
-
 .down_button {
   width: 100%;
   display: flex;
@@ -103,7 +100,6 @@
       width: 100%;
       text-align: center;
     }
-    
 }
 
 .offer_text {
@@ -113,6 +109,15 @@
 .section_header {
   @include section-header;
   margin-top: -12px;
+}
+
+//Call to action button
+
+.home_cta a {
+  @include main-button;
+  margin: 0 auto;
+  align-self: flex-end;
+  width: 50%;
 }
 
 
@@ -155,6 +160,7 @@
 }
 
 // end of workaround 
+//what we offer section
 
 .what_we_offer_section {
   display: flex;
@@ -162,7 +168,7 @@
   justify-content: center;
 }
 
-//Progrm Blocks on home page
+//Program Blocks on home page
 
 .program_blocks {
   max-width: $content_width;
@@ -205,21 +211,20 @@
   .home_program_img {
     height: 100px;
     margin: 10px;
-  }
-  
-  
-  
-  
+  }  
 }
 
 
 
-
+// Where we are section
 
 #map {
   width: 100%;
   height: 250px;
 }
+
+
+// Events Section
 
 .home_events {
   height: 420px;
@@ -237,13 +242,10 @@
       font-family: $font_spring;
       text-shadow: 0px 0px 7px #000;
     }
-    a {
-      @include main-button;
-      margin: 0 auto;
-      align-self: flex-end;
-      width: 50%;
-    }
+  
 }
+
+// Blog Section
 
 .home_blog {
   height: 290px;
@@ -256,6 +258,8 @@
     width: 50%;
   }
 }
+
+// Stay updated section
 
 .home_updated {
   height: 190px;
@@ -324,6 +328,9 @@
   .program_blocks {
     justify-content: space-around;  
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }  
+  .program_cta {
+    width: 50%;
+ }
 }

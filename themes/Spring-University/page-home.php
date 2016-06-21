@@ -56,6 +56,10 @@ get_header(); ?>
 									 </div>
 									<?php endforeach; wp_reset_postdata(); ?>
 							</div>
+							<div class="home_cta program_cta">
+								<a href="#">Discover our programs</a>
+							</div>	
+							
 					</section>
 
 			<?php while ( have_posts() ) : the_post(); ?>
