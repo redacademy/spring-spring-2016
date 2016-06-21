@@ -289,7 +289,6 @@
 .home_blog_content {
   width: 50%;
   height: 50%;
-  margin: 0 auto;
   margin-bottom: 20px;
   h3 {
     color: #fff;
@@ -326,7 +325,7 @@
     }
 }
   
-// Media Queries
+// Media Queries - - - - - - - - - - - - - - - - -
 
 @media (min-width: 500px) {
   .home_program_box {
@@ -361,6 +360,9 @@
 }
 
 @media (min-width: 700px) {
+  
+  //what we offer desktop
+  
   .home_program_box {
     width: 23%;
     max-width: 190px;
@@ -389,6 +391,8 @@
     width: 50%;
  }
  
+ //map section desktop
+ 
  .map_overlay {
    position: absolute;
    top: 0;
@@ -406,10 +410,48 @@
      margin-top: 100px;
    }
  }
+ 
  .location_cta {
    width: 50%;
    margin: 0 auto;
    margin-bottom: 10px;
  }
  
+ //blog section desktop
+ 
+ .home_blog {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: flex-start;
+ }
+ 
+ .home_blog_content {
+   width: 50%;
+   height: 50%;
+   margin-left: 7%;
+     h3 {
+       color: #4a4a4a;
+       font-family: $font_spring;
+       font-size: 1.2rem;
+       text-shadow: none;
+       margin: 0;
+       text-align: left;
+     }
+     p {
+       color: #4a4a4a;
+       font-family: $font_spring;
+       font-size: 0.9rem;
+       text-shadow: none;
+       margin: 0;
+       margin-bottom: 20px;
+       text-align: left;  
+     }
+  }
+  .blog_cta a{
+    width: 50%;
+    margin: 5px 0px;
+  }
+  
+   
 }
