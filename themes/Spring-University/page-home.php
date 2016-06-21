@@ -97,18 +97,21 @@ get_header(); ?>
 			
 			<h2 class="section_header">Blog</h2>
 			<section class="home_blog">
-				
-					<?php
-						$args = array( 'numberposts' => '1' );
-						$recent_posts = wp_get_recent_posts( $args );
-						foreach( $recent_posts as $recent ){
-							echo  $recent["post_title"];
-							echo  $recent["post_author"];
-							echo  $recent["post_date"];
-						}
-					?>
-				
-				<a href="#">View Blog</a>
+					<div class="home_blog_content">
+					
+						<?php
+							$args = array( 'numberposts' => '1' );
+							$recent_posts = wp_get_recent_posts( $args );
+							foreach( $recent_posts as $recent ){
+								echo  '<h3>'.$recent["post_title"].'</h3>'; 
+						//		echo  '<p>'.$recent["post_author"].'</p>';
+						echo '<p>'.date( 'l F jS', strtotime( $recent['post_date'] ) ).'</p>';							}
+						?>
+						<div class="home_cta blog_cta">
+							<a href="#">View Blog</a>
+						</div>
+						
+					</div>
 			</section>
 
 

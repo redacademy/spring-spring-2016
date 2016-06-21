@@ -249,6 +249,10 @@
   margin-bottom: 20px;
 }
 
+.mapboxgl-ctrl-attrib {
+  display: none;
+}
+
 // Events Section
 
 .home_events {
@@ -274,18 +278,44 @@
 
 .home_blog {
   height: 290px;
-  background: url('../../images/events.jpg');
+  background: url('../../images/blog_bkgd.png');
   background-size: cover;
-  a {
-    @include main-button;
-    margin: 0 auto;
-    align-self: flex-end;
-    width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.home_blog_content {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  h3 {
+    color: #fff;
+    font-family: $font_spring;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 10px #000;
+    margin: 0;
+    text-align: center;
+  }
+  p {
+    color: #fff;
+    font-family: $font_spring;
+    font-size: 0.9rem;
+    text-shadow: 0px 0px 10px #000;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;  
   }
 }
 
-// Stay updated section
+.blog_cta a{
+  width: 90%;
+}
 
+// Stay updated section
+  
 .home_updated {
   height: 190px;
   background: $main_color;
