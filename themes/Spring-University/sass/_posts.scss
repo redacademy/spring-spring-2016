@@ -1,0 +1,24 @@
+// post page 
+
+.post {
+  background: #e1e1e1;
+  border-radius: 7px;
+  padding: 20px;
+  max-width: 940px;
+  margin: 0 auto;
+  margin-top: 15px;
+    .entry-title{
+      margin-bottom: 0px;
+    }
+    .entry-title a{
+      color: #4A4A4A;
+      font-family: $font_spring;
+      text-decoration: none;
+    }
+    .entry-meta {
+      font-family: $font_spring;
+    }
+    p {
+      font-family: $font_spring;
+    }
+}
