@@ -55,9 +55,6 @@
     background-color: $button_hover;
   }
 }
-
-
-
 .down_button {
   width: 100%;
   display: flex;
@@ -103,7 +100,6 @@
       width: 100%;
       text-align: center;
     }
-    
 }
 
 .offer_text {
@@ -112,7 +108,15 @@
 
 .section_header {
   @include section-header;
-  margin-top: -12px;
+}
+
+//Call to action button
+
+.home_cta a {
+  @include main-button;
+  margin: 0 auto;
+  align-self: flex-end;
+  width: 50%;
 }
 
 
@@ -155,56 +159,101 @@
 }
 
 // end of workaround 
+//what we offer section
 
 .what_we_offer_section {
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
 }
+
+//Program Blocks on home page
 
 .program_blocks {
   max-width: $content_width;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  display: flex;
   flex-wrap: wrap;
-  
+  justify-content: center;
 }
 
 .home_program_box {
   background: $main_color;
-  width: 100%;
-  border-radius: 10px;
-  padding: 5px;
-  display: flex;
+  width: 80%;
   margin: 10px;
-  flex-wrap: wrap;
+  border-radius: 10px;
+  display: flex;
+//  flex-wrap: wrap;
   justify-content: center;
-  img {
-    height: 80px;
+  align-items: center;
+  
+  .home_program_text {
+    padding: 10px;
   }
+  
+  .home_program_title {
+    font-family: $font_spring;
+    color: #fff;
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+  
   p{
     font-family: $font_spring;
     color: #fff;
     font-size: 0.8rem;
-    
+    margin: 0;
   }
+
+  .home_program_img {
+    height: 100px;
+    margin: 10px;
+  }  
 }
 
-.home_program_title {
-  font-family: $font_spring;
-  color: #fff;
-  font-size: 1rem;
+.program_cta {
   width: 100%;
-  text-align: center;
-  margin: 0;
 }
 
 
+// Where we are section
+
+.map_section {
+  position: relative;
+}
 
 #map {
   width: 100%;
-  height: 250px;
+  height: 450px;
 }
+
+.map_overlay {
+  position: absolute;
+  bottom: 0;
+  .map_overlay_text {
+    color: #fff;
+    font-family: $font_spring;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid #e1e1e1;
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+}
+
+.location_cta {
+  margin-bottom: 20px;
+}
+
+.mapboxgl-ctrl-attrib {
+  display: none;
+}
+
+// Events Section
 
 .home_events {
   height: 420px;
@@ -222,26 +271,50 @@
       font-family: $font_spring;
       text-shadow: 0px 0px 7px #000;
     }
-    a {
-      @include main-button;
-      margin: 0 auto;
-      align-self: flex-end;
-      width: 50%;
-    }
+  
 }
+
+// Blog Section
 
 .home_blog {
   height: 290px;
-  background: url('../../images/events.jpg');
+  background: url('../../images/blog_bkgd.png');
   background-size: cover;
-  a {
-    @include main-button;
-    margin: 0 auto;
-    align-self: flex-end;
-    width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.home_blog_content {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 20px;
+  h3 {
+    color: #fff;
+    font-family: $font_spring;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 10px #000;
+    margin: 0;
+    text-align: center;
+  }
+  p {
+    color: #fff;
+    font-family: $font_spring;
+    font-size: 0.9rem;
+    text-shadow: 0px 0px 10px #000;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;  
   }
 }
 
+.blog_cta a{
+  width: 90%;
+}
+
+// Stay updated section
+  
 .home_updated {
   height: 190px;
   background: $main_color;
@@ -252,7 +325,7 @@
     }
 }
   
-// Media Queries
+// Media Queries - - - - - - - - - - - - - - - - -
 
 @media (min-width: 500px) {
   .home_program_box {
@@ -286,14 +359,99 @@
   }
 }
 
-
 @media (min-width: 700px) {
+  
+  //what we offer desktop
+  
   .home_program_box {
     width: 23%;
     max-width: 190px;
+    height: 240px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .home_program_img {
+    margin-bottom: 0px !important;
+  }
+  .home_program_title {
+    text-align: center !important;
+    margin-top: 0px;
+    margin-bottom: 10px !important;
+  }
+  .home_program_text {
+    padding-top: 0 !important;
+    height: 50%;
   }
   .program_blocks {
     justify-content: space-around;  
-    flex-wrap: nowrap;
+    align-items: center;
+    flex-wrap: wrap;
   }  
+  .program_cta {
+    width: 50%;
+ }
+ 
+ //map section desktop
+ 
+ .map_overlay {
+   position: absolute;
+   top: 0;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   .map_overlay_text {
+     color: #fff;
+     font-family: $font_spring;
+     background: rgba(0,0,0,0.6);
+     width: 80%;
+     padding: 15px;
+     margin: 0 auto;
+     margin-top: 100px;
+   }
+ }
+ 
+ .location_cta {
+   width: 50%;
+   margin: 0 auto;
+   margin-bottom: 10px;
+ }
+ 
+ //blog section desktop
+ 
+ .home_blog {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: flex-start;
+ }
+ 
+ .home_blog_content {
+   width: 50%;
+   height: 50%;
+   margin-left: 7%;
+     h3 {
+       color: #4a4a4a;
+       font-family: $font_spring;
+       font-size: 1.2rem;
+       text-shadow: none;
+       margin: 0;
+       text-align: left;
+     }
+     p {
+       color: #4a4a4a;
+       font-family: $font_spring;
+       font-size: 0.9rem;
+       text-shadow: none;
+       margin: 0;
+       margin-bottom: 20px;
+       text-align: left;  
+     }
+  }
+  .blog_cta a{
+    width: 50%;
+    margin: 5px 0px;
+  }
+  
+   
 }

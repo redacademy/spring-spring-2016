@@ -37,35 +37,33 @@ get_header(); ?>
 					</div>
 				</div>
 				
-				<section class="what_we_offer_section">
+				
 					<h2 class="section_header">What we offer</h2>
-					<p class="offer_text"><?php echo CFS()->get( 'what_we_offer' ); ?></p>
-					<div class="program_blocks">
-							<?php
-						 	$args = array( 'post_type' => 'program', 'posts_per_page' => 4 );
-						 	$program_post = get_posts( $args );
-							?>
-							<?php foreach ( $program_post as $post ) : setup_postdata( $post ); ?>
-								<div class="home_program_box">
-									<img src="<?php echo CFS()->get( 'program_image' ); ?>" alt="program_image">
-									<h3 class="home_program_title"><?php the_title(); ?></h3>
-								<p>	<?php echo CFS()->get( 'program_keywords' ); ?> </p>
-							 </div>
-							<?php endforeach; wp_reset_postdata(); ?>
-					</div>
-					
-					
-					
-					
-				</section>
+					<section class="what_we_offer_section">
+						<p class="offer_text"><?php echo CFS()->get( 'what_we_offer' ); ?></p>
+							<div class="program_blocks">
+									<?php
+								 	$args = array( 'post_type' => 'program', 'posts_per_page' => 4 );
+								 	$program_post = get_posts( $args );
+									?>
+									<?php foreach ( $program_post as $post ) : setup_postdata( $post ); ?>
+										<div class="home_program_box">
+											<img class="home_program_img" src="<?php echo CFS()->get( 'program_image' ); ?>" alt="program_image">
+											<div class="home_program_text">
+												<h3 class="home_program_title"><?php the_title(); ?></h3>
+												<p>	<?php echo CFS()->get( 'program_keywords' ); ?> </p>
+											</div>
+									 </div>
+									<?php endforeach; wp_reset_postdata(); ?>
+							</div>
+							<div class="home_cta program_cta">
+								<a href="#">Discover our programs</a>
+							</div>	
+							
+					</section>
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
 			
-			<section>
+			<section class="map_section">
 				<h2 class="section_header">Where we are</h2>
 				<div id='map'	></div>
 					<script>
@@ -76,6 +74,16 @@ get_header(); ?>
 					  });
 						map.scrollZoom.disable();
 					</script>
+					
+					<div class="map_overlay">
+						<div class="map_overlay_text">
+							<?php echo CFS()->get( 'locations_text' ); ?>
+						</div>
+						<div class="home_cta location_cta">
+							<a href="#">Our Locations</a>
+						</div>
+						
+					</div>
 			</section>
 			
 			<h2 class="section_header">Events</h2>
@@ -89,18 +97,21 @@ get_header(); ?>
 			
 			<h2 class="section_header">Blog</h2>
 			<section class="home_blog">
-				
-					<?php
-						$args = array( 'numberposts' => '1' );
-						$recent_posts = wp_get_recent_posts( $args );
-						foreach( $recent_posts as $recent ){
-							echo  $recent["post_title"];
-							echo  $recent["post_author"];
-							echo  $recent["post_date"];
-						}
-					?>
-				
-				<a href="#">View Blog</a>
+					<div class="home_blog_content">
+					
+						<?php
+							$args = array( 'numberposts' => '1' );
+							$recent_posts = wp_get_recent_posts( $args );
+							foreach( $recent_posts as $recent ){
+								echo  '<h3>'.$recent["post_title"].'</h3>'; 
+						//		echo  '<p>'.$recent["post_author"].'</p>';
+						echo '<p>'.date( 'l F jS', strtotime( $recent['post_date'] ) ).'</p>';							}
+						?>
+						<div class="home_cta blog_cta">
+							<a href="#">View Blog</a>
+						</div>
+						
+					</div>
 			</section>
 
 
