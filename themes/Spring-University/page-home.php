@@ -37,27 +37,26 @@ get_header(); ?>
 					</div>
 				</div>
 				
-				<section class="what_we_offer_section">
+				
 					<h2 class="section_header">What we offer</h2>
-					<p class="offer_text"><?php echo CFS()->get( 'what_we_offer' ); ?></p>
-					<div class="program_blocks">
-							<?php
-						 	$args = array( 'post_type' => 'program', 'posts_per_page' => 4 );
-						 	$program_post = get_posts( $args );
-							?>
-							<?php foreach ( $program_post as $post ) : setup_postdata( $post ); ?>
-								<div class="home_program_box">
-									<img src="<?php echo CFS()->get( 'program_image' ); ?>" alt="program_image">
-									<h3 class="home_program_title"><?php the_title(); ?></h3>
-								<p>	<?php echo CFS()->get( 'program_keywords' ); ?> </p>
-							 </div>
-							<?php endforeach; wp_reset_postdata(); ?>
-					</div>
-					
-					
-					
-					
-				</section>
+					<section class="what_we_offer_section">
+						<p class="offer_text"><?php echo CFS()->get( 'what_we_offer' ); ?></p>
+							<div class="program_blocks">
+									<?php
+								 	$args = array( 'post_type' => 'program', 'posts_per_page' => 4 );
+								 	$program_post = get_posts( $args );
+									?>
+									<?php foreach ( $program_post as $post ) : setup_postdata( $post ); ?>
+										<div class="home_program_box">
+											<img class="home_program_img" src="<?php echo CFS()->get( 'program_image' ); ?>" alt="program_image">
+											<div class="home_program_text">
+												<h3 class="home_program_title"><?php the_title(); ?></h3>
+												<p>	<?php echo CFS()->get( 'program_keywords' ); ?> </p>
+											</div>
+									 </div>
+									<?php endforeach; wp_reset_postdata(); ?>
+							</div>
+					</section>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
