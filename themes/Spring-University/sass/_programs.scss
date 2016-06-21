@@ -88,6 +88,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .learning-images{
@@ -114,12 +115,31 @@
   margin-bottom: 1rem;
 }
 
+.dates-container{
+  background-color: $main_color;
+  padding: 2rem;
+}
+
+.program-dates{
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
 ----------------------Media Query---------------------------------
 /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
 @media only screen and (min-width: 640px) {
 
+  .learning-images{
+    padding: 1rem 7rem 0 7rem;
+    font-size: 24px;
 
+    img{
+      height: 200px;
+      width: 200px;
+    }
+  }
 
 }
 
@@ -127,6 +147,24 @@
 
   .program-container{
     justify-content: space-around;
+  }
+
+  .learning-container{
+    flex-direction: row;
+  }
+
+  .learning-images{
+    padding: 1rem 3rem 0 3rem;
+    font-size: 24px;
+
+    img{
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  .learning-object{
+    font-size: 28px;
   }
 
 }

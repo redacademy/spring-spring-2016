@@ -16,7 +16,7 @@ get_header(); ?>
 
 			<h2 class="section_header">What you learn</h2>
 
-			<div class="learning-container">
+			<section class="learning-container">
 			<?php
 	 			$loop = CFS() -> get ('program_learnings');
 	 			foreach ($loop as $row) :
@@ -26,7 +26,19 @@ get_header(); ?>
 				<p class="program-learning"><?php echo $row['program_learning']; ?></p>
 			 </div>
 			<?php endforeach; ?>
-		</div> <!--# What you learn-->
+		</section> <!--# What you learn-->
+
+		<h2 class="section_header">Program Dates</h2>
+		<section class="dates-container">
+			<div class="program-dates">
+				<p class="program-month"><?php echo CFS()->get( 'program_month' ); ?></p>
+				<p class="program-day"><?php echo CFS()->get( 'program_day' ); ?></p>
+				<p class="program-year"><?php echo CFS()->get( 'program_year' ); ?></p>
+			</div>
+		</section>
+
+
+
 
 
 
