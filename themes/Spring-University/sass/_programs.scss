@@ -68,9 +68,51 @@
   margin-bottom: 1rem;
 }
 
+
 /*///// Single Programs Page /////*/
+//
+.program-area{
+  padding-top: 4rem;
+}
 
+.program-description{
+  padding: 1.5rem 2rem;
+  font-size: 18px;
+  font-weight: 100;
+  text-align: center;
+  background-color: $main_color;
+  color: #fff;
+}
 
+.learning-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.learning-images{
+  padding: 1rem 3rem 0 3rem;
+  text-align: center;
+  font-size: 20px;
+  font-family: $font_spring;
+
+  img{
+    height: 150px;
+    width: 150px;
+  }
+}
+
+.learning-object{
+  margin-top: -1rem;
+  margin-bottom: 0;
+  font-size: 22px;
+  color: $main_color;
+}
+
+.program-learning{
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
 ----------------------Media Query---------------------------------

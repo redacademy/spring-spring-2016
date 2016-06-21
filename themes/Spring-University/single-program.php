@@ -7,25 +7,29 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="program-area">
 
-		<div class="program-content">
-			<?php the_content(); ?>
-		</div>
+			<p>NEED ARCHIVE PAGES WITH JAVASCRIPT</p>
 
-		<h2 class="sections-header">What you learn</h2>
+		<main id="main" class="program-main" role="main">
+			<div class="program-description"><?php echo CFS()->get( 'program_description' ); ?></div>
+
+			<h2 class="section_header">What you learn</h2>
+
+			<div class="learning-container">
+			<?php
+	 			$loop = CFS() -> get ('program_learnings');
+	 			foreach ($loop as $row) :
+			?>
+				<div class="learning-images"><img src="<?php echo $row['learning_images'];?>"/>
+	 			<p class="learning-object"><?php echo $row['learning_object']; ?></p>
+				<p class="program-learning"><?php echo $row['program_learning']; ?></p>
+			 </div>
+			<?php endforeach; ?>
+		</div> <!--# What you learn-->
 
 
-		<div class="program-learnings"><?php echo CFS()->get( 'program_learnings' ); ?></div>
-		<h2 class="sections-header">Program Dates</h2>
-		<div class="program-dates"><?php echo CFS()->get( 'program_dates' ); ?></div>
-		<div class="program-info"><?php echo CFS()->get( 'program_info' ); ?></div>
-		<h2 class="sections-header">Your Instructors</h2>
-		<p>need to create another custom field called instructors and use plugin post2post to link!!!</p>
-		<h2 class="sections-header">Tuition</h2>
-		<div class="program-tuition"><?php echo CFS()->get( 'program_tuition' ); ?></div>
-		<div class="program-onetime-tuition"><?php echo CFS()->get( 'program_onetime_tuition' ); ?></div>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
