@@ -9,10 +9,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-				<header class="program-header">
-					<h2 class="section_header">what we offer</h2>
-				</header><!-- .page-header -->
+		
+					<h2 class="program-offer">what we offer</h2>
 
 <div class="program-container">
 				<?php /* Start the Loop */ ?>
