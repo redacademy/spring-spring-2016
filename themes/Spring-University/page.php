@@ -10,9 +10,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section class="page_section_header">
-				<h1>Page title</h1>
-			</section>
+		
+			<h2 class="page_section_header"><?php echo wp_title($sep = '');?></h2>
 
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -24,5 +23,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php // get_sidebar(); ?>
 <?php get_footer(); ?>

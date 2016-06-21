@@ -54,6 +54,10 @@
 }
 
 //section headers
+
+
+
+
 @mixin section-header {
 	margin: 0px;
 	height: 70px;
@@ -68,3 +72,10 @@
 	align-items: center;
 	z-index: 20;
 	}
+	
+	.page_section_header {
+		@include section-header;
+		height: 120px;
+		padding-top: 58px;
+	}
+
