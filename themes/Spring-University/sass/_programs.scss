@@ -247,6 +247,7 @@
   }
 
   .program-info{
+    text-align: left;
     padding: 3rem 2rem 3rem 2rem;
   }
 
@@ -324,7 +325,7 @@
   }
 
   .dates-container{
-    padding: 5rem 20rem 3rem 20rem;
+    padding: 5rem 15rem 3rem 15rem;
   }
 
   .program-month{
@@ -359,20 +360,17 @@
   }
 
   .select-buttons{
-    padding-right: 17rem;
-    padding-left: 17rem;
+    padding-right: 11rem;
+    padding-left: 11rem;
 
     .apply-button{
       padding: 1rem 10rem 1rem 10rem;
       font-size: 24px;
     }
-
     .request-button{
       padding: 1rem 6rem 1rem 6rem;
       font-size: 24px;
     }
   }
-
-
 
 }
