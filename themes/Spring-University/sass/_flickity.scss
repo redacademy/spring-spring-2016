@@ -1,0 +1,23 @@
+.forceFullWidth .gallery-cell-image, .forceFullWidth .gallery-cell{
+  width: 210px;
+}
+
+.flickity-slider img {
+  height: 230px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  margin-left: 50px;
+}
+
+#wpflickity-2 {
+
+  .forceFullWidth .gallery-cell-image, .forceFullWidth .gallery-cell{
+    width: 200px;
+  }
+
+  .flickity-slider img {
+    height: 150px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+}

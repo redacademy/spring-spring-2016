@@ -20,3 +20,22 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+// About Header CSS //
+function about_header_styles_method() {
+
+	if ( !is_page( 'about' ) ) {
+		return ;
+	}
+
+	$image = CFS()->get( 'header_image' );
+  $custom_css = "
+		.about-header {
+			background: url(" . $image . ") no-repeat center;
+			background-size: cover;
+		}";
+
+	wp_add_inline_style( 'red-starter-style', $custom_css );
+}
+
+add_action( 'wp_enqueue_scripts', 'about_header_styles_method' );

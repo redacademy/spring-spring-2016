@@ -1,0 +1,27 @@
+.about-header {
+  display: flex;
+  align-items: flex-end;
+  height: 50vh;
+  object-fit: cover;
+
+  h1 {
+    @include right-rounded-border;
+    height: 60px;
+    margin-bottom: 100px;
+  }
+}
+
+.browse {
+  display: flex;
+  justify-content: center;
+
+  button {
+    @include main-button;
+    border: none;
+    outline: none;
+  }
+}
+
+.about-title {
+  @include section-header;
+}
