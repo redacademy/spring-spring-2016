@@ -76,7 +76,10 @@ get_header(); ?>
 			?>
 
 			<h2 class="section_header">Tuition</h2>
-
+			<section class="tuition-container">
+				<div><span>$</span><span><?php echo CFS()->get( 'program_tuition' ); ?></span><span>/mo</span></div>
+				<div><?php echo CFS()->get( 'program_onetime_tuition' ); ?></div>
+		 </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
