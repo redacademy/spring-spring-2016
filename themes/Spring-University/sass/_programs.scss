@@ -128,7 +128,6 @@
 }
 
 .program-dates{
-  margin: 1rem;
   padding: 1rem;
   background-color: #fff;
   color: $main_color;
@@ -159,7 +158,7 @@
   line-height: 1;
 }
 
-.apply-button {
+.applybutton {
   @include main-button;
   text-transform: uppercase;
 }
@@ -174,6 +173,13 @@
     width: 260px;
     @include box-shadows;
   }
+  .amp{
+    display: none;
+  }
+}
+
+.instructors-inner-wrapper{
+  margin-top: 1rem;
 }
 
 .instructor-name{
@@ -185,8 +191,36 @@
 .about-instructor{
   font-size: 18px;
   font-weight: 400;
-  margin: 1rem 0 4rem 0;
+  margin: 1rem 0 2rem 0;
 }
+
+.tuition-container{
+  background-color: $main_color;
+  color: #fff;
+  padding: 3rem 3rem 2rem 3rem;
+}
+
+.single-tuition{
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.request-button{
+  @include second-button;
+  margin-bottom: 1.5rem;
+}
+
+.apply-button{
+  @include main-button;
+  margin-bottom: 1.5rem;
+}
+
+.program-tip{
+  text-align: center;
+
+}
+
+
 
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
 ----------------------Media Query---------------------------------
@@ -203,6 +237,18 @@
     }
   }
 
+  .dates-container{
+    padding: 5rem 15rem 3rem 15rem;
+  }
+
+  .tuition-container{
+
+  }
+
+  .select-buttons{
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 @media only screen and (min-width: 1240px) {
@@ -231,14 +277,26 @@
 
   .instructors{
     display: flex;
+    margin-bottom: 2rem;
+
+    .amp{
+      display: inline-block;
+      font-size:300px;
+      color: #CFCFCF;
+
+      &:last-child{
+        display: none;
+      }
+    }
   }
 
   .instructors-inner-wrapper{
     padding: 0 5rem 0 5rem;
   }
 
+
   .dates-container{
-    padding: 5rem 20rem 5rem 20rem;
+    padding: 5rem 20rem 3rem 20rem;
     justify-content: space-around;
     flex-direction: row;
   }
@@ -250,10 +308,6 @@
 
   .program-info{
     padding: 3rem 2rem 3rem 2rem;
-  }
-
-  .apply-button{
-    padding: 1rem 2rem 1rem 2rem;
   }
 
 }

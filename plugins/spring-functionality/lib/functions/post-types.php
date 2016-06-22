@@ -41,7 +41,7 @@ function programs_post_type() {
 		'label'                 => 'Program',
 		'description'           => 'Spring Universities Programs Post-Type',
 		'labels'                => $labels,
-		'supports'              => array(),
+		'supports'              => array('title', 'editor', 'thumbnail'),
 		'taxonomies'            => array(),
 		'hierarchical'          => false,
 		'public'                => true,
