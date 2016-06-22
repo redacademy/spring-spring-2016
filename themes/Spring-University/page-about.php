@@ -26,6 +26,16 @@ get_header(); ?>
             <?php echo CFS()->get( 'our_impact' ); ?>
 
             <h2 class="about-title">Awards</h2>
+            <section class="awards-container">
+              <?php
+                $awards = CFS() -> get ('awards');
+                foreach ($awards as $award) :
+              ?>
+              <div class="awards-images"><img src="<?php echo $award['awards_images'];?>"/>
+                <p class="awards-description"><?php echo $award['awards_description']; ?></p>
+             </div>
+              <?php endforeach; ?>
+            </section>
 
             <h2 class="about-title">Success Stories</h2>
 
