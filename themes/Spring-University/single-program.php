@@ -49,10 +49,8 @@ get_header(); ?>
 			 </div>
 		</section><!--# Program Dates-->
 
-			<h2 class="section_header">Your Instructors</h2>
 			<?php
 			// Find connected pages
-
 			$connected = new WP_Query( array(
 			  'connected_type' => 'program_to_program_instructors',
 			  'connected_items' => get_queried_object(),
@@ -62,10 +60,14 @@ get_header(); ?>
 			// Display connected pages
 			if ( $connected->have_posts() ) :
 			?>
-			<h3>Instructors:</h3>
-			<div>
+			<h2 class="section_header">Your Instructors</h2>
+			<div class="instructors">
 			<?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
-			    <p><?php echo CFS()->get( 'instructor_title' ); ?></p>
+				  <div class="instructors-inner-wrapper">
+			  		<img src="<?php echo CFS()->get( 'instructor_photo' ); ?>"/>
+				  	<p class="instructor-name"><?php the_title(); ?></p>
+				  	<p class="about-instructor"><?php echo CFS()->get( 'about_instructor' ); ?></p>
+			  	</div>
 			<?php endwhile; ?>
 		 </div>
 

@@ -126,9 +126,7 @@
   background-color: #fff;
   color: $main_color;
   text-align: center;
-  -webkit-box-shadow: -1px 6px 19px 3px rgba(0,0,0,0.3);
-  -moz-box-shadow: -1px 6px 19px 3px rgba(0,0,0,0.3);
-  box-shadow: -1px 6px 19px 3px rgba(0,0,0,0.3);
+  @include box-shadows;
 }
 
 .program-month{
@@ -157,6 +155,30 @@
 .apply-button {
   @include main-button;
   text-transform: uppercase;
+}
+
+.instructors{
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0 2rem 0 2rem;
+  img{
+    border-radius: 5px;
+    height: 360px;
+    width: 260px;
+    @include box-shadows;
+  }
+}
+
+.instructor-name{
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.about-instructor{
+  font-size: 18px;
+  font-weight: 400;
+  margin: 1rem 0 4rem 0;
 }
 
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
@@ -198,6 +220,14 @@
 
   .learning-object{
     font-size: 28px;
+  }
+
+  .instructors{
+    display: flex;
+  }
+
+  .instructors-inner-wrapper{
+    padding: 0 5rem 0 5rem;
   }
 
 }
