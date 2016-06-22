@@ -74,6 +74,7 @@ get_header(); ?>
 			wp_reset_postdata();
 			endif;
 			?>
+			
 			<h2 class="section_header">Tuition</h2>
 			<section class="tuition-container">
 				<div class="single-tuition"><span>&dollar;</span><span class="tuition-amount"><?php echo CFS()->get( 'program_tuition' ); ?></span><span><?php echo CFS()->get( 'frequency' ); ?></span>

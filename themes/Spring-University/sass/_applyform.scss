@@ -24,5 +24,13 @@
     display: block; 
   }
 
+  .wpcf7-submit {
+    border: none;
+    outline: none;
+    text-shadow: none;
+    @include main-button;
+    margin: 0 auto;
+    
+  }
   
 }
