@@ -38,7 +38,7 @@ get_header(); ?>
 				</div>
 				
 				
-					<h2 class="section_header">What we offer</h2>
+					<h2 class="section_header offer_header">What we offer</h2>
 					<section class="what_we_offer_section">
 						<p class="offer_text"><?php echo CFS()->get( 'what_we_offer' ); ?></p>
 							<div class="program_blocks">
