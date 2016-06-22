@@ -8,8 +8,6 @@
 
 .program-container {
   display: flex;
-  flex-direction: row-reverse;
-  margin: 2rem 1rem 0 1rem;
   font-family: $font_spring;
 }
 
@@ -18,7 +16,7 @@
   border: 4px solid #F49110;
   border-radius: 7px;
   min-width: 280px;
-  max-width: 280px;
+  max-width: 320px;
   padding: 2rem 1rem 1rem 1rem;
   margin: 1rem;
   text-align: center;
@@ -238,16 +236,48 @@
   }
 
   .dates-container{
-    padding: 5rem 15rem 3rem 15rem;
+    padding: 5rem 1rem 3rem 1rem;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .program-dates{
+    padding: 3rem 8rem 3rem 8rem;
+    align-self: center;
+  }
+
+  .program-info{
+    padding: 3rem 2rem 3rem 2rem;
   }
 
   .tuition-container{
 
+    .tuition-amount{
+      font-size: 78px;
+    }
+
+    span{
+      font-size: 24px;
+    }
+
+    .single-tuition{
+      font-size: 20px;
+    }
   }
 
+.program-tip{
+  font-size: 20px;
+}
   .select-buttons{
     display: flex;
     justify-content: space-around;
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+
+    .apply-button{
+      padding-right: 5rem;
+      padding-left: 5rem;
+    }
   }
 }
 
@@ -255,6 +285,8 @@
 
   .program-container{
     justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   .learning-container{
@@ -282,6 +314,7 @@
     .amp{
       display: inline-block;
       font-size:300px;
+      font-weight: 800;
       color: #CFCFCF;
 
       &:last-child{
@@ -290,24 +323,56 @@
     }
   }
 
+  .dates-container{
+    padding: 5rem 20rem 3rem 20rem;
+  }
+
+  .program-month{
+    font-size: 48px;
+    margin: 0;
+  }
+
+  .program-day{
+    font-size: 78px;
+    font-weight: 800;
+  }
+
+  .program-year{
+    font-size: 36px;
+  }
+
+  .program-info{
+    font-size: 28px;
+  }
+
+  .applybutton{
+    font-size: 32px;
+    padding: 1rem 5rem 1rem 5rem;
+  }
+
   .instructors-inner-wrapper{
     padding: 0 5rem 0 5rem;
   }
 
-
-  .dates-container{
-    padding: 5rem 20rem 3rem 20rem;
-    justify-content: space-around;
-    flex-direction: row;
+  .about-instructor{
+    font-size: 20px;
   }
 
-  .program-dates{
-    padding: 3rem 8rem 3rem 8rem;
-    align-self: center;
+  .select-buttons{
+    padding-right: 17rem;
+    padding-left: 17rem;
+
+    .apply-button{
+      padding: 1rem 10rem 1rem 10rem;
+      font-size: 24px;
+    }
+
+    .request-button{
+      padding: 1rem 6rem 1rem 6rem;
+      font-size: 24px;
+    }
   }
 
-  .program-info{
-    padding: 3rem 2rem 3rem 2rem;
-  }
+
 
 }
