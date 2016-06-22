@@ -24,7 +24,7 @@ get_header(); ?>
 							<?php the_excerpt(); ?>
 
               <div class="program-keywords"><?php echo CFS()->get( 'program_keywords' ); ?></div>
-						  <div class="program-tuition"><span>$</span><span class="tuition-amount"><?php echo CFS()->get( 'program_tuition' ); ?></span><span class="frequency">/mo</span></div>
+						  <div class="program-tuition"><span>$</span><span class="tuition-amount"><?php echo CFS()->get( 'program_tuition' ); ?></span><span class="frequency"><?php echo CFS()->get( 'frequency' ); ?></span></div>
 							<div class="program-onetime-tuition"><?php echo CFS()->get( 'program_onetime_tuition' ); ?></div>
 						</a>
 					</div>
