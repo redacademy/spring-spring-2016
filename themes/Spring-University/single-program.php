@@ -9,22 +9,6 @@ get_header(); ?>
 
 	<div id="primary" class="program-area">
 
-		<!-- get_posts loop of programs -->
-
-		<?php
-			$program_id = get_the_ID();
-
-			$args = array('post_type' => 'program',
-	 									 'posts_per_page' => 4,
-										 'order' => 'ASC');
-			$programs = get_posts( $args );
-
-			foreach ($programs as $program) {
-
-				// if ( current program id equal id of program being looped over ) {
-
-			}
-		 ?>
 
 		<main id="main" class="program-main" role="main">
 			<div class="program-description"><?php echo CFS()->get( 'program_description' ); ?></div>
@@ -58,7 +42,7 @@ get_header(); ?>
 					<p><?php echo $info['program_hours']; ?></p>
 					<p><?php echo $info['program_sessions']; ?></p>
 					<p><?php echo $info['program_days_and_times']; ?></p>
-          <a class="apply-button" href="#">Apply</a>
+          <a class="applybutton" href="#">Apply</a>
 				 </div>
 				<?php endforeach; ?>
 		</section>
@@ -82,6 +66,7 @@ get_header(); ?>
 				  	<p class="instructor-name"><?php the_title(); ?></p>
 				  	<p class="about-instructor"><?php echo CFS()->get( 'about_instructor' ); ?></p>
 					</div>
+					<div class="amp">&amp;</div>
 			<?php endwhile; ?>
 		 </div>
 			<?php
@@ -91,8 +76,13 @@ get_header(); ?>
 			?>
 			<h2 class="section_header">Tuition</h2>
 			<section class="tuition-container">
-				<div><span>$</span><span><?php echo CFS()->get( 'program_tuition' ); ?></span><span><?php echo CFS()->get( 'frequency' ); ?></span></div>
-				<div><?php echo CFS()->get( 'program_onetime_tuition' ); ?></div>
+				<div class="single-tuition"><span>&dollar;</span><span class="tuition-amount"><?php echo CFS()->get( 'program_tuition' ); ?></span><span><?php echo CFS()->get( 'frequency' ); ?></span>
+				<div><?php echo CFS()->get( 'program_onetime_tuition' ); ?></div></div>
+				<div class="select-buttons">
+				<a class="request-button" href="#">Request Syllabus</a>
+				<a class="apply-button" href="#">Apply</a>
+			</div>
+			<p class="program-tip"><span>Tip: </span><?php echo CFS()->get( 'tip' ); ?></p>
 		 </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
