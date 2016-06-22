@@ -117,7 +117,10 @@
 
 .dates-container{
   background-color: $main_color;
-  padding: 2rem;
+  padding: 2rem 4rem 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .program-dates{
@@ -228,6 +231,25 @@
 
   .instructors-inner-wrapper{
     padding: 0 5rem 0 5rem;
+  }
+
+  .dates-container{
+    padding: 5rem 20rem 5rem 20rem;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .program-dates{
+    padding: 3rem 8rem 3rem 8rem;
+    align-self: center;
+  }
+
+  .program-info{
+    padding: 3rem 2rem 3rem 2rem;
+  }
+
+  .apply-button{
+    padding: 1rem 2rem 1rem 2rem;
   }
 
 }
