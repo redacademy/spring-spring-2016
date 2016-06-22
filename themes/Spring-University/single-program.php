@@ -66,8 +66,9 @@ get_header(); ?>
 			  		<img src="<?php echo CFS()->get( 'instructor_photo' ); ?>"/>
 				  	<p class="instructor-name"><?php the_title(); ?></p>
 				  	<p class="about-instructor"><?php echo CFS()->get( 'about_instructor' ); ?></p>
-			  	</div>
+					</div>
 			<?php endwhile; ?>
+     <div class="amp">&amp;</div>
 		 </div>
 			<?php
 			// Prevent weirdness

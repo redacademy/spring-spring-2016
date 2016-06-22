@@ -176,6 +176,10 @@
   }
 }
 
+.instructors-inner-wrapper{
+  margin-top: 3.5rem;
+}
+
 .instructor-name{
   font-size: 26px;
   font-weight: 800;
@@ -185,7 +189,11 @@
 .about-instructor{
   font-size: 18px;
   font-weight: 400;
-  margin: 1rem 0 4rem 0;
+  margin: 1rem 0 2rem 0;
+}
+
+.amp{
+  color: #D3D3D3;
 }
 
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
@@ -235,6 +243,11 @@
 
   .instructors-inner-wrapper{
     padding: 0 5rem 0 5rem;
+  }
+
+  .amp{
+    order: 2;
+
   }
 
   .dates-container{
