@@ -1,0 +1,28 @@
+.wpcf7 {
+  max-width: 500px;
+  margin: 0 auto !important;
+  background: #e1e1e1;
+  border-radius: 10px;
+  padding: 20px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   p {
+     color: $main_color;
+     font-family: $font_spring;
+   }
+  
+  .wpcf7-text {
+    outline: none;
+    background: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid $main_color;
+  }
+  
+  .wpcf7-list-item { 
+    display: block; 
+  }
+
+  
+}
