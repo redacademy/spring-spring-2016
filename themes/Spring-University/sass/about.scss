@@ -29,3 +29,13 @@
 .about-title {
   @include section-header;
 }
+
+.impact-imgs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.awards-images {
+  display: flex;
+  justify-content: space-around;
+}
