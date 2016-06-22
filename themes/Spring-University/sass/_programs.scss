@@ -194,6 +194,7 @@
 
 .amp{
   color: #D3D3D3;
+  visibility: hidden;
 }
 
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
@@ -239,6 +240,7 @@
 
   .instructors{
     display: flex;
+    margin-bottom: 2rem;
   }
 
   .instructors-inner-wrapper{
@@ -246,7 +248,8 @@
   }
 
   .amp{
-    order: 2;
+    font-size: 40px;
+    visibility: visible;
 
   }
 

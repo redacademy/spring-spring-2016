@@ -9,7 +9,42 @@ get_header(); ?>
 
 	<div id="primary" class="program-area">
 
-			<p>NEED ARCHIVE PAGES WITH JAVASCRIPT</p>
+		// get_posts loop of programs
+
+		<?php
+			$program_id = get_the_ID();
+
+			$args = array();
+			$programs = get_posts( $args );
+
+			foreach ($programs as $program) {
+
+				// if ( current program id equal id of program being looped over ) {
+
+			}
+			}
+		 ?>
+
+   <p>NEED ARCHIVE PAGES WITH JAVASCRIPT</p>
+		<div class="program-container">
+						<?php /* Start the Loop */ ?>
+							<?php while ( have_posts() ) : the_post(); ?>
+		             <div class="single-container">
+									 <a class="programs-link" href="<?php echo esc_url( get_permalink() ); ?>">
+									<div class="program-image"><img src="<?php echo CFS()->get( 'program_image' ); ?>"/></div>
+									<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+										<?php the_title( sprintf( '<h2 class="program-title">', '</h2>' ) ); ?>
+									</div><!-- #post-## -->
+									<?php the_excerpt(); ?>
+
+		              <div class="program-keywords"><?php echo CFS()->get( 'program_keywords' ); ?></div>
+								  <div class="program-tuition"><span>$</span><span class="tuition-amount"><?php echo CFS()->get( 'program_tuition' ); ?></span><span class="frequency"><?php echo CFS()->get( 'frequency' ); ?></span></div>
+									<div class="program-onetime-tuition"><?php echo CFS()->get( 'program_onetime_tuition' ); ?></div>
+								</a>
+							</div>
+							<?php endwhile; ?>
+		</div>
+	  <p>NEED ARCHIVE PAGES WITH JAVASCRIPT</p>
 
 		<main id="main" class="program-main" role="main">
 			<div class="program-description"><?php echo CFS()->get( 'program_description' ); ?></div>
@@ -68,7 +103,6 @@ get_header(); ?>
 				  	<p class="about-instructor"><?php echo CFS()->get( 'about_instructor' ); ?></p>
 					</div>
 			<?php endwhile; ?>
-     <div class="amp">&amp;</div>
 		 </div>
 			<?php
 			// Prevent weirdness
