@@ -9,11 +9,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			
-
-		
-			<h2 class="page_section_header"><?php echo wp_title($sep = '');?></h2>
-			
+				
+			<h2 class="page_section_header"><?php echo wp_title($sep = '');?></h2>	
 			<div id='map'	></div>
 				<script>
 				mapboxgl.accessToken = 'pk.eyJ1IjoidG9tcm9wZXIiLCJhIjoiY2lwaW5wZHVtMDFyaHRjbWRjZmJ1M2c0ZSJ9.Gc778JgvVYrCjqLRAmrbww';
@@ -23,8 +20,7 @@ get_header(); ?>
 					});
 					map.scrollZoom.disable();
 				</script>
-
-
+				
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
