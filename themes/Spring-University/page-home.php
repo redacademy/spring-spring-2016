@@ -57,7 +57,7 @@ get_header(); ?>
 									<?php endforeach; wp_reset_postdata(); ?>
 							</div>
 							<div class="home_cta program_cta">
-								<a href="#">Discover our programs</a>
+								<a href="<?php echo get_site_url(); ?>/programs">Discover our programs</a>
 							</div>	
 							
 					</section>
@@ -80,7 +80,7 @@ get_header(); ?>
 							<?php echo CFS()->get( 'locations_text' ); ?>
 						</div>
 						<div class="home_cta location_cta">
-							<a href="#">Our Locations</a>
+							<a href="<?php echo get_site_url(); ?>/locations">Our Locations</a>
 						</div>
 						
 					</div>
@@ -90,7 +90,7 @@ get_header(); ?>
 			<section class="home_events">
 			<div class="home_cta">
 				<p><?php echo CFS()->get( 'events' ); ?></p>
-				<a href="#">See our Events</a>
+				<a href="<?php echo get_site_url(); ?>/events">See our Events</a>
 			</div>	
 			</section>
 			
@@ -108,7 +108,7 @@ get_header(); ?>
 						echo '<p>'.date( 'l F jS', strtotime( $recent['post_date'] ) ).'</p>';							}
 						?>
 						<div class="home_cta blog_cta">
-							<a href="#">View Blog</a>
+							<a href="<?php echo get_site_url(); ?>/blog">View Blog</a>
 						</div>
 						
 					</div>
