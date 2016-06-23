@@ -27,7 +27,7 @@ get_header(); ?>
 								<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 									<?php the_title( sprintf( '<h2 class="program-title">', '</h2>' ) ); ?></div>
 								<div class="program-keywords"><?php echo CFS()->get( 'program_keywords' ); ?></div>
-								<div class="program-tuition"><span>&dollar;</span><span class="tuition-amount"><?php echo CFS()->get( 'program_tuition' ); ?></span><span class="frequency"><?php echo CFS()->get( 'frequency' ); ?></span></div>
+								<div class="program-tuition"><sup class="dollar-sign">&dollar;</sup><span class="tuition-amount"><?php echo CFS()->get( 'program_tuition' ); ?></span><span class="frequency"><?php echo CFS()->get( 'frequency' ); ?></span></div>
 								<div class="program-onetime-tuition"><?php echo CFS()->get( 'program_onetime_tuition' ); ?></div>
 							</a>
 						</div>

@@ -9,6 +9,7 @@
 .program-container {
   display: flex;
   font-family: $font_spring;
+  overflow-x:hidden;
 }
 
 .single-container a{
@@ -29,8 +30,19 @@
   }
 }
 
-.program-image {
+//Bxslider override styles
+.post-type-archive-program .bx-wrapper{
 
+  .bx-viewport{
+    box-shadow:none;
+    border:none;
+  }
+  .program-image img {
+    display: inline-block;
+  }
+}
+
+.program-image {
   img {
   background-color: transparent;
   width: 140px;
@@ -54,6 +66,10 @@
   font-size: 2rem;
   margin-top: 2rem;
   line-height: 1;
+}
+
+.dollar-sign{
+  vertical-align: super;
 }
 
 .tuition-amount{
@@ -429,7 +445,7 @@
   .program-dates{
     margin-right: 3rem;
   }
-  
+
   .program-info{
     font-size: 28px;
   }
