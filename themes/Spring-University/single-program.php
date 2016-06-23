@@ -74,7 +74,7 @@ get_header(); ?>
 			wp_reset_postdata();
 			endif;
 			?>
-			
+
 			<h2 class="section_header">Tuition</h2>
 			<section class="tuition-container">
 				<div class="single-tuition"><span>&dollar;</span><span class="tuition-amount"><?php echo CFS()->get( 'program_tuition' ); ?></span><span><?php echo CFS()->get( 'frequency' ); ?></span>
@@ -84,6 +84,16 @@ get_header(); ?>
 				<a class="apply-button" href="#">Apply</a>
 			</div>
 			<p class="program-tip"><span>Tip: </span><?php echo CFS()->get( 'tip' ); ?></p>
+
+			<div>
+				<img class="light-inspire" src="images/light-inspire.png" alt= "light icon" />
+				<span>&plus; </span>
+				<img class="rocket-launch" src="images/rocket-launch.png" alt= "rocket icon" />
+			 <span>&equals; </span>
+			 <span><span>&dollar;</span><?php echo CFS()->get( 'total_amount' ); ?></span>
+			 <span><span>&dollar;</span><?php echo CFS()->get( 'discount' ); ?></span>
+			</div>
+
 		 </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
