@@ -71,20 +71,36 @@
 }
 
 
-/*///// Single Programs Page /////*/
-//
+
+/*/./././././././. Single Programs Page ././././././././*/
+
 .program-area{
   padding-top: 4rem;
   font-family: $font_spring;
 }
 
 .program-description{
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem 2rem;
   font-size: 18px;
   font-weight: 100;
   text-align: center;
   background-color: $main_color;
   color: #fff;
+}
+
+.program-page-background{
+  display: none;
+}
+
+.program-page-title{
+  display: none;
+}
+
+.program-description-title{
+  font-size: 22px;
+  padding-bottom: 1rem;
 }
 
 .learning-container{
@@ -224,6 +240,30 @@
 ----------------------Media Query---------------------------------
 /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
 @media only screen and (min-width: 640px) {
+
+  .program-description{
+
+  }
+
+.program-page-background{
+  display: block;
+  background-color: orange;
+}
+
+  .program-page-title{
+    @include right-rounded-border;
+    display: inline-block;
+    font-size: 42px;
+    margin-bottom: 4rem;
+    margin-top: 6rem;
+    z-index: 10;
+  }
+
+  .program-description-title,
+  .program-description-text{
+    text-align: left;
+    padding-left: 2rem;
+  }
 
   .learning-images{
     padding: 1rem 7rem 0 7rem;

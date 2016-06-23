@@ -11,10 +11,20 @@ get_header(); ?>
 
 
 		<main id="main" class="program-main" role="main">
-			<div class="program-description"><?php echo CFS()->get( 'program_description' ); ?></div>
+
+      <div class="program-page-background">
+			  <!-- <?php //if ( has_post_thumbnail() ) : ?>
+					<?php the_post_thumbnail( 'full' ); ?>
+				<?php //endif; ?> -->
+				<div class="program-page-title"><?php the_title(); ?></div>
+			</div>
+
+			<section class="program-description">
+		 		<div class="program-description-title"><?php echo CFS()->get( 'program_description_title' ); ?></div>
+				<div class="program-description-text"><?php echo CFS()->get( 'program_description' ); ?></div>
+		  </section>
 
 			<h2 class="section_header">What you learn</h2>
-
 			<section class="learning-container">
 			<?php
 	 			$loop = CFS() -> get ('program_learnings');
@@ -83,17 +93,7 @@ get_header(); ?>
 				<a class="request-button" href="#">Request Syllabus</a>
 				<a class="apply-button" href="#">Apply</a>
 			</div>
-			<p class="program-tip"><span>Tip: </span><?php echo CFS()->get( 'tip' ); ?></p>
-
-			<div>
-				<img class="light-inspire" src="images/light-inspire.png" alt= "light icon" />
-				<span>&plus; </span>
-				<img class="rocket-launch" src="images/rocket-launch.png" alt= "rocket icon" />
-			 <span>&equals; </span>
-			 <span><span>&dollar;</span><?php echo CFS()->get( 'total_amount' ); ?></span>
-			 <span><span>&dollar;</span><?php echo CFS()->get( 'discount' ); ?></span>
-			</div>
-
+			<p class="program-tip"><?php echo CFS()->get( 'tip' ); ?></p>
 		 </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
