@@ -294,17 +294,19 @@
   }
 
   .dates-container{
+    width: 100%;
     padding: 5rem 1rem 3rem 1rem;
-    justify-content: space-around;
     flex-direction: row;
   }
 
   .program-dates{
+    margin-rigth: 2rem;
     padding: 3rem 8rem 3rem 8rem;
     align-self: center;
   }
 
   .program-info{
+    margin-left: 2rem;
     text-align: left;
     padding: 3rem 2rem 3rem 2rem;
   }
@@ -424,6 +426,10 @@
     font-size: 36px;
   }
 
+  .program-dates{
+    margin-right: 3rem;
+  }
+  
   .program-info{
     font-size: 28px;
   }

@@ -8,8 +8,6 @@
 get_header(); ?>
 
 	<div id="primary" class="program-area">
-
-
 		<main id="main" class="program-main" role="main">
 
       <div class="program-page-background">
@@ -18,7 +16,6 @@ get_header(); ?>
 				<?php //endif; ?>
 				<div class="program-page-title"><?php the_title(); ?></div>
 			</div>
-
 			<section class="program-description">
 		 		<div class="program-description-title"><?php echo CFS()->get( 'program_description_title' ); ?></div>
 				<div class="program-description-text"><?php echo CFS()->get( 'program_description' ); ?></div>
@@ -64,7 +61,6 @@ get_header(); ?>
 			  'connected_items' => get_queried_object(),
 			  'nopaging' => true,
 			) );
-
 			// Display connected pages
 			if ( $connected->have_posts() ) :
 			?>
@@ -95,8 +91,7 @@ get_header(); ?>
 			</div>
 			<p class="program-tip"><?php echo CFS()->get( 'tip' ); ?></p>
 		 </section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-
 <?php get_footer(); ?>
