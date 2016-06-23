@@ -94,10 +94,11 @@ get_header(); ?>
 							<?php
 								$args = array( 'numberposts' => '1' );
 								$recent_posts = wp_get_recent_posts( $args );
-								foreach( $recent_posts as $recent ){
-									echo  '<h3>'.$recent["post_title"].'</h3>'; 
-									echo '<p>'.date( 'l F jS', strtotime( $recent['post_date'] ) ).'</p>';							}
-							?>
+								?>
+							<?php	foreach( $recent_posts as $recent ): ?>
+									  <h3><?php echo $recent["post_title"]?></h3>
+									  <p><?php echo date( 'l F jS', strtotime( $recent['post_date'] ) ) ?></p>							
+							<?php endforeach; wp_reset_postdata(); ?>
 							<div class="home_cta blog_cta">
 								<a href="<?php echo get_site_url(); ?>/blog">View Blog</a>
 							</div>		
