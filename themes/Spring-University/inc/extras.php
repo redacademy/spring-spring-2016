@@ -39,3 +39,12 @@ function about_header_styles_method() {
 }
 
 add_action( 'wp_enqueue_scripts', 'about_header_styles_method' );
+
+// load bxslider
+function loadbxslider()
+{
+    wp_enqueue_style('bxstyle', '/wp-content/themes/Spring-University/js/bxslider/jquery.bxslider.css');
+    wp_enqueue_script('bxscript', '/wp-content/themes/Spring-University/js/bxslider/jquery.bxslider.min.js', array('jquery'));
+		wp_enqueue_script('program_js_script', get_template_directory_uri() . '/build/js/programs.min.js');
+}
+add_action('wp_enqueue_scripts', 'loadbxslider');
