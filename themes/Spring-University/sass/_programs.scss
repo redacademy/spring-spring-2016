@@ -12,10 +12,16 @@
 }
 
 .bxslider{
-  display: flex;
-  flex-direction: row;
   width: 100%;
-  transform: translate3d(-85px, 0px, 0px) !important;
+  margin:0 auto;
+
+  li{
+    display:inline-block;
+
+    .single-container{
+      text-align: center;
+    }
+  }
 }
 
 //Bxslider override styles
@@ -34,9 +40,6 @@
     margin: 0 auto;
   }
 
-  .bx-pager{
-    display: none;
-  }
 }
 
 .single-container a{
@@ -45,7 +48,7 @@
   border-radius: 7px;
   min-width: 280px;
   padding: 2rem 1rem 1rem 1rem;
-  margin: 1rem;
+  margin: 1rem 0;
   text-align: center;
   background-color: $main_color;
   color: #fff;
@@ -265,13 +268,19 @@
 }
 
 
-
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
 ----------------------Media Query---------------------------------
 /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
 
 /*/./././././././. min-with: 640px ././././././././*/
 @media only screen and (min-width: 640px) {
+
+  .bxslider{
+
+    li{
+      width: 50vw !important;
+  }
+}
 
 .program-page-background{
   display: block;
@@ -380,6 +389,13 @@
 
 /*/./././././././. min-with: 1240px ././././././././*/
 @media only screen and (min-width: 1240px) {
+
+  .bxslider{
+
+    li{
+      width: 25vw !important;
+  }
+}
 
   .program-container{
     margin-top: 2rem;
