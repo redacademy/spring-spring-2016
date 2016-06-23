@@ -3,6 +3,6 @@ jQuery(document).ready(function($){
   $('.bxslider').bxSlider({
     minSlides:1,
     maxSlides: 4,
-    slideWidth: 320
+    slideWidth: 310
   });
 });

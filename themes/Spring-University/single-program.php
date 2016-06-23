@@ -10,6 +10,7 @@ get_header(); ?>
 	<div id="primary" class="program-area">
 		<main id="main" class="program-main" role="main">
 
+
       <div class="program-page-background">
 				<?php //if ( has_post_thumbnail() ) : ?>
 					<div class="program-bkg-img"><?php the_post_thumbnail( 'full' ); ?></div>

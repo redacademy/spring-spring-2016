@@ -20,7 +20,7 @@ get_header(); ?>
 				?>
 				<ul class="bxslider">
 					<?php foreach ( $program_post as $post ) : setup_postdata( $post ); ?>
-					<li>
+					<li class="program-list">
 						<div class="single-container">
 							<a class="programs-link" href="<?php echo esc_url( get_permalink() ); ?>">
 								<div class="program-image"><img src="<?php echo CFS()->get( 'program_image' ); ?>"/></div>
