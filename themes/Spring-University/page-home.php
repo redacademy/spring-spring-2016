@@ -32,7 +32,7 @@ get_header(); ?>
 					<div class="video_text_overlay">
 						<img class="home_hero_logo" src= "<?php echo get_template_directory_uri(); ?>/images/spring_logo_white.png" alt= "spring logo" />
 						<h1 class="home_hero_h1">A Global Startup School for Entrepreneurs</h1>
-						<i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i>
+						<a href="#"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></a>
 					</div>
 				</div>
 				
@@ -108,7 +108,7 @@ get_header(); ?>
 			<!-- Newsletter signup to be built -->
 			<!-- <h2 class="section_header">Stay updated</h2>
 			<section class="home_updated">
-				<p><?php echo CFS()->get( 'updated' ); ?></p>
+				<p><?php //echo CFS()->get( 'updated' ); ?></p>
 				<p>Here is where the signup form will go</p>
 			</section> -->
 
