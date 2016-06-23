@@ -3,21 +3,24 @@
 }
 
 .flickity-slider img {
-  height: 230px;
-  margin-top: 100px;
+  height: 200px;
+  margin-top: 75px;
   margin-bottom: 70px;
   margin-left: 50px;
 }
 
+
+/* Partners section */
 #wpflickity-2 {
-
-  .forceFullWidth .gallery-cell-image, .forceFullWidth .gallery-cell{
-    width: 200px;
-  }
-
   .flickity-slider img {
-    height: 150px;
-    margin-top: 100px;
-    margin-bottom: 70px;
+    height: 175px;
+  }
+}
+
+/* Team members section */
+#wpflickity-3 {
+  .flickity-slider img {
+    height: 350px;
+    width: 250px;
   }
 }
