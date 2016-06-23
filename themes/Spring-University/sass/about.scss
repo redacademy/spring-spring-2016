@@ -11,6 +11,7 @@
   }
 }
 
+/* Browse through progams button */
 .browse {
   display: flex;
   justify-content: center;
@@ -26,16 +27,34 @@
   }
 }
 
+/* Section headers */
 .about-title {
   @include section-header;
 }
 
+/* Our impact section */
 .impact-imgs {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  img {
+    height: 375px;
+    width: 375px;
+    margin-left: 20px;
+  }
+}
+
+/* Awards section */
+.awards-container {
   display: flex;
   justify-content: space-around;
 }
-
 .awards-images {
-  display: flex;
-  justify-content: space-around;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  align-items: baseline;
+  font-size: 1.3rem;
+  text-align: center;
 }
