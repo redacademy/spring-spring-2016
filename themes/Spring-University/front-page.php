@@ -96,8 +96,7 @@ get_header(); ?>
 								$recent_posts = wp_get_recent_posts( $args );
 								foreach( $recent_posts as $recent ){
 									echo  '<h3>'.$recent["post_title"].'</h3>'; 
-							//		echo  '<p>'.$recent["post_author"].'</p>';
-							echo '<p>'.date( 'l F jS', strtotime( $recent['post_date'] ) ).'</p>';							}
+									echo '<p>'.date( 'l F jS', strtotime( $recent['post_date'] ) ).'</p>';							}
 							?>
 							<div class="home_cta blog_cta">
 								<a href="<?php echo get_site_url(); ?>/blog">View Blog</a>
@@ -105,12 +104,11 @@ get_header(); ?>
 						</div>
 				</section>
 
-			<!-- Newsletter signup to be built -->
-			<!-- <h2 class="section_header">Stay updated</h2>
+			 <h2 class="section_header">Stay updated</h2>
 			<section class="home_updated">
-				<p><?php //echo CFS()->get( 'updated' ); ?></p>
+				<p><?php echo CFS()->get( 'updated' ); ?></p>
 				<p>Here is where the signup form will go</p>
-			</section> -->
+			</section> 
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
