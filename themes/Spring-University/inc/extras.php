@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function red_starter_body_classes( $classes ) {
+function spring_starter_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -19,10 +19,10 @@ function red_starter_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'red_starter_body_classes' );
+add_filter( 'body_class', 'spring_starter_body_classes' );
 
 // About Header CSS //
-function about_header_styles_method() {
+function spring_about_header_styles_method() {
 
 	if ( !is_page( 'about' ) ) {
 		return ;
@@ -38,4 +38,4 @@ function about_header_styles_method() {
 	wp_add_inline_style( 'red-starter-style', $custom_css );
 }
 
-add_action( 'wp_enqueue_scripts', 'about_header_styles_method' );
+add_action( 'wp_enqueue_scripts', 'spring_about_header_styles_method' );

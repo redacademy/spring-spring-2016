@@ -96,10 +96,10 @@ function spring_scripts() {
 add_action( 'wp_enqueue_scripts', 'spring_scripts' );
 
 //enqueues our external font awesome stylesheet
-function enqueue_our_required_stylesheets(){
+function spring_enqueue_our_required_stylesheets(){
 	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 }
-add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
+add_action('wp_enqueue_scripts','spring_enqueue_our_required_stylesheets');
 
 
 /**
@@ -115,11 +115,11 @@ require get_template_directory() . '/inc/extras.php';
 /**
  * Posts2Posts plugin to connect program and program_instructors
  */
-function connect_program_instructors() {
+function spring_connect_program_instructors() {
     p2p_register_connection_type( array(
         'name' => 'program_to_program_instructors',
         'from' => 'program',
         'to' => 'program_instructors'
     ) );
 }
-add_action( 'p2p_init', 'connect_program_instructors' );
+add_action( 'p2p_init', 'spring_connect_program_instructors' );
