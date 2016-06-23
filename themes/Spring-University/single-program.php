@@ -13,9 +13,9 @@ get_header(); ?>
 		<main id="main" class="program-main" role="main">
 
       <div class="program-page-background">
-			  <!-- <?php //if ( has_post_thumbnail() ) : ?>
-					<?php the_post_thumbnail( 'full' ); ?>
-				<?php //endif; ?> -->
+				<?php //if ( has_post_thumbnail() ) : ?>
+					<div class="program-bkg-img"><?php the_post_thumbnail( 'full' ); ?></div>
+				<?php //endif; ?>
 				<div class="program-page-title"><?php the_title(); ?></div>
 			</div>
 
