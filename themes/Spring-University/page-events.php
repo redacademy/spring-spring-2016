@@ -12,7 +12,6 @@ get_header(); ?>
 			
 			<h2 class="event_section_header">Events</h2>
 
-
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
