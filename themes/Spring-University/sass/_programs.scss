@@ -310,12 +310,17 @@
   font-size: 20px;
 }
   .select-buttons{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding-right: 3.5rem;
-    padding-left: 3.5rem;
+    justify-content: center;
+    align-items: center;
+
+    .request-button{
+      margin-right: 1rem;
+    }
 
     .apply-button{
+      margin-left: 1rem;
       padding-right: 5rem;
       padding-left: 5rem;
     }
@@ -400,8 +405,6 @@
   }
 
   .select-buttons{
-    padding-right: 11rem;
-    padding-left: 11rem;
 
     .apply-button{
       padding: 1rem 10rem 1rem 10rem;
