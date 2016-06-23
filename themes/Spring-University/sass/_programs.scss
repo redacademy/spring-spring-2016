@@ -239,30 +239,48 @@
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
 ----------------------Media Query---------------------------------
 /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+
+/*/./././././././. min-with: 640px ././././././././*/
 @media only screen and (min-width: 640px) {
-
-  .program-description{
-
-  }
 
 .program-page-background{
   display: block;
-  background-color: orange;
+}
+
+.program-bkg-img{
+  img{
+    position: relative;
+    max-height: 20rem;
+    width: 100%;
+  }
+}
+
+.program-description{
+  margin-top: -.4rem;
 }
 
   .program-page-title{
     @include right-rounded-border;
+    position: absolute;
+    top: 17rem;
     display: inline-block;
-    font-size: 42px;
-    margin-bottom: 4rem;
-    margin-top: 6rem;
-    z-index: 10;
+    font-size: 40px;
+    padding: .4rem 2.5rem .4rem 5rem;
+    z-index: 3;
   }
 
-  .program-description-title,
+  .program-description-title{
+    text-align: left;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-size: 28px;
+  }
+
   .program-description-text{
     text-align: left;
     padding-left: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1.5;
   }
 
   .learning-images{
@@ -276,17 +294,19 @@
   }
 
   .dates-container{
+    width: 100%;
     padding: 5rem 1rem 3rem 1rem;
-    justify-content: space-around;
     flex-direction: row;
   }
 
   .program-dates{
+    margin-rigth: 2rem;
     padding: 3rem 8rem 3rem 8rem;
     align-self: center;
   }
 
   .program-info{
+    margin-left: 2rem;
     text-align: left;
     padding: 3rem 2rem 3rem 2rem;
   }
@@ -310,24 +330,48 @@
   font-size: 20px;
 }
   .select-buttons{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding-right: 3.5rem;
-    padding-left: 3.5rem;
+    justify-content: center;
+    align-items: center;
+
+    .request-button{
+      margin-right: 1rem;
+    }
 
     .apply-button{
+      margin-left: 1rem;
       padding-right: 5rem;
       padding-left: 5rem;
     }
   }
 }
 
+
+/*/./././././././. min-with: 1240px ././././././././*/
 @media only screen and (min-width: 1240px) {
 
   .program-container{
     justify-content: space-around;
     margin-top: 2rem;
     margin-bottom: 1rem;
+  }
+
+  .program-page-title{
+      font-size: 48px;
+      padding: .5rem 3rem .5rem 6rem;
+  }
+
+  .program-description-title{
+    padding-left: 3rem;
+    font-weight: 800;
+    font-size: 36px;
+  }
+
+  .program-description-text{
+    padding-left: 3rem;
+    line-height: 2;
+    font-size: 22px;
   }
 
   .learning-container{
@@ -382,6 +426,10 @@
     font-size: 36px;
   }
 
+  .program-dates{
+    margin-right: 3rem;
+  }
+  
   .program-info{
     font-size: 28px;
   }
@@ -400,8 +448,6 @@
   }
 
   .select-buttons{
-    padding-right: 11rem;
-    padding-left: 11rem;
 
     .apply-button{
       padding: 1rem 10rem 1rem 10rem;
