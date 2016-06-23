@@ -45,7 +45,7 @@ get_header(); ?>
 									 	$program_post = get_posts( $args );
 										?>
 										<?php foreach ( $program_post as $post ) : setup_postdata( $post ); ?>
-								<div class="home_program_box">
+										<div class="home_program_box">
 										<img class="home_program_img" src="<?php echo CFS()->get( 'program_image' ); ?>" alt="program_image">
 										<div class="home_program_text">
 											<h3 class="home_program_title"><?php the_title(); ?></h3>

@@ -38,7 +38,6 @@ function spring_about_header_styles_method() {
 	wp_add_inline_style( 'red-starter-style', $custom_css );
 }
 
-
 add_action( 'wp_enqueue_scripts', 'spring_about_header_styles_method' );
 
 // load bxslider
@@ -49,4 +48,3 @@ function loadbxslider()
 		wp_enqueue_script('program_js_script', get_template_directory_uri() . '/build/js/programs.min.js');
 }
 add_action('wp_enqueue_scripts', 'loadbxslider');
->>>>>>> 58def7e971a729b0f9144c6c26363426146aaf73
