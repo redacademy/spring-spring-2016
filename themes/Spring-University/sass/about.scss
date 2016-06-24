@@ -34,8 +34,6 @@
 
 /* Our impact section */
 .impact-imgs {
-  display: flex;
-  justify-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
 
@@ -47,15 +45,24 @@
 }
 
 /* Awards section */
-.awards-container{
-  display: flex;
-  justify-content: space-around;
-}
-
 .awards-images {
   padding-top: 75px;
   padding-bottom: 50px;
   align-items: baseline;
   font-size: 1.3rem;
   text-align: center;
+}
+
+
+// Tablet version
+@media screen and (min-width: 640px) {
+  .impact-imgs {
+    display: flex;
+    justify-content: center;
+  }
+
+  .awards-container {
+    display: flex;
+    justify-content: space-around;
+  }
 }
