@@ -15,8 +15,8 @@
 				<div class="footer-info">
 
 					<div class="social-networks">
-						<span class="facebook-icon"><a href="https://www.facebook.com/SpringUni/?fref=ts" target="_blank" alt="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
-						<span class="twitter-icon"><a href="https://twitter.com/SpringU_is" target="_blank" alt="twitter"><i class="fa fa-twitter" aria-hidden="true"></a></i></span>
+						<span class="facebook-icon"><a href="https://www.facebook.com/SpringUni/?fref=ts" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></a></i></span>
+						<span class="twitter-icon"><a href="https://twitter.com/SpringU_is" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
 					</div>
 
 			   <div class="spring-contact">
@@ -27,7 +27,7 @@
 
 					<div class="contact-info">
 						<span class="phone-number">+1 (604) 440-0101</span>
-						<a class="email-info" href="mailto:help@springu.is"><span>help@springu.is</a></span>
+						<a class="email-info" href="mailto:help@springu.is"><span>help@springu.is</span></a>
 					</div>
 				</div>
 
