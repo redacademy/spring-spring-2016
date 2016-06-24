@@ -9,7 +9,7 @@
 
 			</div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
+			<footer id="colophon" class="site-footer">
 				<div class="line-separator"></div>
 
 				<div class="footer-info">
