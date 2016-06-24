@@ -37,7 +37,7 @@ get_header(); ?>
               <?php endforeach; ?>
             </section>
 
-            <h2 class="about-title">Success Stories</h2>
+            <h2 class="about-title">Success Stories </h2>
             <?php echo do_shortcode("[wp_flickity id='4']"); ?>
 
             <h2 class="about-title">Alumni</h2>
