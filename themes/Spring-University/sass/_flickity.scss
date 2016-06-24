@@ -2,11 +2,11 @@
   width: 210px;
 }
 
-.flickity-slider img {
-  height: 200px;
-  margin-top: 75px;
-  margin-bottom: 70px;
-  margin-left: 50px;
+#wpflickity-1 {
+  .flickity-slider img {
+    height: 200px;
+    @include slider-margin;
+  }
 }
 
 
@@ -14,6 +14,7 @@
 #wpflickity-2{
   .flickity-slider img {
     height: 175px;
+    @include slider-margin;
   }
 }
 
@@ -22,5 +23,6 @@
   .flickity-slider img {
     height: 350px;
     width: 250px;
+    @include slider-margin;
   }
 }

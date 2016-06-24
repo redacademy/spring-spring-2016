@@ -112,3 +112,10 @@
   -moz-box-shadow: -1px 6px 19px 3px rgba(0,0,0,0.4);
   box-shadow: -1px 6px 19px 3px rgba(0,0,0,0.4);
 }
+
+// Flickity margin
+@mixin slider-margin {
+	margin-top: 75px;
+	margin-bottom: 70px;
+	margin-left: 50px;
+}
