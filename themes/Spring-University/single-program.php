@@ -12,23 +12,34 @@ get_header(); ?>
 
 			<div class="program-container">
 					<?php
+					$current_program_id = get_the_ID();
+
 					$args = array( 'post_type' => 'program',
 													'posts_per_page' => 4,
 													'order' => 'ASC');
 					$program_post = get_posts( $args );
 					?>
 					<ul class="bxslider">
-						<?php foreach ( $program_post as $post ) : setup_postdata( $post ); ?>
+						<?php
+							foreach ( $program_post as $post ) : setup_postdata( $post );
+
+								$program_block_id = $post->ID;
+								$is_current = $current_program_id === $program_block_id;
+						?>
 						<li class="program-list">
-							<div class="single-container">
-								<a class="programs-link" href="<?php echo esc_url( get_permalink() ); ?>">
-									<div class="program-image"><img src="<?php echo CFS()->get( 'program_image' ); ?>"/></div>
+							<div class="single-container<?php echo $is_current ? ' current-program' : ''; ?>">
+								<?php if ( !$is_current ) : ?>
+									<a class="programs-link" href="<?php echo esc_url( get_permalink() ); ?>">
+								<?php endif; ?>
 									<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+										<div class="program-image"><img src="<?php echo CFS()->get( 'program_image' ); ?>"/></div>
 										<?php the_title( sprintf( '<h2 class="program-title">', '</h2>' ) ); ?></div>
 									<div class="program-keywords"><?php echo CFS()->get( 'program_keywords' ); ?></div>
 									<div class="program-tuition"><sup class="dollar-sign">&dollar;</sup><span class="tuition-amount"><?php echo CFS()->get( 'program_tuition' ); ?></span><span class="frequency"><?php echo CFS()->get( 'frequency' ); ?></span></div>
 									<div class="program-onetime-tuition"><?php echo CFS()->get( 'program_onetime_tuition' ); ?></div>
-								</a>
+								<?php if ( !$is_current ) : ?>
+									</a>
+								<?php endif; ?>
 							</div>
 						</li>
 						<?php endforeach; wp_reset_postdata(); ?>

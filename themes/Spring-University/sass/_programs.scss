@@ -35,11 +35,15 @@
     border: none;
     left: 0;
   }
-  .program-image img {
+  .program-image img{
     display: inline-block;
     margin: 0 auto;
   }
+}
 
+.program-image img{
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .single-container a{
@@ -301,7 +305,7 @@
   .program-page-title{
     @include right-rounded-border;
     position: absolute;
-    top: 850px;
+    top: 800px;
     display: inline-block;
     font-size: 40px;
     padding: .4rem 2.5rem .4rem 5rem;
