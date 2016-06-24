@@ -7,8 +7,39 @@
 }
 
 .program-container {
-  display: flex;
   font-family: $font_spring;
+  overflow-x:hidden;
+}
+
+.bxslider{
+  width: 100%;
+  margin:0 auto;
+
+  li{
+    display:inline-block;
+
+    .single-container{
+      text-align: center;
+    }
+  }
+}
+
+//Bxslider override styles
+.post-type-archive-program .bx-wrapper{
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  .bx-viewport{
+    box-shadow:none;
+    border: none;
+    left: 0;
+  }
+  .program-image img {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
 }
 
 .single-container a{
@@ -16,9 +47,8 @@
   border: 4px solid #F49110;
   border-radius: 7px;
   min-width: 280px;
-  max-width: 320px;
   padding: 2rem 1rem 1rem 1rem;
-  margin: 1rem;
+  margin: 1rem 0;
   text-align: center;
   background-color: $main_color;
   color: #fff;
@@ -30,7 +60,6 @@
 }
 
 .program-image {
-
   img {
   background-color: transparent;
   width: 140px;
@@ -54,6 +83,10 @@
   font-size: 2rem;
   margin-top: 2rem;
   line-height: 1;
+}
+
+.dollar-sign{
+  vertical-align: super;
 }
 
 .tuition-amount{
@@ -235,34 +268,58 @@
 }
 
 
-
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
 ----------------------Media Query---------------------------------
 /-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/*/
+
+/*/./././././././. min-with: 640px ././././././././*/
 @media only screen and (min-width: 640px) {
 
-  .program-description{
+  .bxslider{
 
+    li{
+      width: 50vw !important;
   }
+}
 
 .program-page-background{
   display: block;
-  background-color: orange;
+}
+
+.program-bkg-img{
+  img{
+    position: relative;
+    max-height: 20rem;
+    width: 100%;
+  }
+}
+
+.program-description{
+  margin-top: -.4rem;
 }
 
   .program-page-title{
     @include right-rounded-border;
+    position: absolute;
+    top: 850px;
     display: inline-block;
-    font-size: 42px;
-    margin-bottom: 4rem;
-    margin-top: 6rem;
-    z-index: 10;
+    font-size: 40px;
+    padding: .4rem 2.5rem .4rem 5rem;
+    z-index: 3;
   }
 
-  .program-description-title,
+  .program-description-title{
+    text-align: left;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-size: 28px;
+  }
+
   .program-description-text{
     text-align: left;
     padding-left: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1.5;
   }
 
   .learning-images{
@@ -276,17 +333,19 @@
   }
 
   .dates-container{
+    width: 100%;
     padding: 5rem 1rem 3rem 1rem;
-    justify-content: space-around;
     flex-direction: row;
   }
 
   .program-dates{
+    margin-rigth: 2rem;
     padding: 3rem 8rem 3rem 8rem;
     align-self: center;
   }
 
   .program-info{
+    margin-left: 2rem;
     text-align: left;
     padding: 3rem 2rem 3rem 2rem;
   }
@@ -310,24 +369,54 @@
   font-size: 20px;
 }
   .select-buttons{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding-right: 3.5rem;
-    padding-left: 3.5rem;
+    justify-content: center;
+    align-items: center;
+
+    .request-button{
+      margin-right: 1rem;
+    }
 
     .apply-button{
+      margin-left: 1rem;
       padding-right: 5rem;
       padding-left: 5rem;
     }
   }
 }
 
+
+/*/./././././././. min-with: 1240px ././././././././*/
 @media only screen and (min-width: 1240px) {
 
+  .bxslider{
+
+    li{
+      width: 25vw !important;
+  }
+}
+
   .program-container{
-    justify-content: space-around;
     margin-top: 2rem;
     margin-bottom: 1rem;
+  }
+
+  .program-page-title{
+      font-size: 48px;
+      padding: .5rem 3rem .5rem 6rem;
+  }
+
+  .program-description-title{
+    padding-left: 3rem;
+    font-weight: 800;
+    font-size: 36px;
+  }
+
+  .program-description-text{
+    padding-left: 3rem;
+    line-height: 2;
+    font-size: 22px;
   }
 
   .learning-container{
@@ -382,6 +471,10 @@
     font-size: 36px;
   }
 
+  .program-dates{
+    margin-right: 3rem;
+  }
+
   .program-info{
     font-size: 28px;
   }
@@ -400,8 +493,6 @@
   }
 
   .select-buttons{
-    padding-right: 11rem;
-    padding-left: 11rem;
 
     .apply-button{
       padding: 1rem 10rem 1rem 10rem;
