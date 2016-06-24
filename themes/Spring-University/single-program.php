@@ -10,6 +10,30 @@ get_header(); ?>
 	<div id="primary" class="program-area">
 		<main id="main" class="program-main" role="main">
 
+			<div class="program-container">
+					<?php
+					$args = array( 'post_type' => 'program',
+													'posts_per_page' => 4,
+													'order' => 'ASC');
+					$program_post = get_posts( $args );
+					?>
+					<ul class="bxslider">
+						<?php foreach ( $program_post as $post ) : setup_postdata( $post ); ?>
+						<li class="program-list">
+							<div class="single-container">
+								<a class="programs-link" href="<?php echo esc_url( get_permalink() ); ?>">
+									<div class="program-image"><img src="<?php echo CFS()->get( 'program_image' ); ?>"/></div>
+									<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+										<?php the_title( sprintf( '<h2 class="program-title">', '</h2>' ) ); ?></div>
+									<div class="program-keywords"><?php echo CFS()->get( 'program_keywords' ); ?></div>
+									<div class="program-tuition"><sup class="dollar-sign">&dollar;</sup><span class="tuition-amount"><?php echo CFS()->get( 'program_tuition' ); ?></span><span class="frequency"><?php echo CFS()->get( 'frequency' ); ?></span></div>
+									<div class="program-onetime-tuition"><?php echo CFS()->get( 'program_onetime_tuition' ); ?></div>
+								</a>
+							</div>
+						</li>
+						<?php endforeach; wp_reset_postdata(); ?>
+					</ul>
+			</div>
 
       <div class="program-page-background">
 				<?php //if ( has_post_thumbnail() ) : ?>
