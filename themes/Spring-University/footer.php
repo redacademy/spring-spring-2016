@@ -15,7 +15,7 @@
 				<div class="footer-info">
 
 					<div class="social-networks">
-						<span class="facebook-icon"><a href="https://www.facebook.com/SpringUni/?fref=ts" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></a></i></span>
+						<span class="facebook-icon"><a href="https://www.facebook.com/SpringUni/?fref=ts" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
 						<span class="twitter-icon"><a href="https://twitter.com/SpringU_is" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
 					</div>
 
