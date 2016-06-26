@@ -107,8 +107,7 @@ get_header(); ?>
 
 			 <h2 class="section_header">Stay updated</h2>
 			<section class="home_updated">
-				<p><?php echo CFS()->get( 'updated' ); ?></p>
-				<p>Here is where the signup form will go</p>
+				<p><?php echo CFS()->get( 'sign_up' ); ?></p>
 			</section> 
 
 		</main><!-- #main -->
