@@ -30,9 +30,15 @@
 						<a class="email-info" href="mailto:help@springu.is"><span>help@springu.is</span></a>
 					</div>
 				</div>
-
+			
 				</div><!-- .footer-info -->
+				
+			
 			</footer><!-- #colophon -->
+			<div class="sub_footer">
+				<h5 class="powered">Powered by <span>Spring: A purpose driven activator</span></h5>	
+			</div>
+			
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
