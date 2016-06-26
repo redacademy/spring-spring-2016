@@ -124,7 +124,7 @@
   @include main-button;
   margin: 0 auto;
   align-self: flex-end;
-  width: 50%;
+  width: 100%;
   
 }
 
@@ -224,7 +224,7 @@
 }
 
 .program_cta {
-  width: 100%;
+  width: 80%;
 }
 
 
@@ -257,6 +257,14 @@
 }
 
 .location_cta {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  
+}
+.events_cta a{
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -299,7 +307,7 @@
 }
 
 .home_blog_content {
-  width: 50%;
+  width: 60%;
   height: 50%;
   margin-bottom: 20px;
   h3 {
@@ -322,7 +330,8 @@
 }
 
 .blog_cta a{
-  width: 90%;
+  width: 180px;
+  margin: 0 auto;
 }
 
 // Stay updated section
@@ -403,7 +412,7 @@
     flex-wrap: wrap;
   }  
   .program_cta {
-    width: 50%;
+    width: 40%;
     margin-top: 25px;
     margin-bottom: 25px;
  }
@@ -432,6 +441,10 @@
    width: 30%;
    margin: 0 auto;
    margin-bottom: 10px;
+ }
+ 
+ .events_cta a {
+   width: 50%;
  }
  
  //blog section desktop
