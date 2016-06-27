@@ -36,8 +36,10 @@ get_header(); ?>
 						<a href="#"><i class="fa fa-volume-up fa-4x" aria-hidden="true"></i></a>
 					</div>
 					<div class="video_controls_overlay">
-					<i class="fa fa-volume-off fa-4x" aria-hidden="true"></i>
-					<i class="fa fa-volume-up fa-4x" aria-hidden="true"></i>
+					<i class="fa fa-volume-off fa-3x" aria-hidden="true"></i>
+					<i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+					<i class="fa fa-play fa-3x" aria-hidden="true"></i>
+					<i class="fa fa-pause fa-3x" aria-hidden="true"></i>
 					</div>
 				</div>
 								

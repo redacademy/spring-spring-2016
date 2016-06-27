@@ -54,16 +54,22 @@
     
     });
     
+
+  
+    // bind events
+    var playButton = $(".fa-play");
+      playButton.on('click', function() {
+      player.api("play");
+    });
+
+    var pauseButton = $(".fa-pause");
+      pauseButton.on('click', function() {
+      player.api("pause");
+    });
     
-      $(iframe).prop('muted', true);
-      
-      $(".toggle_mute").click( function (){
-        if( $(iframe).prop('muted') ) {
-              $(iframe).prop('muted', false);
-        } else {
-          $(iframe).prop('muted', true);
-        }
-      });
+    
+    
+    
 
     
     

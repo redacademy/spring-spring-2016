@@ -114,19 +114,21 @@
   
 }
 
-.fa-volume-up {
-  color: #fff;
-  text-align: center;
-  cursor: pointer;
-  margin-left: 5px;
-}
 
 
-.fa-volume-off {
+
+.fa-volume-off,
+.fa-volume-up,
+.fa-play,
+.fa-pause {
     color: #fff;
     text-align: center;
     cursor: pointer;
-    margin-left: 5px;
+    margin-left: 10px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 5px;
+    width: 60px;
   }
 
 
