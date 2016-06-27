@@ -47,7 +47,30 @@ get_header(); ?>
             <?php echo do_shortcode("[wp_flickity id='2']"); ?>
 
             <h2 class="about-title">Team Members</h2>
-            
+            <?php
+            // Find connected pages
+            $connected = new WP_Query( array(
+              'connected_type' => 'about_to_program_instructors',
+              'connected_items' => get_queried_object(),
+              'nopaging' => true,
+            ) );
+            // Display connected pages
+            if ( $connected->have_posts() ) :
+            ?>
+            <div class="instructors">
+            <?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
+                <div class="instructors-inner-wrapper">
+                  <img src="<?php echo CFS()->get( 'instructor_photo' ); ?>"/>
+                  <p class="instructor-name"><?php the_title(); ?></p>
+                  <p class="about-instructor"><?php echo CFS()->get( 'about_instructor' ); ?></p>
+                </div>
+            <?php endwhile; ?>
+           </div>
+            <?php
+            // Prevent weirdness
+            wp_reset_postdata();
+            endif;
+            ?>
         </div> <!-- .ABOUT-CONTENT -->
       </main><!-- #main -->
   </div><!-- #primary -->

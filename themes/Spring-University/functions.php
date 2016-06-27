@@ -135,3 +135,15 @@ function spring_connect_program_discount() {
     ) );
 }
 add_action( 'p2p_init', 'spring_connect_program_discount' );
+
+/**
+ * Posts2Posts plugin to connect about and program_instructors
+ */
+function team_members_connect_program_instructors() {
+    p2p_register_connection_type( array(
+        'name' => 'about_to_program_instructors',
+        'from' => 'about',
+        'to' => 'program_instructors'
+    ) );
+}
+add_action( 'p2p_init', 'team_members_connect_program_instructors' );
