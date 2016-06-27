@@ -16,6 +16,8 @@
 		<!--  Mapbox code -->
 		<script src='https://api.mapbox.com/mapbox-gl-js/v0.20.0/mapbox-gl.js'></script>
 		<link href='https://api.mapbox.com/mapbox-gl-js/v0.20.0/mapbox-gl.css' rel='stylesheet' />
+		<!-- Vimeo API -->
+		<script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
 
 	<?php wp_head(); ?>
 	</head>
