@@ -112,8 +112,16 @@
 }
 
 // Flickity margin
-@mixin slider-margin {
-	margin-top: 75px;
-	margin-bottom: 70px;
-	margin-left: 50px;
+@mixin gallery-cell {
+	margin-top: 80px;
+	margin-bottom: 40px;
+	margin-left: 40px;
+	opacity: 0.4;
+}
+
+// Main slider image
+@mixin main-cell {
+	margin-top: 55px;
+	margin-bottom: 30px;
+	opacity: 1;
 }

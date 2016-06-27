@@ -47,8 +47,7 @@ get_header(); ?>
             <?php echo do_shortcode("[wp_flickity id='2']"); ?>
 
             <h2 class="about-title">Team Members</h2>
-            <?php echo do_shortcode("[wp_flickity id='3']"); ?>
-          </div>
+            
         </div> <!-- .ABOUT-CONTENT -->
       </main><!-- #main -->
   </div><!-- #primary -->

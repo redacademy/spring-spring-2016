@@ -4,26 +4,44 @@
 
 /* Alumni section */
 #wpflickity-1{
-  .flickity-slider img {
+  .gallery-cell-image{
     height: 200px;
-    @include slider-margin;
+    @include gallery-cell;
+  }
+
+  .is-selected {
+    height: 250px;
+    width: 250px;
+    @include main-cell;
   }
 }
 
 
 /* Partners section */
 #wpflickity-2{
-  .flickity-slider img {
+  .gallery-cell-image {
     height: 175px;
-    @include slider-margin;
+    @include gallery-cell;
+  }
+
+  .is-selected {
+    height: 230px;
+    width: 230px;
+    @include main-cell;
   }
 }
 
 /* Team members section */
 #wpflickity-3 {
-  .flickity-slider img {
+  .gallery-cell-image {
     height: 350px;
     width: 250px;
-    @include slider-margin;
+    @include gallery-cell;
+  }
+
+  .is-selected {
+    height: 440px;
+    width: 300px;
+    @include main-cell;
   }
 }
