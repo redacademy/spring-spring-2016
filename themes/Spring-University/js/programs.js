@@ -4,6 +4,5 @@ jQuery(document).ready(function($){
     pager:false,
     minSlides:1,
     maxSlides: 4,
-    slideWidth: 320
   });
 });
