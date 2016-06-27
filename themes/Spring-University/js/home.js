@@ -1,9 +1,8 @@
 (function($) {
 
    
-   //video url variable, set autoplay to =1 to autoplay. 
    
-   
+    $('.video_controls_overlay').hide();
    
    // on page load over 640px video will load. under and it will be mobile view.
    if ($(window).width() < 640) {
@@ -29,7 +28,7 @@
               });
     
     
-    $('.fa-play-circle-o').on('click', function(){
+    $('.fa-volume-up').on('click', function(){
       $('.video_text_overlay').fadeOut(300);
       
       player = $f(iframe),
@@ -39,10 +38,32 @@
           player.api('setVolume', 1);
       });
       
-      
-      
+      $('.video_controls_overlay').fadeIn(300);
+
+    
     });
     
+    $('.fa-volume-off').on('click', function(){
+            
+      player = $f(iframe),
+      status = $('.status');
+
+      player.addEvent('ready', function() {
+          player.api('setVolume', 0);
+      });
+    
+    });
+    
+    
+      $(iframe).prop('muted', true);
+      
+      $(".toggle_mute").click( function (){
+        if( $(iframe).prop('muted') ) {
+              $(iframe).prop('muted', false);
+        } else {
+          $(iframe).prop('muted', true);
+        }
+      });
 
     
     

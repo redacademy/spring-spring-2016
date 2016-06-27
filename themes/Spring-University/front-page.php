@@ -35,10 +35,12 @@ get_header(); ?>
 						<h1 class="home_hero_h1">A Global Startup School for Entrepreneurs</h1>
 						<a href="#"><i class="fa fa-volume-up fa-4x" aria-hidden="true"></i></a>
 					</div>
+					<div class="video_controls_overlay">
+					<i class="fa fa-volume-off fa-4x" aria-hidden="true"></i>
+					<i class="fa fa-volume-up fa-4x" aria-hidden="true"></i>
+					</div>
 				</div>
-				
-				<button type="button" class="toggle_mute">Toggle mute</button>
-				
+								
 				<h2 class="section_header offer_header">What we offer</h2>
 				<section class="what_we_offer_section">
 					<p class="offer_text"><?php echo CFS()->get( 'what_we_offer' ); ?></p>

@@ -98,12 +98,37 @@
       display: block;
     }
     
-    .fa-play-circle-o {
-      color: #fff;
-      width: 100%;
-      text-align: center;
-    }
 }
+
+
+.video_controls_overlay {
+  background: rgba(0,0,0,0.0);
+  height: 14%;
+  position: absolute;
+  bottom: 0; 
+  width: 50%;  
+}
+
+.fa {
+  display: flex;
+  
+}
+
+.fa-volume-up {
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+
+.fa-volume-off {
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+
 
 .offer_text {
   display: none;
