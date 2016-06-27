@@ -114,10 +114,9 @@ function spring_instructors() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => false,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
-		'rewrite'               => $rewrite,
 		'capability_type'       => 'post',
 	);
 	register_post_type( 'program_instructors', $args );
@@ -170,7 +169,7 @@ function spring_events_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => 'events',		
+		'has_archive'           => 'events',
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -211,17 +210,11 @@ function program_discount() {
 		'items_list_navigation' => 'Discount list navigation',
 		'filter_items_list'     => 'Filter discounts list',
 	);
-	$rewrite = array(
-		'slug'                  => 'discount',
-		'with_front'            => true,
-		'pages'                 => false,
-		'feeds'                 => false,
-	);
 	$args = array(
 		'label'                 => 'discount',
 		'description'           => 'Program Discount',
 		'labels'                => $labels,
-		'supports'              => array( 'thumbnail', 'custom-fields' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail'),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -231,7 +224,7 @@ function program_discount() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => false,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => discount,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
@@ -240,4 +233,3 @@ function program_discount() {
 
 }
 add_action( 'init', 'program_discount', 0 );
-
