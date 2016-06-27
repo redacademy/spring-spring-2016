@@ -28,13 +28,16 @@ get_header(); ?>
 
 				<div class="desktop_home_hero">
 					<div class="js-video [vimeo, widescreen] overlay">
+						<iframe id="vimeo_player" src="https://player.vimeo.com/video/165338136?portrait=0&title=0&autoplay=1&byline=0&loop=1&api=1&player_id=vimeo_player" width="100%" height="75%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 					<div class="video_text_overlay">
 						<img class="home_hero_logo" src= "<?php echo get_template_directory_uri(); ?>/images/spring_logo_white.png" alt= "spring logo" />
 						<h1 class="home_hero_h1">A Global Startup School for Entrepreneurs</h1>
-						<a href="#"><i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-volume-up fa-4x" aria-hidden="true"></i></a>
 					</div>
 				</div>
+				
+				<button type="button" class="toggle_mute">Toggle mute</button>
 				
 				<h2 class="section_header offer_header">What we offer</h2>
 				<section class="what_we_offer_section">
@@ -107,6 +110,7 @@ get_header(); ?>
 
 			 <h2 class="section_header">Stay updated</h2>
 			<section class="home_updated">
+				<h3 class="h3_updated">Receive relevant news and business tips to become a better entrepreneur</h3>
 				<p><?php echo CFS()->get( 'sign_up' ); ?></p>
 			</section> 
 

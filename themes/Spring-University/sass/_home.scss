@@ -340,6 +340,7 @@
   height: 190px;
   background: $main_color;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
     p {
@@ -347,8 +348,19 @@
       color: #fff;
       font-family: $font_spring;
     }
+    .h3_updated {
+      color: #fff;
+      font-family: $font_spring;
+      font-weight: lighter;
+      font-size: 1.7rem;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
 }
   
+    
 // Media Queries - - - - - - - - - - - - - - - - -
 
 @media (min-width: 500px) {
