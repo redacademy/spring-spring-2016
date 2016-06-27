@@ -128,6 +128,11 @@ get_header(); ?>
 			<p class="program-tip"><?php echo CFS()->get( 'tip' ); ?></p>
 		 </section>
 
+		 <div="discount-container">
+		 	<div="plus-container"></div>
+			<div="balance-container"></div>
+		 </div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>

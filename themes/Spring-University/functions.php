@@ -123,3 +123,15 @@ function spring_connect_program_instructors() {
     ) );
 }
 add_action( 'p2p_init', 'spring_connect_program_instructors' );
+
+/**
+ * Posts2Posts plugin to connect program and program_discount
+ */
+function spring_connect_program_discount() {
+    p2p_register_connection_type( array(
+        'name' => 'program_to_program_discount',
+        'from' => 'program',
+        'to' => 'program_discount'
+    ) );
+}
+add_action( 'p2p_init', 'spring_connect_program_discount' );

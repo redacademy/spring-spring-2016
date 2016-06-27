@@ -180,3 +180,64 @@ function spring_events_post_type() {
 }
 add_action( 'init', 'spring_events_post_type', 0 );
 
+
+// Register Custom Post Type
+function program_discount() {
+
+	$labels = array(
+		'name'                  => 'discounts',
+		'singular_name'         => 'discount',
+		'menu_name'             => 'Discount',
+		'name_admin_bar'        => 'Program Discount',
+		'archives'              => 'Discount Archives',
+		'parent_item_colon'     => 'Discount Item:',
+		'all_items'             => 'All Discounts',
+		'add_new_item'          => 'Add New Discount',
+		'add_new'               => 'Add New',
+		'new_item'              => 'New Discount',
+		'edit_item'             => 'Edit Discount',
+		'update_item'           => 'Update Discount',
+		'view_item'             => 'View Discount',
+		'search_items'          => 'Search Discount',
+		'not_found'             => 'Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into discount',
+		'uploaded_to_this_item' => 'Uploaded to this discount',
+		'items_list'            => 'Discounts list',
+		'items_list_navigation' => 'Discount list navigation',
+		'filter_items_list'     => 'Filter discounts list',
+	);
+	$rewrite = array(
+		'slug'                  => 'discount',
+		'with_front'            => true,
+		'pages'                 => false,
+		'feeds'                 => false,
+	);
+	$args = array(
+		'label'                 => 'discount',
+		'description'           => 'Program Discount',
+		'labels'                => $labels,
+		'supports'              => array( 'thumbnail', 'custom-fields' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-arrow-down-alt',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => false,
+		'can_export'            => true,
+		'has_archive'           => true,		
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+	);
+	register_post_type( 'program_discount', $args );
+
+}
+add_action( 'init', 'program_discount', 0 );
+
