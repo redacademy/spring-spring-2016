@@ -107,6 +107,7 @@ get_header(); ?>
 
 			 <h2 class="section_header">Stay updated</h2>
 			<section class="home_updated">
+				<h3 class="h3_updated">Receive relevant news and business tips to become a better entrepreneur</h3>
 				<p><?php echo CFS()->get( 'sign_up' ); ?></p>
 			</section> 
 

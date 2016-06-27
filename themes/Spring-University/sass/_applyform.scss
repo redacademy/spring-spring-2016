@@ -34,3 +34,54 @@
   }
   
 }
+
+.home_updated{
+  
+  .wpcf7 {
+    max-width: 800px;
+    background: none;
+    margin: 0 auto !important;
+    border-radius: 10px;
+    padding: 20px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     p {
+       color: #fff;
+       font-family: $font_spring;
+       width: 100%;
+     }
+    
+    .wpcf7-form {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    
+    .wpcf7-text {
+      outline: none;
+      background: none;
+      border: none;
+      border-radius: 0px;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 10px;
+    }
+    
+    .wpcf7-list-item { 
+      display: block; 
+    }
+
+    .wpcf7-submit {
+      border: none;
+      outline: none;
+      text-shadow: none;
+      @include main-button;
+      margin: 0 auto;
+      
+    }
+    
+  }
+
+}
