@@ -38,7 +38,56 @@ get_header(); ?>
             </section>
 
             <h2 class="about-title">Success Stories </h2>
-            <?php echo do_shortcode("[wp_flickity id='4']"); ?>
+            <ul class="bxslider">
+              <li class="Evan">
+                <img src="../wp-content/themes/Spring-University/images/stories/headshot1.png" alt="Evan" />
+                <span class="personal-story">
+                  "Spring has enabled me to re-evaluate how to
+                  start Daovita, check my assumptions, and
+                  provided me with some top notch connections. I
+                  am now on a path geared for success. Most of all
+                  I'm appreciative of the overwhelming support
+                  and consideration of every entrepreneur in
+                  the room."
+                </span>
+                <span class="ss-name"> Evan Sidwell </span>
+                <span class="ss-company"> Founder, Daovita </span>
+              </li>
+
+              <li class="story-jen">
+                <img src="../wp-content/themes/Spring-University/images/stories/headshot2.png" alt="Jennifer Li" />
+                <span class="personal-story">
+                  "We're officially part of the
+                    summer cohort of Entrepreneur
+                    Round Table accelerator in
+                    New York City.
+
+                    Couldn't have done it without
+                    Spring."
+                </span>
+                <span class="ss-name"> Jennifer Li </span>
+                <span class="ss-company"> CEO, Muse </span>
+              </li>
+
+              <li class="Penaloza">
+                <img src="../wp-content/themes/Spring-University/images/stories/headshot3.png" alt="Jesús Penaloza" />
+                <span class="personal-story">
+                  "Spring team, you guys are awesome.
+                  Thanks for the opportunity you gave us in
+                  Venezuela to take the Kick program. I am
+                  glad I was able to meet all of you. Spring
+                  has enabled me to learn how to evaluate
+                  my projects from another perspective, and
+                  let me network with people all
+                  around the world. I am now on a path
+                  geared for success, and am a member of a
+                  great network such as Spring. Many thanks
+                  for all your support."
+                </span>
+                <span class="ss-name"> Jesús Penaloza </span>
+                <span class="ss-company"> CEO, Pago en Red </span>
+              </li>
+            </ul>
 
             <h2 class="about-title">Alumni</h2>
             <?php echo do_shortcode("[wp_flickity id='1']"); ?>
@@ -47,30 +96,72 @@ get_header(); ?>
             <?php echo do_shortcode("[wp_flickity id='2']"); ?>
 
             <h2 class="about-title">Team Members</h2>
-            <?php
-            // Find connected pages
-            $connected = new WP_Query( array(
-              'connected_type' => 'about_to_program_instructors',
-              'connected_items' => get_queried_object(),
-              'nopaging' => true,
-            ) );
-            // Display connected pages
-            if ( $connected->have_posts() ) :
-            ?>
-            <div class="instructors">
-            <?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
-                <div class="instructors-inner-wrapper">
-                  <img src="<?php echo CFS()->get( 'instructor_photo' ); ?>"/>
-                  <p class="instructor-name"><?php the_title(); ?></p>
-                  <p class="about-instructor"><?php echo CFS()->get( 'about_instructor' ); ?></p>
+            <ul class="bxslider">
+              <li class="Keith">
+                <img src="../wp-content/themes/Spring-University/images/members/Spring-Keith.jpg" alt="Keith Ippel" />
+                <span class="member-name"> Keith Ippel </span>
+                <span class="position-title"> CEO </span>
+                <span class="personal-info">
+                  I'm passionate about helping entrepreneurs change
+                  the world by connecting their ideas with the right
+                  tools; resources, technology, and funding. I
+                  co-founded Spring to focus on early stage
+                  entrepreneurs with high growth potential who want
+                  to make the world a better place. Whether you call
+                  it social good, impact, conscious captialism, do
+                  good,or social entrepreneurship - Spring is the
+                  place to transform your ideas into impact.
+                </span>
+                <div class="social-media">
+                  1
+                  2
+                  3
+                  4
                 </div>
-            <?php endwhile; ?>
-           </div>
-            <?php
-            // Prevent weirdness
-            wp_reset_postdata();
-            endif;
-            ?>
+              </li>
+
+              <li class="member-jen">
+                <img src="../wp-content/themes/Spring-University/images/members/SpringJen.jpg" alt="Jennifer Chin" />
+                <span class="member-name"> Jennifer Chin </span>
+                <span class="position-title"> Community Manager </span>
+                <span class="personal-info">
+                  Jen shares Spring's story with our ggrowing
+                  community through a variety of channels, partners
+                  and content creators. She enjoys seeing good
+                  companies grow and is a fan of all things innovation.
+                  Have something to share? Shoot her a message at
+                  jen@spring.is
+                </span>
+                <div class="social-media">
+                  1
+                  2
+                  3
+                  4
+                </div>
+              </li>
+
+              <li class="Chang">
+                <img src="../wp-content/themes/Spring-University/images/members/Chin.jpeg" alt="Chin Hing Chang" />
+                <span class="member-name"> Chin Hing Chang </span>
+                <span class="position-title"> Program Manager </span>
+                <span class="personal-info">
+                  Chin supports the growth of Spring through
+                  Business Development. He does this by building
+                  awarness in the community via
+                  strategic partnerships and by promoting our
+                  workshops and programs. He is also the lead
+                  facilitator for Spring University, a global startup
+                  school for budding impact entrepreneurs.
+                </span>
+                <div class="social-media">
+                  1
+                  2
+                  3
+                  4
+                </div>
+              </li>
+            </ul>
+          </div>  <!-- About-paragraphs -->
         </div> <!-- .ABOUT-CONTENT -->
       </main><!-- #main -->
   </div><!-- #primary -->

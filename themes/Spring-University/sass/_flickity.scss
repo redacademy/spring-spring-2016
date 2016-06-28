@@ -30,18 +30,3 @@
     @include main-cell;
   }
 }
-
-/* Team members section */
-#wpflickity-3 {
-  .gallery-cell-image {
-    height: 350px;
-    width: 250px;
-    @include gallery-cell;
-  }
-
-  .is-selected {
-    height: 440px;
-    width: 300px;
-    @include main-cell;
-  }
-}

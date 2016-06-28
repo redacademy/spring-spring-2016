@@ -47,10 +47,13 @@ get_header(); ?>
 			</div>
 
       <div class="program-page-background">
-				<?php //if ( has_post_thumbnail() ) : ?>
+				<?php if ( has_post_thumbnail() ) : ?>
 					<div class="program-bkg-img"><?php the_post_thumbnail( 'full' ); ?></div>
-				<?php //endif; ?>
+				<?php endif; ?>
 				<div class="program-page-title"><?php the_title(); ?></div>
+					<img class="program-icon-one" src="<?php echo CFS()->get( 'program_image' ); ?>"/>
+					<img class="program-icon-two" src="<?php echo CFS()->get( 'program_image' ); ?>"/>
+					<img class="program-icon-three" src="<?php echo CFS()->get( 'program_image' ); ?>"/>
 			</div>
 			<section class="program-description">
 		 		<div class="program-description-title"><?php echo CFS()->get( 'program_description_title' ); ?></div>
@@ -126,12 +129,37 @@ get_header(); ?>
 				<a class="apply-button" href="#">Apply</a>
 			</div>
 			<p class="program-tip"><?php echo CFS()->get( 'tip' ); ?></p>
-		 </section>
-
-		 <div="discount-container">
-		 	<div="plus-container"></div>
-			<div="balance-container"></div>
+			<?php
+			$connected = new WP_Query( array(
+				'connected_type' => 'program_to_program_discount',
+				'connected_items' => get_queried_object(),
+				'nopaging' => true,
+			) );
+			if ( $connected->have_posts() ) :
+			?>
+			<?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
+				<div class="discount-wrapper">
+						<?php
+							$discounts = CFS() -> get ('discount');
+							foreach ($discounts as $discount) :?>
+							<div class="discount-container">
+							<img src="<?php echo $discount['discount_image']; ?>"/>
+							<span class="plus-sign"><?php echo CFS()->get( 'plus' ); ?></span>
+							<p class="onetime_fee"><?php echo $discount['onetime_fee']; ?></p>
+						</div>
+					 <?php endforeach; ?>
+					<div class="discount-total">
+						<span class="equal-sign"><?php echo CFS()->get( 'equal' ); ?></span>
+						<span class="sum-tuition"><?php echo CFS()->get( 'sum_tuition' ); ?></span>
+						<span class="discount-tuition"><?php echo CFS()->get( 'discount_tuition' ); ?></span>
+					</div>
+			<?php endwhile; ?>
 		 </div>
+			<?php
+			wp_reset_postdata();
+			endif;
+			?>
+		 </section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
