@@ -18,8 +18,8 @@ get_header(); ?>
 
           <div class="about-company">
             <?php echo CFS()->get( 'about_text' ); ?>
+            <a href="<?php echo get_site_url(); ?>/programs">Browse through programs</a>
           </div>
-          <span class="browse"> <button> Browse through programs </button> </span>
 
           <div class=" about-paragraphs">
             <h2 class="about-title">Our Impact</h2>

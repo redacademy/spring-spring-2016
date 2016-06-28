@@ -12,19 +12,10 @@
 }
 
 /* Browse through progams button */
-.browse {
-  display: flex;
-  justify-content: center;
-
-  button {
-    @include main-button;
-    height: 40px;
-    border: none;
-    outline: none;
-    font-size: 1.1rem;
-    text-shadow: none;
-    margin-bottom: 70px;
-  }
+.about-company a {
+  @include main-button;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* Section headers */
