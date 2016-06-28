@@ -92,6 +92,7 @@
 
 .dollar-sign,
 .frequency{
+  font-size: 18px;
   position: relative;
   top: -17px;
 }
@@ -362,6 +363,11 @@
   }
 }
 
+.discount-wrapper{
+  div:nth-child(2) span{
+    display:none;
+  }
+}
 
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
 ----------------------Media Query---------------------------------

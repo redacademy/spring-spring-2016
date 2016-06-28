@@ -6,15 +6,20 @@
   padding-top: 58px;
 }
 
-.hentry {
-  width: 70%;
-  margin: 0 auto;
-  border-bottom: 1px solid #4a4a4a;
-  
-  .entry-title a{
-    font-family: $font_spring;
-    color: $main_color;
-    font-size: 1.4rem;
-    text-decoration: none;
+.post-type-archive-events {
+    
+    .entry-title a{
+      font-family: $font_spring;
+      color: $main_color;
+      font-size: 1.4rem;
+      text-decoration: none;
+      padding-left: 20%;
+    }
+    .entry-content {
+      padding-left: 20%;
+      margin-bottom: 20px;
+      width: 70%;
+
+    }
   }
-}
+
