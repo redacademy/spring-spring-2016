@@ -3,10 +3,12 @@
 
   $(document).ready(function(){
     $('.bxslider').bxSlider({
+        controls: false,
+        slideMargin: 0,
+        slideWidth: 0,
         auto: true,
-        slideWidth: 300,
-        minSlides: 1,
-        maxSlides: 1,
-        slideMargin: 10
+        infiniteLoop: true,
+        minslides: 1,
+        maxSlides: 4
     });
   });
