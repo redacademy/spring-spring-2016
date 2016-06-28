@@ -3,8 +3,8 @@
 }
 
 /* Alumni section */
-#wpflickity-1{
-  .gallery-cell-image{
+#wpflickity-1 {
+  .gallery-cell-image {
     height: 200px;
     @include gallery-cell;
   }
@@ -18,7 +18,7 @@
 
 
 /* Partners section */
-#wpflickity-2{
+#wpflickity-2 {
   .gallery-cell-image {
     height: 175px;
     @include gallery-cell;
@@ -27,6 +27,21 @@
   .is-selected {
     height: 230px;
     width: 230px;
+    @include main-cell;
+  }
+}
+
+/* Success stories section */
+#wpflickity-4 {
+  .gallery-cell-image {
+    height: 500px;
+    width: 650px;
+    @include gallery-cell;
+  }
+
+  .is-selected {
+    height: 550px;
+    width: 700px;
     @include main-cell;
   }
 }
