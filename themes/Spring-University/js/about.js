@@ -7,7 +7,6 @@ jQuery(document).ready(function(){
     pager: false,
     minSlides: 1,
     maxSlides: 3,
-    infiniteLoop: false,
   });
 });
 // ]]></script>

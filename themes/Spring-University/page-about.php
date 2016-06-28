@@ -38,56 +38,7 @@ get_header(); ?>
             </section>
 
             <h2 class="about-title">Success Stories </h2>
-            <ul class="bxslider">
-              <li class="Evan">
-                <img src="../wp-content/themes/Spring-University/images/stories/headshot1.png" alt="Evan" />
-                <span class="personal-story">
-                  "Spring has enabled me to re-evaluate how to
-                  start Daovita, check my assumptions, and
-                  provided me with some top notch connections. I
-                  am now on a path geared for success. Most of all
-                  I'm appreciative of the overwhelming support
-                  and consideration of every entrepreneur in
-                  the room."
-                </span>
-                <span class="ss-name"> Evan Sidwell </span>
-                <span class="ss-company"> Founder, Daovita </span>
-              </li>
-
-              <li class="story-jen">
-                <img src="../wp-content/themes/Spring-University/images/stories/headshot2.png" alt="Jennifer Li" />
-                <span class="personal-story">
-                  "We're officially part of the
-                    summer cohort of Entrepreneur
-                    Round Table accelerator in
-                    New York City.
-
-                    Couldn't have done it without
-                    Spring."
-                </span>
-                <span class="ss-name"> Jennifer Li </span>
-                <span class="ss-company"> CEO, Muse </span>
-              </li>
-
-              <li class="Penaloza">
-                <img src="../wp-content/themes/Spring-University/images/stories/headshot3.png" alt="Jesús Penaloza" />
-                <span class="personal-story">
-                  "Spring team, you guys are awesome.
-                  Thanks for the opportunity you gave us in
-                  Venezuela to take the Kick program. I am
-                  glad I was able to meet all of you. Spring
-                  has enabled me to learn how to evaluate
-                  my projects from another perspective, and
-                  let me network with people all
-                  around the world. I am now on a path
-                  geared for success, and am a member of a
-                  great network such as Spring. Many thanks
-                  for all your support."
-                </span>
-                <span class="ss-name"> Jesús Penaloza </span>
-                <span class="ss-company"> CEO, Pago en Red </span>
-              </li>
-            </ul>
+            <?php echo do_shortcode("[wp_flickity id='4']"); ?>
 
             <h2 class="about-title">Alumni</h2>
             <?php echo do_shortcode("[wp_flickity id='1']"); ?>
