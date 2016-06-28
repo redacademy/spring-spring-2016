@@ -88,7 +88,7 @@ get_header(); ?>
 					<p><?php echo $info['program_hours']; ?></p>
 					<p><?php echo $info['program_sessions']; ?></p>
 					<p><?php echo $info['program_days_and_times']; ?></p>
-          <a class="applybutton" href="#">Apply</a>
+          <a class="applybutton" href="<?php echo get_site_url(); ?>/apply-now">Apply</a>
 				 </div>
 				<?php endforeach; ?>
 		</section>
