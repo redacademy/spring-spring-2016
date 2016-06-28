@@ -15,7 +15,8 @@
 .about-company a {
   @include main-button;
   margin: 0 auto;
-  width: 20%;
+  width: 30%;
+  margin-bottom: 1rem;
 }
 
 /* Section headers */
