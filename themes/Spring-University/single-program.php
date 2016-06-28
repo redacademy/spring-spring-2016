@@ -48,7 +48,7 @@ get_header(); ?>
 
       <div class="program-page-background">
 				<?php if ( has_post_thumbnail() ) : ?>
-					<div class="program-bkg-img"><?php the_post_thumbnail( 'full' ); ?>
+					<div class="program-bkg-img"><?php the_post_thumbnail( 'full' ); ?></div>
 				<?php endif; ?>
 				<div class="program-page-title"><?php the_title(); ?></div>
 					<img class="program-icon-one" src="<?php echo CFS()->get( 'program_image' ); ?>"/>
