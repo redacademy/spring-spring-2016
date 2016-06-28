@@ -90,8 +90,10 @@
   line-height: 1;
 }
 
-.dollar-sign{
-  vertical-align: super;
+.dollar-sign,
+.frequency{
+  position: relative;
+  top: -17px;
 }
 
 .tuition-amount{
