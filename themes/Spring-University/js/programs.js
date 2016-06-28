@@ -1,8 +1,10 @@
-jQuery(document).ready(function($){
+jQuery(document).ready(function($) {
 
-  $('.bxslider').bxSlider({
-    pager:false,
-    minSlides:1,
-    maxSlides: 4,
-  });
+    $('.bxslider').bxSlider({
+
+        infiniteLoop: true,
+        pager: false,
+        minSlides:1,
+        maxSlides: 4,
+    });
 });
