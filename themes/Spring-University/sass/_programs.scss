@@ -90,8 +90,10 @@
   line-height: 1;
 }
 
-.dollar-sign{
-  vertical-align: super;
+.dollar-sign,
+.frequency{
+  position: relative;
+  top: -17px;
 }
 
 .tuition-amount{
@@ -153,9 +155,13 @@
   color: #fff;
 }
 
-.program-page-background{
+.program-page-background,
+.program-icon-one,
+.program-icon-two,
+.program-icon-three{
   display: none;
 }
+
 
 .program-page-title{
   display: none;
@@ -274,7 +280,7 @@
 .tuition-container{
   background-color: $main_color;
   color: #fff;
-  padding: 3rem 3rem 2rem 3rem;
+  padding: 3rem 2rem 2rem 2rem;
 }
 
 .single-tuition{
@@ -296,9 +302,66 @@
   text-align: center;
 }
 
-.discount-container{
+.discount-wrapper{
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+.discount-container{
+
+  margin-right: .5rem;
+
+  img{
+    height: 48px;
+    width: 42px;
+  }
+
+  .plus-sign{
+    display: inline-block;
+  }
+
+  .onetime_fee{
+    padding-left: .3rem;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+}
+
+.discount-total{
+  display: flex;
+  align-items: center;
+
+  .sum-tuition{
+    position: relative;
+    font-size: 14px;
+    margin-left: .3rem;
+  }
+
+  .sum-tuition:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 2px solid;
+    border-color: inherit;
+    -webkit-transform:rotate(-15deg);
+    -moz-transform:rotate(-15deg);
+    -ms-transform:rotate(-15deg);
+    -o-transform:rotate(-15deg);
+    transform:rotate(-15deg);
+  }
+
+  .discount-tuition{
+    font-size: 14px;
+    margin-left: .5rem;
+    border-radius: 50%;
+    padding: .3rem .5rem .3rem .5rem;
+    background-color: #4A4A4A;
+  }
+}
+
 
 /*-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
 ----------------------Media Query---------------------------------
@@ -327,7 +390,7 @@
 }
 
 .program-description{
-  margin-top: -.4rem;
+    margin-top: -.4rem;
 }
 
   .program-page-title{
@@ -418,6 +481,34 @@
   }
 }
 
+.discount-container{
+
+  margin-right: 1rem;
+
+  img{
+    height: 50px;
+    width: 48px;
+  }
+
+  .onetime_fee{
+    font-size: 16px;
+  }
+}
+
+.discount-total{
+
+  .sum-tuition{
+    font-size: 16px;
+    margin-left: 1rem;
+  }
+
+  .discount-tuition{
+    font-size: 16px;
+    margin-left: 1rem;
+    padding: .5rem .8rem .5rem .8rem;
+  }
+}
+
 
 /*/./././././././. min-with: 1240px ././././././././*/
 @media only screen and (min-width: 1240px) {
@@ -437,20 +528,49 @@
   .program-bkg-img{
 
     img{
-      max-height: 28rem;
+      max-height: 24rem;
     }
   }
 
+  .program-icon-one{
+    width: 420px;
+    height: 420px;
+    display: inline-block;
+    position: absolute;
+    top: 590px;
+    right: 100px;
+  }
+
+  .program-icon-two{
+    display: inline-block;
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    right: 2px;
+    top: 620px;
+    transform:rotate(20deg);
+  }
+
+  .program-icon-three{
+    display: inline-block;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    right: 380px;
+    top: 850px;
+    transform: rotate(-17deg);
+  }
+
   .program-page-title{
-      top: 900px;
-      font-size: 48px;
-      padding: .6rem 3rem .6rem 6.5rem;
+      top: 920px;
+      font-size: 40px;
+      padding: .5rem 3rem .5rem 6.5rem;
   }
 
   .program-description-title{
     padding-left: 3rem;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .program-description-text{
