@@ -1,12 +1,12 @@
 <!--?php wp_enqueue_script('jquery'); ?-->
 <!--?php wp_head(); ?-->
 
-<script type="text/javascript">// <![CDATA[
-jQuery(document).ready(function(){
-  jQuery('#slidebx').bxSlider({
-    pager: false,
-    minSlides: 1,
-    maxSlides: 3,
+  $(document).ready(function(){
+    $('.bxslider').bxSlider({
+        auto: true,
+        slideWidth: 300,
+        minSlides: 1,
+        maxSlides: 1,
+        slideMargin: 10
+    });
   });
-});
-// ]]></script>

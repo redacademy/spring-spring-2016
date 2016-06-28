@@ -35,13 +35,15 @@
 #wpflickity-4 {
   .gallery-cell-image {
     height: 500px;
-    width: 650px;
+    width: 600px;
+    margin-right: 40px;
+    box-shadow: 0px 1px 4px 1px black;
     @include gallery-cell;
   }
 
   .is-selected {
     height: 550px;
-    width: 700px;
+    width: 650px;
     @include main-cell;
   }
 }

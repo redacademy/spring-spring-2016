@@ -50,9 +50,9 @@ get_header(); ?>
             <ul class="bxslider">
               <li class="Keith">
                 <img src="../wp-content/themes/Spring-University/images/members/Spring-Keith.jpg" alt="Keith Ippel" />
-                <span class="member-name"> Keith Ippel </span>
-                <span class="position-title"> CEO </span>
-                <span class="personal-info">
+                <h2 class="member-name"> Keith Ippel </h2>
+                <h2 class="position-title"> CEO </h2>
+                <p class="personal-info">
                   I'm passionate about helping entrepreneurs change
                   the world by connecting their ideas with the right
                   tools; resources, technology, and funding. I
@@ -62,7 +62,7 @@ get_header(); ?>
                   it social good, impact, conscious captialism, do
                   good,or social entrepreneurship - Spring is the
                   place to transform your ideas into impact.
-                </span>
+                </p>
                 <div class="social-media">
                   1
                   2
@@ -73,16 +73,16 @@ get_header(); ?>
 
               <li class="member-jen">
                 <img src="../wp-content/themes/Spring-University/images/members/SpringJen.jpg" alt="Jennifer Chin" />
-                <span class="member-name"> Jennifer Chin </span>
-                <span class="position-title"> Community Manager </span>
-                <span class="personal-info">
+                <h2 class="member-name"> Jennifer Chin </h2>
+                <h2 class="position-title"> Community Manager </h2>
+                <p class="personal-info">
                   Jen shares Spring's story with our ggrowing
                   community through a variety of channels, partners
                   and content creators. She enjoys seeing good
                   companies grow and is a fan of all things innovation.
                   Have something to share? Shoot her a message at
                   jen@spring.is
-                </span>
+                </p>
                 <div class="social-media">
                   1
                   2
@@ -93,9 +93,9 @@ get_header(); ?>
 
               <li class="Chang">
                 <img src="../wp-content/themes/Spring-University/images/members/Chin.jpeg" alt="Chin Hing Chang" />
-                <span class="member-name"> Chin Hing Chang </span>
-                <span class="position-title"> Program Manager </span>
-                <span class="personal-info">
+                <h2 class="member-name"> Chin Hing Chang </h2>
+                <h2 class="position-title"> Program Manager </h2>
+                <p class="personal-info">
                   Chin supports the growth of Spring through
                   Business Development. He does this by building
                   awarness in the community via
@@ -103,7 +103,7 @@ get_header(); ?>
                   workshops and programs. He is also the lead
                   facilitator for Spring University, a global startup
                   school for budding impact entrepreneurs.
-                </span>
+                </p>
                 <div class="social-media">
                   1
                   2

@@ -56,7 +56,9 @@
 
 /* Team members section */
 .bxslider {
-  margin:0 auto;
+  li {
+    margin-left: 100px;
+  }
 }
 
 .bx-clone {
