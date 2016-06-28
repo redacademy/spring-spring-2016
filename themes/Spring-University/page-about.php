@@ -40,7 +40,7 @@ get_header(); ?>
             <h2 class="about-title">Success Stories </h2>
             <ul class="bxslider">
               <li class="Evan">
-                <img src="" alt="Evan" />
+                <img src="../wp-content/themes/Spring-University/images/stories/headshot1.png" alt="Evan" />
                 <span class="personal-story">
                   "Spring has enabled me to re-evaluate how to
                   start Daovita, check my assumptions, and
@@ -55,7 +55,7 @@ get_header(); ?>
               </li>
 
               <li class="story-jen">
-                <img src="" alt="Jennifer Li" />
+                <img src="../wp-content/themes/Spring-University/images/stories/headshot2.png" alt="Jennifer Li" />
                 <span class="personal-story">
                   "We're officially part of the
                     summer cohort of Entrepreneur
@@ -70,7 +70,7 @@ get_header(); ?>
               </li>
 
               <li class="Penaloza">
-                <img src="" alt="Jesús Penaloza" />
+                <img src="../wp-content/themes/Spring-University/images/stories/headshot3.png" alt="Jesús Penaloza" />
                 <span class="personal-story">
                   "Spring team, you guys are awesome.
                   Thanks for the opportunity you gave us in
@@ -98,7 +98,7 @@ get_header(); ?>
             <h2 class="about-title">Team Members</h2>
             <ul class="bxslider">
               <li class="Keith">
-                <img src="" alt="Keith Ippel" />
+                <img src="../wp-content/themes/Spring-University/images/members/Spring-Keith.jpg" alt="Keith Ippel" />
                 <span class="member-name"> Keith Ippel </span>
                 <span class="position-title"> CEO </span>
                 <span class="personal-info">
@@ -121,7 +121,7 @@ get_header(); ?>
               </li>
 
               <li class="member-jen">
-                <img src="" alt="Jennifer Chin" />
+                <img src="../wp-content/themes/Spring-University/images/members/SpringJen.jpg" alt="Jennifer Chin" />
                 <span class="member-name"> Jennifer Chin </span>
                 <span class="position-title"> Community Manager </span>
                 <span class="personal-info">
@@ -141,7 +141,7 @@ get_header(); ?>
               </li>
 
               <li class="Chang">
-                <img src="" alt="Chin Hing Chang" />
+                <img src="../wp-content/themes/Spring-University/images/members/Chin.jpeg" alt="Chin Hing Chang" />
                 <span class="member-name"> Chin Hing Chang </span>
                 <span class="position-title"> Program Manager </span>
                 <span class="personal-info">
