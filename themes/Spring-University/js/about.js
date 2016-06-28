@@ -1,6 +1,5 @@
-<!--?php wp_enqueue_script('jquery'); ?-->
-<!--?php wp_head(); ?-->
 
+(function($) {
   $(document).ready(function(){
     $('.bxslider').bxSlider({
         controls: false,
@@ -12,3 +11,4 @@
         maxSlides: 4
     });
   });
+})( jQuery ); 
