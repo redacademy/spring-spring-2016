@@ -48,7 +48,7 @@ get_header(); ?>
 
             <h2 class="about-title">Team Members</h2>
             <ul class="bxslider">
-              <li class="Keith">
+              <li class="li Keith">
                 <img src="../wp-content/themes/Spring-University/images/members/Spring-Keith.jpg" alt="Keith Ippel" />
                 <h2 class="member-name"> Keith Ippel </h2>
                 <h2 class="position-title"> CEO </h2>
@@ -71,7 +71,7 @@ get_header(); ?>
                 </div>
               </li>
 
-              <li class="member-jen">
+              <li class="li jen">
                 <img src="../wp-content/themes/Spring-University/images/members/SpringJen.jpg" alt="Jennifer Chin" />
                 <h2 class="member-name"> Jennifer Chin </h2>
                 <h2 class="position-title"> Community Manager </h2>
@@ -91,7 +91,7 @@ get_header(); ?>
                 </div>
               </li>
 
-              <li class="Chang">
+              <li class="li Chang">
                 <img src="../wp-content/themes/Spring-University/images/members/Chin.jpeg" alt="Chin Hing Chang" />
                 <h2 class="member-name"> Chin Hing Chang </h2>
                 <h2 class="position-title"> Program Manager </h2>
