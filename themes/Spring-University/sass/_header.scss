@@ -38,7 +38,6 @@
     }
   }
 }
-
 // Site Pages//
 
 .menu-spring_main_menu-container {
@@ -85,6 +84,12 @@
 
 
 @media screen and (min-width: 920px) {
+  .home-click a {
+    width: 15%;
+    height: 25px;
+    z-index: 99;
+  }
+
   .site-header {
     padding: 3px;
   }
