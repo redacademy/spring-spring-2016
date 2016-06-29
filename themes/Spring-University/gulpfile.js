@@ -63,11 +63,13 @@ gulp.task('browser-sync', function() {
       './**/*.php',
    ];
 
-    browserSync.init(files, {
-        proxy: 'http://localhost:8888/spring/', //update this everytime you pull-inhabitent.dev
-    });
+    browserSync.init({
+      proxy: 'localhost:8080/spring/',
+      port: '5005',
+    })
 
-    gulp.watch(files).on('change', browserSync.reload);
+    gulp.watch(files)
+      .on('change', browserSync.reload)
 });
 
 gulp.task('watch', function() {
