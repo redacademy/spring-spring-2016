@@ -50,8 +50,8 @@ get_header(); ?>
             <ul class="bxslider">
               <li class="team-members Keith">
                 <img src="../wp-content/themes/Spring-University/images/members/Spring-Keith.jpg" alt="Keith Ippel" />
-                <h2 class="member-name"> Keith Ippel </h2>
-                <h2 class="position-title"> CEO </h2>
+                <p class="member-name"> Keith Ippel </p>
+                <p class="position-title"> CEO </p>
                 <p class="personal-info">
                   I'm passionate about helping entrepreneurs change
                   the world by connecting their ideas with the right
@@ -64,17 +64,17 @@ get_header(); ?>
                   place to transform your ideas into impact.
                 </p>
                 <div class="social-media">
-                  1
-                  2
-                  3
-                  4
+                  <a href="https://www.facebook.com/keith.ippel"/> <i class="fa fa-facebook"></i> </a>
+                  <a href="https://twitter.com/KeithIppel"/> <i class="fa fa-twitter"></i> </a>
+                  <a href=""/> <i class="fa fa-google-plus"></i> </a>
+                  <a href="https://ca.linkedin.com/in/keithippel"/> <i class="fa fa-linkedin"></i> </a>
                 </div>
               </li>
 
               <li class="team-members jen">
                 <img src="../wp-content/themes/Spring-University/images/members/SpringJen.jpg" alt="Jennifer Chin" />
-                <h2 class="member-name"> Jennifer Chin </h2>
-                <h2 class="position-title"> Community Manager </h2>
+                <p class="member-name"> Jennifer Chin </p>
+                <p class="position-title"> Community Manager </p>
                 <p class="personal-info">
                   Jen shares Spring's story with our ggrowing
                   community through a variety of channels, partners
@@ -84,17 +84,17 @@ get_header(); ?>
                   jen@spring.is
                 </p>
                 <div class="social-media">
-                  1
-                  2
-                  3
-                  4
+                  <a href="https://www.facebook.com/jennifer.chin3"/> <i class="fa fa-facebook"></i> </a>
+                  <a href="https://twitter.com/jenchinifer"/> <i class="fa fa-twitter"></i> </a>
+                  <a href=""/> <i class="fa fa-google-plus"></i> </a>
+                  <a href="https://ca.linkedin.com/in/jenniferchin"/> <i class="fa fa-linkedin"></i> </a>
                 </div>
               </li>
 
               <li class="team-members Chang">
                 <img src="../wp-content/themes/Spring-University/images/members/Chin.jpeg" alt="Chin Hing Chang" />
-                <h2 class="member-name"> Chin Hing Chang </h2>
-                <h2 class="position-title"> Program Manager </h2>
+                <p class="member-name"> Chin Hing Chang </p>
+                <p class="position-title"> Program Manager </p>
                 <p class="personal-info">
                   Chin supports the growth of Spring through
                   Business Development. He does this by building
@@ -105,10 +105,10 @@ get_header(); ?>
                   school for budding impact entrepreneurs.
                 </p>
                 <div class="social-media">
-                  1
-                  2
-                  3
-                  4
+                  <a href="https://www.facebook.com/chinhingchang"/> <i class="fa fa-facebook"></i> </a>
+                  <a href="https://twitter.com/h1ng"/> <i class="fa fa-twitter"></i> </a>
+                  <a href=""/> <i class="fa fa-google-plus"></i> </a>
+                  <a href="https://ca.linkedin.com/in/chinhingchang"/> <i class="fa fa-linkedin"></i> </a>
                 </div>
               </li>
             </ul>

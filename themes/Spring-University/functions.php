@@ -136,14 +136,8 @@ function spring_connect_program_discount() {
 }
 add_action( 'p2p_init', 'spring_connect_program_discount' );
 
-/**
- * Posts2Posts plugin to connect about and program_instructors
- */
-function team_members_connect_program_instructors() {
-    p2p_register_connection_type( array(
-        'name' => 'about_to_program_instructors',
-        'from' => 'about',
-        'to' => 'program_instructors'
-    ) );
+
+function enqueue_our_required_stylesheets(){
+	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 }
-add_action( 'p2p_init', 'team_members_connect_program_instructors' );
+add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');

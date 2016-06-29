@@ -50,7 +50,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  
+
   &:hover {
     background-color: $button_hover;
   }
@@ -82,7 +82,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
+
     .home_hero_h1 {
       font-family: $font_spring;
       font-style: italic;
@@ -92,12 +92,12 @@
       width: 100%;
       text-align: center;
     }
-    
+
     .home_hero_logo {
       height: 80%;
       display: block;
     }
-    
+
 }
 
 
@@ -105,13 +105,13 @@
   background: rgba(0,0,0,0.0);
   height: 14%;
   position: absolute;
-  bottom: 0; 
-  width: 50%;  
+  bottom: 0;
+  width: 50%;
 }
 
 .fa {
   display: flex;
-  
+
 }
 
 
@@ -152,7 +152,7 @@
   margin: 0 auto;
   align-self: flex-end;
   width: 100%;
-  
+
 }
 
 
@@ -184,17 +184,17 @@
   height: 100%;
   position: absolute;
 }
- 
+
 .overlay iframe {
-  width:100%; 
-  height:181%; 
-  position:absolute; 
-  left:0; 
-  top:-40%; 
+  width:100%;
+  height:181%;
+  position:absolute;
+  left:0;
+  top:-40%;
   z-index:-1;
 }
 
-// end of workaround 
+// end of workaround
 //what we offer section
 
 .what_we_offer_section {
@@ -223,11 +223,11 @@
 //  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
+
   .home_program_text {
     padding: 10px;
   }
-  
+
   .home_program_title {
     font-family: $font_spring;
     color: #fff;
@@ -236,7 +236,7 @@
     text-align: left;
     margin: 0;
   }
-  
+
   p{
     font-family: $font_spring;
     color: #fff;
@@ -247,7 +247,7 @@
   .home_program_img {
     height: 100px;
     margin: 10px;
-  }  
+  }
 }
 
 .program_cta {
@@ -288,7 +288,7 @@
   margin: 0 auto;
   margin-bottom: 20px;
 
-  
+
 }
 .events_cta a{
   margin: 0 auto;
@@ -318,7 +318,7 @@
       font-size: 1.1rem;
       text-shadow: 0px 0px 7px #000;
     }
-  
+
 }
 
 // Blog Section
@@ -352,7 +352,7 @@
     text-shadow: 0px 0px 10px #000;
     margin: 0;
     margin-bottom: 20px;
-    text-align: center;  
+    text-align: center;
   }
 }
 
@@ -362,7 +362,7 @@
 }
 
 // Stay updated section
-  
+
 .home_updated {
   height: 190px;
   background: $main_color;
@@ -386,8 +386,8 @@
       margin-bottom: 0px;
     }
 }
-  
-    
+
+
 // Media Queries - - - - - - - - - - - - - - - - -
 
 @media (min-width: 500px) {
@@ -395,8 +395,8 @@
     width: 45%;
   }
   .program_blocks {
-    justify-content: space-around;  
-  }  
+    justify-content: space-around;
+  }
 }
 
 @media (min-width: 600px) {
@@ -417,15 +417,15 @@
     display: block;
     max-width: $content_width;
     font-family: $font_spring;
-    margin: 0 auto; 
-    padding: 20px; 
+    margin: 0 auto;
+    padding: 20px;
   }
 }
 
 @media (min-width: 700px) {
-  
+
   //what we offer desktop
-  
+
   .home_program_box {
     width: 22%;
     max-width: 190px;
@@ -446,18 +446,18 @@
     height: 50%;
   }
   .program_blocks {
-    justify-content: space-around;  
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-  }  
+  }
   .program_cta {
     width: 40%;
     margin-top: 25px;
     margin-bottom: 25px;
  }
- 
+
  //map section desktop
- 
+
  .map_overlay {
    position: absolute;
    top: 0;
@@ -475,26 +475,26 @@
      margin-top: 100px;
    }
  }
- 
+
  .location_cta {
    width: 30%;
    margin: 0 auto;
    margin-bottom: 10px;
  }
- 
+
  .events_cta a {
    width: 50%;
  }
- 
+
  //blog section desktop
- 
+
  .home_blog {
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    justify-content: flex-start;
  }
- 
+
  .home_blog_content {
    width: 50%;
    height: 50%;
@@ -514,13 +514,13 @@
        text-shadow: none;
        margin: 0;
        margin-bottom: 20px;
-       text-align: left;  
+       text-align: left;
      }
   }
   .blog_cta a{
     width: 50%;
     margin: 5px 0px;
   }
-  
-   
+
+
 }
