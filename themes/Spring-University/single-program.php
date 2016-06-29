@@ -125,8 +125,15 @@ get_header(); ?>
 				<div class="single-tuition"><span>&dollar;</span><span class="tuition-amount"><?php echo CFS()->get( 'program_tuition' ); ?></span><span><?php echo CFS()->get( 'frequency' ); ?></span>
 				<div><?php echo CFS()->get( 'program_onetime_tuition' ); ?></div></div>
 				<div class="select-buttons">
-				<a class="request-button" href="#">Request Syllabus</a>
-				<a class="apply-button" href="#">Apply</a>
+
+					<a href="#contact_form_pop" class="fancybox request-button">Request Syllabus</a>
+
+					<div style="display:none" class="fancybox-hidden">
+					    <div id="contact_form_pop">
+					        [contact-form-7 id="204" title="Request Syllabus"]
+					    </div>
+					</div>
+				<a class="apply-button" href="<?php echo get_site_url(); ?>/apply-now">Apply</a>
 			</div>
 			<p class="program-tip"><?php echo CFS()->get( 'tip' ); ?></p>
 			<?php
