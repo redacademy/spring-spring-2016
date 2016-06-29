@@ -18,7 +18,7 @@ get_header(); ?>
 
           <div class="about-company">
             <?php echo CFS()->get( 'about_text' ); ?>
-            <a href="<?php echo get_site_url(); ?>/programs">Browse through programs</a>
+            <a class="browse-button" href="<?php echo get_site_url(); ?>/programs">Browse through programs</a>
           </div>
 
           <div class=" about-paragraphs">
@@ -66,7 +66,7 @@ get_header(); ?>
                 <div class="social-media">
                   <a href="https://www.facebook.com/keith.ippel"/> <i class="fa fa-facebook"></i> </a>
                   <a href="https://twitter.com/KeithIppel"/> <i class="fa fa-twitter"></i> </a>
-                  <a href=""/> <i class="fa fa-google-plus"></i> </a>
+                  <a href="https://plus.google.com/105507575418598030936/about"/> <i class="fa fa-google-plus" aria-hidden="true">></i> </a>
                   <a href="https://ca.linkedin.com/in/keithippel"/> <i class="fa fa-linkedin"></i> </a>
                 </div>
               </li>
@@ -86,7 +86,7 @@ get_header(); ?>
                 <div class="social-media">
                   <a href="https://www.facebook.com/jennifer.chin3"/> <i class="fa fa-facebook"></i> </a>
                   <a href="https://twitter.com/jenchinifer"/> <i class="fa fa-twitter"></i> </a>
-                  <a href=""/> <i class="fa fa-google-plus"></i> </a>
+                  <a href="https://plus.google.com/101580838200695912549/about"/> <i class="fa fa-google-plus"></i> </a>
                   <a href="https://ca.linkedin.com/in/jenniferchin"/> <i class="fa fa-linkedin"></i> </a>
                 </div>
               </li>
@@ -107,7 +107,7 @@ get_header(); ?>
                 <div class="social-media">
                   <a href="https://www.facebook.com/chinhingchang"/> <i class="fa fa-facebook"></i> </a>
                   <a href="https://twitter.com/h1ng"/> <i class="fa fa-twitter"></i> </a>
-                  <a href=""/> <i class="fa fa-google-plus"></i> </a>
+                  <a href="https://plus.google.com/+ChinHingChang88/about"/> <i class="fa fa-google-plus"></i> </a>
                   <a href="https://ca.linkedin.com/in/chinhingchang"/> <i class="fa fa-linkedin"></i> </a>
                 </div>
               </li>

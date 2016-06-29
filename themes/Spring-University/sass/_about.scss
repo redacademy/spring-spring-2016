@@ -18,16 +18,15 @@
   justify-content: center;
 
   p {
-    text-align: center;
-    width: 50rem;
+    padding-left: 20px;
   }
+}
 
-  a {
-    @include main-button;
-    margin: 0 auto;
-    width: 70%;
-    margin-bottom: 50px;
-  }
+.browse-button {
+  @include main-button;
+  margin: 0 auto;
+  width: 70%;
+  margin-bottom: 50px;
 }
 
 /* Section headers */
@@ -98,14 +97,13 @@
     justify-content: space-around;
   }
 
-  .about-company
-    p {
-      text-align: left;
-    }
+  .about-company p {
+    width: 50rem;
+  }
 
-    a {
-      width: 30%;
-    }
+  .browse-button {
+    width: 30%;
+  }
 
   .team-members {
     margin-left: 100px;
