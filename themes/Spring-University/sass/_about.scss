@@ -13,6 +13,10 @@
 
 /* Browse through progams button */
 .about-company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   p {
     text-align: center;
     width: 50rem;
@@ -94,9 +98,14 @@
     justify-content: space-around;
   }
 
-  .about-company a {
-    width: 40%;
-  }
+  .about-company
+    p {
+      text-align: left;
+    }
+
+    a {
+      width: 30%;
+    }
 
   .team-members {
     margin-left: 100px;
