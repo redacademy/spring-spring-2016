@@ -82,6 +82,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  
+  a{
+    text-align: center;
+  }
 
     .home_hero_h1 {
       font-family: $font_spring;
@@ -91,8 +95,9 @@
       margin-top: -50px;
       width: 100%;
       text-align: center;
+      
     }
-
+    
     .home_hero_logo {
       height: 80%;
       display: block;
@@ -207,7 +212,7 @@
 //Program Blocks on home page
 
 .program_blocks {
-  max-width: $content_width;
+  min-width: 80%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
