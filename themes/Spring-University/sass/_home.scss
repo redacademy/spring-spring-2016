@@ -82,6 +82,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  
+  a{
+    text-align: center;
+  }
 
     .home_hero_h1 {
       font-family: $font_spring;
@@ -91,9 +95,7 @@
       margin-top: -50px;
       width: 100%;
       text-align: center;
-      a{
-        text-align: center;
-      }
+      
     }
     
     .home_hero_logo {
