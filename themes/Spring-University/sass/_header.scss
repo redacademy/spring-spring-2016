@@ -4,6 +4,12 @@
 
 // Navbar //
 
+.site-branding {
+  width: 100px;
+position: absolute;
+left: 10px;
+}
+
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -95,6 +101,8 @@
   }
 
   .site-branding {
+    position: absolute;
+    left: 10px;
 
     .spring-home {
       display: none;
