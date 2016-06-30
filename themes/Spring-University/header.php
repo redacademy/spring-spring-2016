@@ -25,8 +25,6 @@
 	<body <?php body_class(); ?>>
 		<div class="home-click"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> </div>
 		<div id="page" class="hfeed site">
-			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
-
 			<header id="masthead" class="site-header">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"> Spring </h1>
